@@ -1,0 +1,95 @@
+{
+  "scope": "Built route-entry chunks, excluding common framework runtime overhead; gzip comparison is a bundle comparison, not authenticated admin load timing.",
+  "buildId": "qCZlGIN3_qKnjrwV0OIRw",
+  "records": [
+    {
+      "route": "(public)/order",
+      "entryChunkCount": 8,
+      "decodedBytes": 598888,
+      "gzipBytes": 153334,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/public-order/query-provider.tsx",
+        "[project]/src/app/(public)/order/error.tsx",
+        "[project]/src/features/public-order/form.tsx"
+      ],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1qdo9p8_pkqya.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/3d6awvausbf_w.js",
+        "static/chunks/00pbmojyfaypg.js",
+        "static/chunks/0eqtbjk2aepfz.js",
+        "static/chunks/0m22drf6c7u8o.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/dashboard",
+      "entryChunkCount": 10,
+      "decodedBytes": 717873,
+      "gzipBytes": 188917,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/17upyyrrc6mgz.js",
+        "static/chunks/36306-tzdnxqa.js",
+        "static/chunks/00pbmojyfaypg.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/2hltnu8vxw5fj.js",
+        "static/chunks/3jlgq5e9vnvuk.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/[module]",
+      "entryChunkCount": 12,
+      "decodedBytes": 829479,
+      "gzipBytes": 217988,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/settings/preferences-settings.tsx",
+        "[project]/src/features/shipments/live.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/17upyyrrc6mgz.js",
+        "static/chunks/36306-tzdnxqa.js",
+        "static/chunks/00pbmojyfaypg.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/2hltnu8vxw5fj.js",
+        "static/chunks/2489u2trwnrfp.js",
+        "static/chunks/1tutrbup8zk_2.js",
+        "static/chunks/300-ad5xprvk3.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    }
+  ],
+  "publicForbiddenClientSources": [],
+  "publicLoadedChunksWithTanStackTableSignatures": 0
+}

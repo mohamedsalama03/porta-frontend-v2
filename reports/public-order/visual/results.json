@@ -1,0 +1,3716 @@
+{
+  "scope": "Isolated browser presentation verification with synthetic public API responses only. No real order or live integration claim.",
+  "base": "http://localhost:3000",
+  "apiOrigin": "http://localhost:8080",
+  "startedAt": "2026-09-13T20:41:02.788Z",
+  "results": [
+    {
+      "name": "light-390",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/light-390-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "validation",
+      "screenshot": "reports/public-order/visual/light-390-validation.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "INPUT",
+          "id": "sender_name"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/light-390-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/light-390-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/light-390-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/light-390-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "refresh",
+      "screenshot": "reports/public-order/visual/light-390-refresh.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BODY",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-390",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    },
+    {
+      "name": "light-430",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/light-430-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "documentWidth": 430,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-430",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/light-430-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "documentWidth": 430,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-430",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/light-430-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "documentWidth": 430,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-430",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/light-430-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "documentWidth": 430,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-430",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/light-430-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "documentWidth": 430,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-success-heading",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-success-heading",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "button button-secondary",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-430",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    },
+    {
+      "name": "light-768",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/light-768-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-skip",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-768",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/light-768-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-768",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/light-768-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-768",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/light-768-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-768",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/light-768-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-768",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    },
+    {
+      "name": "light-1024",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/light-1024-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 1024,
+          "height": 900
+        },
+        "documentWidth": 1024,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1024",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/light-1024-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 1024,
+          "height": 900
+        },
+        "documentWidth": 1024,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1024",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/light-1024-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 1024,
+          "height": 900
+        },
+        "documentWidth": 1024,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1024",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/light-1024-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 1024,
+          "height": 900
+        },
+        "documentWidth": 1024,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BODY",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1024",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/light-1024-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 1024,
+          "height": 900
+        },
+        "documentWidth": 1024,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1024",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    },
+    {
+      "name": "light-1440",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/light-1440-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1440",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/light-1440-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1440",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/light-1440-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-description",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1440",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/light-1440-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1440",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/light-1440-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "documentWidth": 1440,
+        "direction": "rtl",
+        "theme": "light",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "light-1440",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    },
+    {
+      "name": "dark-390",
+      "state": "initial",
+      "screenshot": "reports/public-order/visual/dark-390-initial.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "dark",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "main-content",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "MAIN",
+          "id": "main-content"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "dark-390",
+      "state": "filled",
+      "screenshot": "reports/public-order/visual/dark-390-filled.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "dark",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "TEXTAREA",
+          "id": "notes"
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "dark-390",
+      "state": "review",
+      "screenshot": "reports/public-order/visual/dark-390-review.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "dark",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "sender_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_name",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "recipient_phone",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "origin_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "destination_city_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_type_id",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "shipment_size",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "weight",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-OFFICE_PICKUP-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_method-DOOR_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "delivery_address",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-CASH_ON_DELIVERY-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "payment_method-PREPAID_TRANSFER-label",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "notes",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "dark-390",
+      "state": "error",
+      "screenshot": "reports/public-order/visual/dark-390-error.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "dark",
+        "reducedMotion": true,
+        "activeAnimations": [
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          },
+          {
+            "target": "public-order-summary-region",
+            "activeDurationMs": 0.01
+          }
+        ],
+        "runningAnimations": 0,
+        "inputs": [
+          {
+            "id": "sender_name",
+            "fontPx": 16
+          },
+          {
+            "id": "sender_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_name",
+            "fontPx": 16
+          },
+          {
+            "id": "recipient_phone",
+            "fontPx": 16
+          },
+          {
+            "id": "origin_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "destination_city_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_type_id",
+            "fontPx": 16
+          },
+          {
+            "id": "shipment_size",
+            "fontPx": 16
+          },
+          {
+            "id": "weight",
+            "fontPx": 16
+          },
+          {
+            "id": "delivery_address",
+            "fontPx": 16
+          },
+          {
+            "id": "notes",
+            "fontPx": 16
+          }
+        ],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "DIV",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "dark-390",
+      "state": "success",
+      "screenshot": "reports/public-order/visual/dark-390-success.png",
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "direction": "rtl",
+        "theme": "dark",
+        "reducedMotion": true,
+        "activeAnimations": [],
+        "runningAnimations": 0,
+        "inputs": [],
+        "smallInputs": [],
+        "smallTargets": [],
+        "overflowing": [],
+        "activeElement": {
+          "tag": "BUTTON",
+          "id": ""
+        }
+      },
+      "violations": [],
+      "failures": []
+    },
+    {
+      "name": "dark-390",
+      "state": "interaction-evidence",
+      "runtimeErrors": [],
+      "apiRequests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/sanctum/csrf-cookie"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/quotes"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/orders"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/cities"
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/shipment-types"
+        }
+      ],
+      "unexpectedRequests": [],
+      "simulatedOrderCalls": 2,
+      "distinctLogicalKeys": 1,
+      "note": "Request values are synthetic; this is not live backend replay acceptance."
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-13T20:41:35.972Z",
+  "status": "PASS"
+}

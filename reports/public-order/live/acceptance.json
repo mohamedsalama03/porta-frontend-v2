@@ -1,0 +1,68 @@
+{
+  "qaPrefix": "PORTA-QA-20260913-PUBLIC-2240",
+  "creationStarted": true,
+  "completedAt": "2026-09-13T20:34:55.350Z",
+  "status": "PASS",
+  "quote": {
+    "httpStatus": 200,
+    "finalPrice": 1235,
+    "currency": "LYD"
+  },
+  "created": {
+    "httpStatus": 201,
+    "trackingNumber": "PTA-260913-9B906F9B74FA87ED",
+    "finalPrice": 1235,
+    "currency": "LYD",
+    "currentStatus": "RECEIVED"
+  },
+  "orderRequests": 1,
+  "keyHash": "2840cd66345969289fdbc2c076506f0c131860257b52b1ab09f936d2d8e0c0ed",
+  "csrfHeaderPresent": true,
+  "generatedPayloadValid": true,
+  "noStaffRequests": true,
+  "refreshDidNotResubmit": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/cities"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/shipment-types"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cities"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/shipment-types"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/quotes"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/orders"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cities"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/shipment-types"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cities"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/shipment-types"
+    }
+  ],
+  "lifecycleWrites": 0,
+  "financialWrites": 0
+}

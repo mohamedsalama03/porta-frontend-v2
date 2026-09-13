@@ -1,0 +1,147 @@
+
+> porta-delivery-admin@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:20264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:22876) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:30616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:29988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:33032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:32808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:19780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:28732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:27244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 29 tests using 1 worker
+
+(node:26488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\foundation.spec.ts:4:1 › login is safe and honest without an API and supports password visibility (841ms)
+  ok  2 [chromium] › tests\e2e\foundation.spec.ts:25:1 › unconnected dashboard never displays invented operational data (1.7s)
+[WebServer] (node:1316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:28828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:4860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:33528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [chromium] › tests\e2e\foundation.spec.ts:34:1 › feature shells expose no write action and every section renders (5.0s)
+(node:21572) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:21012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:30376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:26928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:30568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [chromium] › tests\e2e\foundation.spec.ts:55:1 › core views pass automated accessibility checks in both themes (9.5s)
+  ok  5 [chromium] › tests\e2e\shell.spec.ts:19:1 › keyboard command search navigates and returns focus on Escape (975ms)
+[WebServer] (node:21712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [chromium] › tests\e2e\shell.spec.ts:46:1 › command dialog keeps keyboard focus away from the workspace (759ms)
+  ok  7 [chromium] › tests\e2e\shell.spec.ts:60:1 › sidebar collapse persists after reload and preserves accessible links (1.2s)
+  ok  8 [chromium] › tests\e2e\shell.spec.ts:78:1 › phone drawer is RTL, traps focus, and returns focus without horizontal overflow (1.5s)
+[WebServer] (node:28328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [chromium] › tests\e2e\shell.spec.ts:110:1 › phone notification and account popovers fit the viewport (840ms)
+[WebServer] (node:20716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:8768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [chromium] › tests\e2e\shell.spec.ts:133:1 › theme and table density take effect and persist (1.3s)
+  ok 11 [chromium] › tests\e2e\shell.spec.ts:154:1 › keyboard skip link targets the main workspace (694ms)
+[WebServer] (node:22532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:18956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 12 [chromium] › tests\e2e\shipments.spec.ts:4:3 › isolated shipment previews › debounces search into the URL, keeps it after reload, and removes the filter chip (1.9s)
+[WebServer] (node:23736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:29716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 [chromium] › tests\e2e\shipments.spec.ts:23:3 › isolated shipment previews › combines filters, clears cursor state, and follows browser history (1.3s)
+[WebServer] (node:19648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 14 [chromium] › tests\e2e\shipments.spec.ts:45:3 › isolated shipment previews › changes columns in a keyboard-safe dialog and restores focus on Escape (899ms)
+[WebServer] (node:8884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 15 [chromium] › tests\e2e\shipments.spec.ts:66:3 › isolated shipment previews › copies the sample tracking number with feedback and disables workflow changes (715ms)
+[WebServer] (node:29992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [chromium] › tests\e2e\shipments.spec.ts:82:3 › isolated shipment previews › keeps creation and pricing unavailable without issuing a write (877ms)
+(node:22320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 17 [public-order-chromium] › tests\e2e\public-order.spec.ts:175:1 › anonymous route is isolated from staff and required errors focus the first field (2.1s)
+  ok 18 [public-order-chromium] › tests\e2e\public-order.spec.ts:201:1 › review, double-click protection, confirmation, copy and refresh retain no personal storage (2.6s)
+  ok 19 [public-order-chromium] › tests\e2e\public-order.spec.ts:257:1 › door address is required and optional kg weight reaches only the reviewed order (2.9s)
+  ok 20 [public-order-chromium] › tests\e2e\public-order.spec.ts:290:1 › selection changes remove the old price immediately and clearing a route cannot create an order (2.6s)
+  ok 21 [public-order-chromium] › tests\e2e\public-order.spec.ts:322:1 › 422 returns editable field errors, focuses the invalid phone and creates a new corrected attempt (2.1s)
+  ok 22 [public-order-chromium] › tests\e2e\public-order.spec.ts:349:3 › network failure keeps fields locked and retries one immutable order only on deliberate action (2.0s)
+  ok 23 [public-order-chromium] › tests\e2e\public-order.spec.ts:349:3 › server failure keeps fields locked and retries one immutable order only on deliberate action (2.2s)
+  ok 24 [public-order-chromium] › tests\e2e\public-order.spec.ts:376:1 › 409 is a safe public conflict and never implies staff editing or exposes backend content (1.9s)
+  ok 25 [public-order-chromium] › tests\e2e\public-order.spec.ts:391:1 › 429 prevents an early retry and reuses the original key after Retry-After (4.4s)
+  ok 26 [public-order-chromium] › tests\e2e\public-order.spec.ts:412:1 › empty public catalogs offer no invented options or order submission (649ms)
+  ok 27 [public-order-chromium] › tests\e2e\public-order.spec.ts:424:1 › catalog errors have a working public retry with no login redirect (692ms)
+  ok 28 [public-order-chromium] › tests\e2e\public-order.spec.ts:441:1 › public layouts fit phone, tablet and desktop widths with readable native controls (1.8s)
+  ok 29 [public-order-chromium] › tests\e2e\public-order.spec.ts:467:1 › form, review and success pass accessibility checks in both themes and reduced motion (4.6s)
+
+
+  1) [chromium] › tests\e2e\foundation.spec.ts:34:1 › feature shells expose no write action and every section renders
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('هذا القسم بانتظار ربط الخدمة.')
+    Expected: visible
+    Error: strict mode violation: getByText('هذا القسم بانتظار ربط الخدمة.') resolved to 2 elements:
+        1) <strong>هذا القسم بانتظار ربط الخدمة.</strong> aka getByText('هذا القسم بانتظار ربط الخدمة').first()
+        2) <strong>هذا القسم بانتظار ربط الخدمة.</strong> aka getByRole('main').getByText('هذا القسم بانتظار ربط الخدمة')
+
+    Call log:
+      - Expect "toBeVisible" getByText('هذا القسم بانتظار ربط الخدمة.') with timeout 7000ms
+      - waiting for getByText('هذا القسم بانتظار ربط الخدمة.')
+
+
+      47 |     await page.goto(`/preview/${section}`);
+      48 |     await expect(page.locator('main h1')).toBeVisible();
+    > 49 |     await expect(page.getByText('هذا القسم بانتظار ربط الخدمة.')).toBeVisible();
+         |                                                                   ^
+      50 |     for (const button of await page.locator('main .page-heading button').all())
+      51 |       await expect(button).toBeDisabled();
+      52 |   }
+        at D:\customers\porta frontend\tests\e2e\foundation.spec.ts:49:67
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\foundation-feature-shells--2dfa6-n-and-every-section-renders-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\foundation-feature-shells--2dfa6-n-and-every-section-renders-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\foundation-feature-shells--2dfa6-n-and-every-section-renders-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\foundation-feature-shells--2dfa6-n-and-every-section-renders-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\e2e\foundation.spec.ts:34:1 › feature shells expose no write action and every section renders
+  28 passed (1.2m)

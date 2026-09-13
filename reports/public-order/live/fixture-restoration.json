@@ -1,0 +1,12 @@
+{
+  "verification": "Authenticated local Admin UI after the one successful public QA booking",
+  "fixturePrefix": "PORTA-QA-20260913-1715",
+  "cityA": { "code": "QA0913A1715", "before": "inactive", "acceptance": "active", "after": "inactive", "saveConfirmed": true },
+  "cityB": { "code": "QA0913B1715", "before": "inactive", "acceptance": "active", "after": "inactive", "saveConfirmed": true },
+  "shipmentType": { "code": "QA0913T1715", "before": "inactive", "acceptance": "active", "after": "inactive", "saveConfirmed": true },
+  "pricing": { "route": "QA0913A1715 to QA0913B1715", "shipmentType": "QA0913T1715", "size": "SMALL", "baseMillimes": 1235, "doorSurchargeMillimes": 100, "before": "inactive", "acceptance": "active", "after": "inactive", "saveConfirmed": true },
+  "retainedOrderTracking": "PTA-260913-9B906F9B74FA87ED",
+  "orderLifecycleUnchangedAfterCreation": true,
+  "financialCaptureOrRefund": false,
+  "backendRepositoryAccess": false
+}

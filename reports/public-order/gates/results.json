@@ -1,0 +1,53 @@
+[
+  {
+    "command": "npm run api:check",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:44:58.4414535Z",
+    "durationSeconds": 0.71,
+    "log": "reports/public-order/gates/api-check.log"
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:56:42.1930133Z",
+    "durationSeconds": 7.6,
+    "log": "reports/public-order/gates/lint.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:56:49.8052893Z",
+    "durationSeconds": 3.58,
+    "log": "reports/public-order/gates/typecheck.log"
+  },
+  {
+    "command": "npm run test",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:45:11.3186856Z",
+    "durationSeconds": 52.67,
+    "log": "reports/public-order/gates/test.log"
+  },
+  {
+    "command": "npm run test:e2e",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:54:34.4882028Z",
+    "durationSeconds": 69.65,
+    "log": "reports/public-order/gates/test-e2e.log",
+    "previousAttemptLog": "reports/public-order/gates/test-e2e.initial.log",
+    "secondAttemptLog": "reports/public-order/gates/test-e2e.second.log"
+  },
+  {
+    "command": "npm run test:live",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:47:26.3705731Z",
+    "durationSeconds": 9.32,
+    "log": "reports/public-order/gates/test-live.log"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "startedAt": "2026-09-13T20:47:35.6909337Z",
+    "durationSeconds": 26.6,
+    "log": "reports/public-order/gates/build.log"
+  }
+]
