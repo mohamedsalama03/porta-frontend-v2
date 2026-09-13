@@ -220,7 +220,7 @@ No OpenAPI, generated schema, dependency/lockfile, Admin application or backend 
 | `0d9e2a1`                                                       | Browser/live regression, privacy, visual/performance tooling and acceptance evidence             |
 | `docs(tracking): record implementation and acceptance evidence` | This report and scoped design documentation; full final hash is in the source-state record below |
 
-The [final source-state record](C:/Users/Mohamed/.codex/visualizations/2026/09/13/01a09a82-f5a8-79a1-aa24-83ca1f166784/porta-public-tracking-final-source-state.json) is written after the documentation commit and records full HEAD, branch, clean status, ten-entry decorated log, all changed files, unchanged main and OpenAPI SHA. It lives outside the repository so recording the final commit does not create an additional uncommitted change or a self-referential commit hash. `main` remains at the approved starting SHA. No merge, push, history rewrite, tag or deployment is part of this phase.
+The [final source-state record](C:/Users/Mohamed/.codex/visualizations/2026/09/13/01a09a82-f5a8-79a1-aa24-83ca1f166784/porta-public-tracking-final-source-state.json) is written after documentation is committed and records full HEAD, branch, clean status, the latest decorated log (up to ten entries), all changed files, unchanged main and OpenAPI SHA. It lives outside the repository so recording the final commit does not create an additional uncommitted change or a self-referential commit hash. `main` remains at the approved starting SHA. No merge, push, history rewrite, tag or deployment is part of this phase.
 
 ## Remaining Gaps
 
