@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import { Check, CheckCircle2, Copy } from 'lucide-react';
 import { formatMoney } from '@/lib/formatters';
+import { trackingHref } from '@/features/public-tracking/model';
 import { OrderReviewDetails, type OrderReviewData } from './summary';
 
 export function OrderSuccess({
@@ -71,6 +73,15 @@ export function OrderSuccess({
       <div className="public-order-success-summary">
         <h3>بيانات الطلب التي أرسلتها</h3>
         <OrderReviewDetails data={summary} />
+      </div>
+      <div className="public-order-success-actions">
+        <Link
+          href={trackingHref(trackingNumber)}
+          className="button button-primary"
+          prefetch={false}
+        >
+          تتبع الشحنة
+        </Link>
       </div>
       {onNewOrder && (
         <div className="public-order-success-actions">

@@ -7,7 +7,7 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
   return (
     <div className="public-order-page">
       <a className="public-order-skip" href="#main-content">
-        انتقل إلى نموذج الطلب
+        انتقل إلى المحتوى
       </a>
       <header className="public-order-header">
         <Link
