@@ -1,0 +1,13 @@
+node_modules
+.next
+.next-*
+package-lock.json
+reports
+test-results
+playwright-report
+.impeccable
+next-env.d.ts
+AGENTS.md
+CLAUDE.md
+# Preserve the supplied approved contract byte-for-byte.
+contracts/porta-api-v1.openapi.json

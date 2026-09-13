@@ -1,0 +1,175 @@
+{
+  "recordedAt": "2026-09-13T18:48:25.841Z",
+  "progress": "COMPLETE",
+  "scope": "Focused trip frontend regression and all seven required frontend gates after approved contract synchronization. Existing live operational evidence was preserved; no additional operational UI retest performed by this agent.",
+  "backendRevision": "064f2903b7f612ff486428d00039387538a040e9",
+  "approvedContractSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+  "baselinePath": "reports/trip-operational-retest/baseline.json",
+  "contractSyncBeforeTests": {
+    "provenance": "Root reported contract-agent results before authorizing test start.",
+    "initialApiCheckExitCode": 1,
+    "initialApiCheckReason": "Generated artifact referenced the stale contract hash.",
+    "generationExitCode": 0,
+    "generatedComponentSchemas": 63,
+    "generatedOperations": 51,
+    "finalApiCheckExitCode": 0,
+    "generatedChange": "Only src/lib/api/generated.ts line 2 contract hash changed."
+  },
+  "unitExecution": {
+    "environmentOverride": {
+      "VITEST_MAX_WORKERS": "1"
+    },
+    "scope": "Process-local on both focused and full unit commands.",
+    "restoredAfterEachCommand": true,
+    "reason": "Known prior resource-sensitive default-worker test timeouts; supported Vitest worker cap selected before this run.",
+    "assertionsChanged": false,
+    "timeoutsChanged": false,
+    "testConfigurationChanged": false,
+    "testSelectionWeakened": false
+  },
+  "checks": [
+    {
+      "id": "focused",
+      "command": "npx vitest run tests/unit/operation-writes.test.tsx tests/unit/idempotency.test.ts tests/unit/formatters.test.ts",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:43:23.128Z",
+      "finishedAt": "2026-09-13T18:44:00.832Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/01-focused.log",
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "summary": {
+        "filesPassed": 3,
+        "filesFailed": 0,
+        "testsPassed": 15,
+        "testsFailed": 0,
+        "testsSkipped": 0,
+        "totalTests": 15,
+        "runnerDurationSeconds": 28.38
+      }
+    },
+    {
+      "id": "api-check",
+      "command": "npm run api:check",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:44:16.067Z",
+      "finishedAt": "2026-09-13T18:44:17.279Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/02-api-check.log",
+      "summary": "Generated schemas match the approved local contract."
+    },
+    {
+      "id": "lint",
+      "command": "npm run lint",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:44:25.292Z",
+      "finishedAt": "2026-09-13T18:45:02.568Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/03-lint.log",
+      "summary": "No lint diagnostics."
+    },
+    {
+      "id": "typecheck",
+      "command": "npm run typecheck",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:45:09.502Z",
+      "finishedAt": "2026-09-13T18:45:15.817Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/04-typecheck.log",
+      "summary": "Route type generation and tsc --noEmit completed."
+    },
+    {
+      "id": "unit",
+      "command": "npm run test",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:45:26.604Z",
+      "finishedAt": "2026-09-13T18:46:03.512Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/05-unit.log",
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "summary": {
+        "filesPassed": 22,
+        "filesFailed": 0,
+        "testsPassed": 142,
+        "testsFailed": 0,
+        "testsSkipped": 0,
+        "totalTests": 142,
+        "runnerDurationSeconds": 35.49
+      }
+    },
+    {
+      "id": "e2e",
+      "command": "npm run test:e2e",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:46:17.503Z",
+      "finishedAt": "2026-09-13T18:46:58.992Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/06-e2e.log",
+      "summary": {
+        "testsPassed": 16,
+        "testsFailed": 0,
+        "testsSkipped": 0,
+        "totalTests": 16,
+        "runnerDurationSeconds": 38.9
+      }
+    },
+    {
+      "id": "live",
+      "command": "npm run test:live",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:47:07.440Z",
+      "finishedAt": "2026-09-13T18:47:12.215Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/07-live.log",
+      "summary": {
+        "testsPassed": 3,
+        "testsFailed": 0,
+        "testsSkipped": 0,
+        "totalTests": 3,
+        "runnerDurationSeconds": 3.2
+      }
+    },
+    {
+      "id": "build",
+      "command": "npm run build",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:47:20.352Z",
+      "finishedAt": "2026-09-13T18:47:29.843Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/08-build.log",
+      "summary": {
+        "compileMilliseconds": 1453,
+        "typecheckSeconds": 2.9,
+        "staticPagesGenerated": 8,
+        "staticPagesTotal": 8,
+        "staticGenerationMilliseconds": 326,
+        "prebuildApiCheckExitCode": 0
+      }
+    }
+  ],
+  "focusedPassed": true,
+  "fullGateCount": 7,
+  "allRequiredGatesPassed": true,
+  "postSyncAttemptCount": 8,
+  "postSyncFailedAttempts": [],
+  "notes": [
+    "All eight post-sync checks passed on the first attempt; no retries, skipped tests, or weakened gates.",
+    "The earlier contract-sync api:check exit1 for the stale generated hash is preserved above with root-reported provenance; it was resolved before these tests.",
+    "Informational output includes color-environment and reduced-motion notices plus Vitest environment-cost guidance.",
+    "Raw command output is retained in the eight linked log files; concise results are not substituted for failed-attempt evidence.",
+    "No application, test, configuration, or dependency edits were made by this regression agent. No existing server was stopped.",
+    "Final source comparison is owned by root after report completion; the 171-file baseline is preserved.",
+    "Unit results explicitly apply to the planned supported one-worker environment."
+  ]
+}

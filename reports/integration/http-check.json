@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-09-13T13:35:55.725Z",
+  "apiOrigin": "http://localhost:8080",
+  "frontendOrigin": "http://localhost:3000",
+  "contractVersion": "1.0.0",
+  "contractSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+  "passed": true,
+  "scope": "Read-only unauthenticated HTTP checks. No staff login or mutations performed.",
+  "checks": [
+    {
+      "path": "/sanctum/csrf-cookie",
+      "status": 204,
+      "expectedStatus": 204,
+      "schemaValid": true,
+      "issues": [],
+      "corsOrigin": "http://localhost:3000",
+      "credentials": "true",
+      "exposedHeaders": "X-Request-ID, Idempotency-Replayed, Retry-After",
+      "requestId": "cbdd72f0-3106-435c-af7b-3608766c570b",
+      "cookies": [
+        {
+          "name": "XSRF-TOKEN",
+          "httpOnly": false,
+          "sameSite": "lax"
+        },
+        {
+          "name": "porta-delivery-session",
+          "httpOnly": true,
+          "sameSite": "lax"
+        }
+      ]
+    },
+    {
+      "path": "/api/v1/auth/me",
+      "status": 401,
+      "expectedStatus": 401,
+      "schemaValid": true,
+      "issues": [],
+      "corsOrigin": "http://localhost:3000",
+      "credentials": "true",
+      "exposedHeaders": "X-Request-ID, Idempotency-Replayed, Retry-After",
+      "requestId": "4bf2c258-ac61-4c07-ab8e-493f61fe2fab",
+      "cookies": [
+        {
+          "name": "XSRF-TOKEN",
+          "httpOnly": false,
+          "sameSite": "lax"
+        },
+        {
+          "name": "porta-delivery-session",
+          "httpOnly": true,
+          "sameSite": "lax"
+        }
+      ]
+    },
+    {
+      "path": "/api/v1/cities",
+      "status": 200,
+      "expectedStatus": 200,
+      "schemaValid": true,
+      "issues": [],
+      "corsOrigin": "http://localhost:3000",
+      "credentials": "true",
+      "exposedHeaders": "X-Request-ID, Idempotency-Replayed, Retry-After",
+      "requestId": "065faaf4-cdd5-40e4-a07b-1c7d67cd5f10",
+      "count": 0,
+      "cookies": [
+        {
+          "name": "XSRF-TOKEN",
+          "httpOnly": false,
+          "sameSite": "lax"
+        },
+        {
+          "name": "porta-delivery-session",
+          "httpOnly": true,
+          "sameSite": "lax"
+        }
+      ]
+    },
+    {
+      "path": "/api/v1/shipment-types",
+      "status": 200,
+      "expectedStatus": 200,
+      "schemaValid": true,
+      "issues": [],
+      "corsOrigin": "http://localhost:3000",
+      "credentials": "true",
+      "exposedHeaders": "X-Request-ID, Idempotency-Replayed, Retry-After",
+      "requestId": "439b868b-b9ba-4d16-a279-353db30202e0",
+      "count": 0,
+      "cookies": [
+        {
+          "name": "XSRF-TOKEN",
+          "httpOnly": false,
+          "sameSite": "lax"
+        },
+        {
+          "name": "porta-delivery-session",
+          "httpOnly": true,
+          "sameSite": "lax"
+        }
+      ]
+    }
+  ]
+}

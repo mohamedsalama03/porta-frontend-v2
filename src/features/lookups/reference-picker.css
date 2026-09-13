@@ -1,0 +1,40 @@
+.reference-picker {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  width: 100%;
+}
+.reference-picker input,
+.reference-picker select {
+  width: 100%;
+}
+.reference-picker small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.reference-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.reference-pagination > div {
+  display: flex;
+  gap: 3px;
+}
+.reference-pagination .icon-button {
+  width: 30px;
+  min-height: 30px;
+}
+.reference-error {
+  color: var(--danger);
+  font-size: 11px;
+}
+.reference-error p {
+  margin: 0;
+}
+.reference-error .button {
+  font-size: 11px;
+  min-height: 30px;
+}

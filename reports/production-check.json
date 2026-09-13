@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/preview",
+    "status": 404
+  },
+  {
+    "path": "/preview/shipments",
+    "status": 404
+  },
+  {
+    "path": "/preview/shipments/sample-001",
+    "status": 404
+  },
+  {
+    "path": "/preview/settings",
+    "status": 404
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "mode": "connected",
+    "loginAvailable": true,
+    "previewEntryHidden": true,
+    "robots": "noindex, nofollow, noarchive"
+  }
+]

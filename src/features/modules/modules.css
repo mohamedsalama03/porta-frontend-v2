@@ -1,0 +1,64 @@
+.module-notice {
+  margin-block-end: 24px;
+}
+.module-table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+}
+.module-table-heading h2 {
+  font-size: 14px;
+}
+.module-table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+}
+.module-table-scroll th {
+  text-align: start;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--background);
+  padding: 12px 22px;
+  border-block: 1px solid var(--border);
+}
+.module-empty {
+  min-height: 280px;
+  align-content: center;
+}
+.module-empty h3 {
+  font-size: 15px;
+}
+.module-table-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 22px;
+  border-block-start: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+}
+.module-footnote {
+  margin-block-start: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+@media (max-width: 767px) {
+  .module-table-scroll th {
+    padding-inline: 15px;
+  }
+  .module-table-scroll th:nth-child(n + 3) {
+    display: none;
+  }
+  .module-table-footer {
+    padding-inline: 16px;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .module-empty {
+    min-height: 260px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "comparedAtUtc": "2026-09-13T18:48:27.4775096Z",
+  "baselinePath": "reports/trip-operational-retest/baseline.json",
+  "baselineFileCount": 171,
+  "currentFileCount": 172,
+  "changed": [
+    {
+      "path": "contracts/porta-api-v1.openapi.json",
+      "beforeSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+      "afterSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658"
+    },
+    {
+      "path": "src/lib/api/generated.ts",
+      "beforeSha256": "ed1c8dacf52fc4200affc535671ac5bc91529fe6e061b0247ca522ddc7cb6d78",
+      "afterSha256": "42ca37414b727fb7243262731078efe98fd713653197618ca6cc2b18c5499bc3"
+    }
+  ],
+  "missing": [],
+  "added": [
+    "docs/TRIP-OPERATIONAL-RETEST-REPORT.md"
+  ],
+  "applicationLogicChanges": [],
+  "applicationLogicChangeCount": 0,
+  "gitMetadata": "Unavailable; retained SHA-256 baseline used. No repository initialized.",
+  "scope": "Root files and src/tests/scripts/docs/contracts, excluding tsconfig.tsbuildinfo; reports/dependencies/build/test-output directories excluded."
+}

@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-09-13T15:44:02.3479226Z",
+  "baseline": "reports/boolean-filter-retest/baseline.json",
+  "baselineFileCount": 167,
+  "unchangedFileCount": 167,
+  "changed": [],
+  "missing": [],
+  "contractSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+  "result": "PASS"
+}

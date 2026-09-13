@@ -1,0 +1,61 @@
+{
+  "comparedAt": "2026-09-13T17:42:06.938Z",
+  "baselinePath": "reports/operational-acceptance/baseline.json",
+  "baselineFileCount": 168,
+  "currentScopedFileCount": 171,
+  "changed": [
+    {
+      "path": "src\\features\\catalog\\actions.tsx",
+      "baselineSha256": "8DF22DBE2A37EAA4201A9DD673D3817DDDE0732823641AD95BF4353F69A84E7F",
+      "currentSha256": "7283EF1CE99B17991FE8006256450B239EE1BB8BBA57A387A624FB63B04551A8"
+    },
+    {
+      "path": "src\\features\\operations\\editor.tsx",
+      "baselineSha256": "85AC97D894941AA0C288AD301DF9B42D395B5019EC6070156B3A5843901FA9DF",
+      "currentSha256": "80C2A0D8349A20854480C7196F2A9CDDF89B12529864BCB710F08F13C9231D30"
+    },
+    {
+      "path": "tests\\unit\\catalog-actions.test.tsx",
+      "baselineSha256": "697F836630BA2DAA7B2E13B4B2B6B04EF1AFBA82F20DD73C12CE27AF1C973F98",
+      "currentSha256": "BE5F4FB5C800608BD41EBF9800A9A2537CFBF92B8D84FE130EBF9677CC9A7BCC"
+    },
+    {
+      "path": "tests\\unit\\operation-writes.test.tsx",
+      "baselineSha256": "E05D2D8F1C46BA23A4E222C7F51375469096979DB6340FD851F6F621336B5AD6",
+      "currentSha256": "407C4237ED4E0B9609C67BCE1304AB010CA872485DD70C5F4739A467F0F1258A"
+    }
+  ],
+  "missing": [],
+  "addedWithinSourceDocConfigScope": [
+    "docs\\ADMIN-DASHBOARD-OPERATIONAL-ACCEPTANCE-REPORT.md",
+    "docs\\OPERATIONAL-ACCEPTANCE-FINDINGS.md",
+    "docs\\OPERATIONAL-ACCEPTANCE-TEST-DATA-PLAN.md"
+  ],
+  "contractSha256": "90D5A0905238D2C9447E1002332FB65B63B1DC552C4C98B441627B9C809B6AE4",
+  "expectedChangedFiles": [
+    "src\\features\\catalog\\actions.tsx",
+    "src\\features\\operations\\editor.tsx",
+    "tests\\unit\\catalog-actions.test.tsx",
+    "tests\\unit\\operation-writes.test.tsx"
+  ],
+  "matchesExpectedChangedFiles": true,
+  "missingFileCount": 0,
+  "changedApplicationFiles": 2,
+  "changedTestFiles": 2,
+  "contractUnchanged": true,
+  "scopeNote": "Same baseline scope: root source/config/docs and src/tests/scripts/docs/contracts. Excludes reports, build/dependency/test-output directories, and tsconfig.tsbuildinfo. Three added documentation artifacts are listed separately.",
+  "addedFiles": [
+    {
+      "path": "docs\\ADMIN-DASHBOARD-OPERATIONAL-ACCEPTANCE-REPORT.md",
+      "sha256": "255616994C7CF05C2403872B57A19E8E33E14BDAC69BA5CD9F363AACE496B19C"
+    },
+    {
+      "path": "docs\\OPERATIONAL-ACCEPTANCE-FINDINGS.md",
+      "sha256": "1E351CC4DDE967EC4E86662666046E9DBCA29B2C883243189E3586C9E834E89A"
+    },
+    {
+      "path": "docs\\OPERATIONAL-ACCEPTANCE-TEST-DATA-PLAN.md",
+      "sha256": "340501AFA0FF12E5E94EE4BABC0E6E84CCAC59AC4CFB014F334D80117CF40136"
+    }
+  ]
+}

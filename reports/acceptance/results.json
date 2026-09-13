@@ -1,0 +1,127 @@
+{
+  "completedAt": "2026-09-13 13:55:19 UTC",
+  "finalResult": "AUTHENTICATED ACCEPTANCE NOT PASSED",
+  "frontend": {
+    "path": "D:\\customers\\porta frontend",
+    "origin": "http://localhost:3000",
+    "gitRevision": null,
+    "gitStatus": "not a git repository",
+    "baselineFileCount": 166,
+    "changedBaselineFiles": []
+  },
+  "backend": {
+    "origin": "http://localhost:8080",
+    "userSuppliedRevision": "b3a55e94673838b0c264a77459017a50aa8078e7",
+    "runtimeRevisionIndependentlyVerified": false
+  },
+  "contract": {
+    "path": "contracts/porta-api-v1.openapi.json",
+    "sha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+    "unchanged": true,
+    "driftCheck": "PASS"
+  },
+  "authentication": {
+    "existingSession": "PASS",
+    "manualLoginRepeated": false,
+    "logoutRepeated": false,
+    "credentialsExported": false,
+    "protectedUsersAuditRoutes": "NOT AUTHORIZED — safe frontend denial",
+    "publicCsrfAndUnauthenticatedChecks": "PASS"
+  },
+  "reports": {
+    "integration": "PASS",
+    "freshResponseScenario": "PASS",
+    "repeatedResponseScenario": "PASS",
+    "cacheLayerStatus": "inferred from expiry/refresh and displayed generation time; no explicit cache hit/miss telemetry",
+    "schemaCoercion": false,
+    "nonemptyCounts": "NO DATA",
+    "oversizedRangeError": "422-specific safe UI message",
+    "oversizedRangeRequestId": "ccda45cd-a06d-404d-a47b-ac0683fe84b5"
+  },
+  "retryAfter": {
+    "corsExposure": "PASS",
+    "real429HeaderReadableInBrowser": null,
+    "real429Integration": "NOT TESTED — approved safe trigger required",
+    "throttleChanges": false,
+    "trafficToExhaustLimits": false,
+    "existingRetryRegressionTests": "PASS"
+  },
+  "activityFilterFailures": [
+    {
+      "request": "GET /api/v1/admin/pricing-rules?active=false",
+      "status": 422,
+      "requestId": "8c2633bf-40b9-451e-a601-775e04272c6b"
+    },
+    {
+      "request": "GET /api/v1/admin/pricing-rules?active=true",
+      "status": 422,
+      "requestId": "c89e399f-94a2-4526-ad71-25e9a29e19cd"
+    },
+    {
+      "request": "GET /api/v1/admin/drivers?active=true",
+      "status": 422,
+      "requestId": "d39647cb-a2c9-42fd-af70-43e04fa5bcdf"
+    }
+  ],
+  "statusEvidence": "Authenticated UI's status-specific safe error mapper plus supplied contract and existing request adapter; no raw private response or cookies exported.",
+  "reads": {
+    "dashboard": "PASS",
+    "reports": "PASS",
+    "shipments": "NO DATA; status filter works",
+    "trips": "NO DATA; status filter works",
+    "drivers": "Unfiltered NO DATA; activity filter FAIL",
+    "cities": "NO DATA",
+    "branches": "NO DATA",
+    "shipmentTypes": "NO DATA",
+    "pricing": "Unfiltered NO DATA; activity filters FAIL",
+    "payments": "NO DATA; shipment-ID entry renders",
+    "users": "NOT AUTHORIZED",
+    "audit": "NOT AUTHORIZED"
+  },
+  "emptyCatalogs": {
+    "cities": 0,
+    "shipmentTypes": 0,
+    "shipmentCreateDisabled": true,
+    "requiredChoicesFabricated": false
+  },
+  "writes": "NOT TESTED — TEST DATA REQUIRED; no operational writes performed",
+  "payments": "NOT TESTED — SAFE PAYMENT FIXTURE REQUIRED; no financial writes performed",
+  "idempotencyConflict": "Live NOT TESTED — TEST DATA REQUIRED; unit coverage passes",
+  "missingShipmentRead": {
+    "status": 404,
+    "requestId": "b426126b-9319-4511-adab-b3f7efc89b5e"
+  },
+  "lifecycle": "LIFECYCLE UI: DEFERRED PENDING BACKEND CONTRACT EXTENSION",
+  "responsive": {
+    "authenticatedDesktop": "PASS at observed 1037–1052 CSS pixels; no document horizontal overflow",
+    "authenticatedTabletMobile": "NOT TESTED — viewport overrides did not change actual width",
+    "overrideReset": true
+  },
+  "accessibility": {
+    "existingAutomatedGates": "PASS; foundation and real login scopes",
+    "authenticatedManual": "Labelled city/shipment fields, dialog keyboard entry, Escape and focus return verified",
+    "authenticatedAxe": "NOT TESTED — browser tooling limitation"
+  },
+  "performance": {
+    "authenticatedWebVitals": "NOT TESTED — unavailable supported profiling interface",
+    "productionResourceFootprint": "production-script-footprint.json; decoded HTML-listed JS only, not initial transfer or authenticated performance"
+  },
+  "regression": {
+    "unitFiles": 22,
+    "unitTests": 139,
+    "foundationBrowserTests": 16,
+    "realApiBrowserTests": 3,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "productionBuild": "PASS",
+    "productionSmoke": "PASS"
+  },
+  "applicationSourceChanges": [],
+  "boundary": {
+    "backendSourceAccessed": false,
+    "contractModified": false,
+    "publicOrderTrackingStarted": false,
+    "driverMobileGpsStarted": false,
+    "productionDeployed": false
+  }
+}

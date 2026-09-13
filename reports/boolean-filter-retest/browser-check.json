@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-09-13 15:40:16 UTC",
+  "backendRevisionSuppliedByUser": "02770a1bf7633203b928cfe48948962c9597019c",
+  "authentication": "Existing staff session reused and valid across reloads; no credential or cookie export.",
+  "method": "Visible authenticated browser interactions, full reloads for filter cases, equivalent existing driver-list adapter for lookup; source review confirms exact API query serialization.",
+  "cases": [
+    {
+      "name": "DRIVERS active=true",
+      "frontendUrl": "http://localhost:3000/drivers?active=true",
+      "request": "GET /api/v1/admin/drivers?active=true",
+      "selected": "true",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "DRIVERS active=false",
+      "frontendUrl": "http://localhost:3000/drivers?active=false",
+      "request": "GET /api/v1/admin/drivers?active=false",
+      "selected": "false",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "DRIVERS unfiltered",
+      "frontendUrl": "http://localhost:3000/drivers",
+      "request": "GET /api/v1/admin/drivers",
+      "selected": "",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "ACTIVE DRIVER LOOKUP",
+      "frontendUrl": "http://localhost:3000/drivers?active=true&per_page=25",
+      "request": "GET /api/v1/admin/drivers?active=true&per_page=25",
+      "selected": "true",
+      "freshNavigation": true,
+      "equivalentAdapterPath": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "PRICING active=true",
+      "frontendUrl": "http://localhost:3000/pricing?active=true",
+      "request": "GET /api/v1/admin/pricing-rules?active=true",
+      "selected": "true",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "PRICING active=false",
+      "frontendUrl": "http://localhost:3000/pricing?active=false",
+      "request": "GET /api/v1/admin/pricing-rules?active=false",
+      "selected": "false",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    },
+    {
+      "name": "PRICING unfiltered",
+      "frontendUrl": "http://localhost:3000/pricing",
+      "request": "GET /api/v1/admin/pricing-rules",
+      "selected": "",
+      "reloaded": true,
+      "result": "PASS",
+      "validEmptyState": true,
+      "validation422Message": false,
+      "schemaValidationError": false,
+      "expectedHttpStatus": 200,
+      "observedHttpOutcome": "Successful response accepted by existing central client and generated schema; raw status capture unavailable in browser interface."
+    }
+  ],
+  "reportsSmoke": {
+    "url": "http://localhost:3000/dashboard",
+    "result": "PASS",
+    "reportRendered": true,
+    "schemaValidationError": false
+  },
+  "requestMutations": 0,
+  "applicationSourceChanges": [],
+  "contractChanged": false,
+  "limitations": [
+    "Current driver/pricing results are empty; no records were created.",
+    "Active-driver lookup exercised the identical read request through the existing driver-list path, not the shipment assignment dialog.",
+    "No raw HTTP trace, cookie values, or private response bodies were exported."
+  ]
+}

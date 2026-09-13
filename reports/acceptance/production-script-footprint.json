@@ -1,0 +1,319 @@
+{
+  "collectedAt": "2026-09-13T13:50:24.705Z",
+  "baseURL": "http://localhost:3001",
+  "measurement": "Production HTML-listed same-origin script resource footprint",
+  "methodology": [
+    "Start the existing production build using npm run start -- --port 3001.",
+    "Fetch each route HTML using unauthenticated HTTP without browser cookies or executing JavaScript.",
+    "Parse actual script elements with a src attribute and retain only same-origin /_next/static/ resources.",
+    "Deduplicate script URLs per route, fetch every distinct resource once across all routes, and count the decoded response body bytes returned by Node fetch arrayBuffer().",
+    "Sum decoded resource bytes for each route; shared scripts count once per route and once in the cross-route unique total."
+  ],
+  "limitations": [
+    "This is a resource footprint, not initial transferred JavaScript, compressed wire bytes, browser execution cost, LCP, or an authenticated performance measurement.",
+    "No scripts were executed; resources requested only after hydration, authentication, dynamic import, navigation, or interaction are excluded unless directly listed in the returned HTML.",
+    "Inline scripts, stylesheets, fonts, images, and preload-only resources are excluded.",
+    "Requests do not reproduce an authenticated browser profile, network conditions, or cache behavior; no performance SLA conclusion is drawn."
+  ],
+  "routes": [
+    {
+      "route": "/dashboard",
+      "htmlStatus": 200,
+      "finalPath": "/dashboard",
+      "redirected": false,
+      "uniqueListedScriptCount": 18,
+      "decodedScriptBytes": 1293005,
+      "scriptPaths": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/27t_qfc-3_lzs.js",
+        "/_next/static/chunks/1gyk2jivcdvi5.js",
+        "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+        "/_next/static/chunks/3bcy96go67exa.js",
+        "/_next/static/chunks/2zbeh9udnz9hw.js",
+        "/_next/static/chunks/1blvbam_irlj_.js",
+        "/_next/static/chunks/2cin3-r518p9t.js",
+        "/_next/static/chunks/36306-tzdnxqa.js",
+        "/_next/static/chunks/2rfxeggqfrif8.js",
+        "/_next/static/chunks/00odf5po9tg9i.js",
+        "/_next/static/chunks/0q_kth5ncxnw_.js",
+        "/_next/static/chunks/302mi-6d9imne.js",
+        "/_next/static/chunks/1fkk5dscq9h3_.js",
+        "/_next/static/chunks/3_lexbhoo_apl.js",
+        "/_next/static/chunks/1nmnxmcfvo9qr.js",
+        "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    },
+    {
+      "route": "/shipments",
+      "htmlStatus": 200,
+      "finalPath": "/shipments",
+      "redirected": false,
+      "uniqueListedScriptCount": 20,
+      "decodedScriptBytes": 1404611,
+      "scriptPaths": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/27t_qfc-3_lzs.js",
+        "/_next/static/chunks/1gyk2jivcdvi5.js",
+        "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+        "/_next/static/chunks/3bcy96go67exa.js",
+        "/_next/static/chunks/2zbeh9udnz9hw.js",
+        "/_next/static/chunks/1blvbam_irlj_.js",
+        "/_next/static/chunks/2cin3-r518p9t.js",
+        "/_next/static/chunks/36306-tzdnxqa.js",
+        "/_next/static/chunks/2rfxeggqfrif8.js",
+        "/_next/static/chunks/00odf5po9tg9i.js",
+        "/_next/static/chunks/0q_kth5ncxnw_.js",
+        "/_next/static/chunks/302mi-6d9imne.js",
+        "/_next/static/chunks/3w1ayjjrcxl14.js",
+        "/_next/static/chunks/1tutrbup8zk_2.js",
+        "/_next/static/chunks/300-ad5xprvk3.js",
+        "/_next/static/chunks/3_lexbhoo_apl.js",
+        "/_next/static/chunks/1nmnxmcfvo9qr.js",
+        "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    },
+    {
+      "route": "/trips",
+      "htmlStatus": 200,
+      "finalPath": "/trips",
+      "redirected": false,
+      "uniqueListedScriptCount": 20,
+      "decodedScriptBytes": 1404611,
+      "scriptPaths": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/27t_qfc-3_lzs.js",
+        "/_next/static/chunks/1gyk2jivcdvi5.js",
+        "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+        "/_next/static/chunks/3bcy96go67exa.js",
+        "/_next/static/chunks/2zbeh9udnz9hw.js",
+        "/_next/static/chunks/1blvbam_irlj_.js",
+        "/_next/static/chunks/2cin3-r518p9t.js",
+        "/_next/static/chunks/36306-tzdnxqa.js",
+        "/_next/static/chunks/2rfxeggqfrif8.js",
+        "/_next/static/chunks/00odf5po9tg9i.js",
+        "/_next/static/chunks/0q_kth5ncxnw_.js",
+        "/_next/static/chunks/302mi-6d9imne.js",
+        "/_next/static/chunks/3w1ayjjrcxl14.js",
+        "/_next/static/chunks/1tutrbup8zk_2.js",
+        "/_next/static/chunks/300-ad5xprvk3.js",
+        "/_next/static/chunks/3_lexbhoo_apl.js",
+        "/_next/static/chunks/1nmnxmcfvo9qr.js",
+        "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    },
+    {
+      "route": "/pricing",
+      "htmlStatus": 200,
+      "finalPath": "/pricing",
+      "redirected": false,
+      "uniqueListedScriptCount": 20,
+      "decodedScriptBytes": 1404611,
+      "scriptPaths": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/27t_qfc-3_lzs.js",
+        "/_next/static/chunks/1gyk2jivcdvi5.js",
+        "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+        "/_next/static/chunks/3bcy96go67exa.js",
+        "/_next/static/chunks/2zbeh9udnz9hw.js",
+        "/_next/static/chunks/1blvbam_irlj_.js",
+        "/_next/static/chunks/2cin3-r518p9t.js",
+        "/_next/static/chunks/36306-tzdnxqa.js",
+        "/_next/static/chunks/2rfxeggqfrif8.js",
+        "/_next/static/chunks/00odf5po9tg9i.js",
+        "/_next/static/chunks/0q_kth5ncxnw_.js",
+        "/_next/static/chunks/302mi-6d9imne.js",
+        "/_next/static/chunks/3w1ayjjrcxl14.js",
+        "/_next/static/chunks/1tutrbup8zk_2.js",
+        "/_next/static/chunks/300-ad5xprvk3.js",
+        "/_next/static/chunks/3_lexbhoo_apl.js",
+        "/_next/static/chunks/1nmnxmcfvo9qr.js",
+        "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    },
+    {
+      "route": "/reports",
+      "htmlStatus": 200,
+      "finalPath": "/reports",
+      "redirected": false,
+      "uniqueListedScriptCount": 20,
+      "decodedScriptBytes": 1404611,
+      "scriptPaths": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/27t_qfc-3_lzs.js",
+        "/_next/static/chunks/1gyk2jivcdvi5.js",
+        "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+        "/_next/static/chunks/3bcy96go67exa.js",
+        "/_next/static/chunks/2zbeh9udnz9hw.js",
+        "/_next/static/chunks/1blvbam_irlj_.js",
+        "/_next/static/chunks/2cin3-r518p9t.js",
+        "/_next/static/chunks/36306-tzdnxqa.js",
+        "/_next/static/chunks/2rfxeggqfrif8.js",
+        "/_next/static/chunks/00odf5po9tg9i.js",
+        "/_next/static/chunks/0q_kth5ncxnw_.js",
+        "/_next/static/chunks/302mi-6d9imne.js",
+        "/_next/static/chunks/3w1ayjjrcxl14.js",
+        "/_next/static/chunks/1tutrbup8zk_2.js",
+        "/_next/static/chunks/300-ad5xprvk3.js",
+        "/_next/static/chunks/3_lexbhoo_apl.js",
+        "/_next/static/chunks/1nmnxmcfvo9qr.js",
+        "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    }
+  ],
+  "crossRouteUniqueScriptCount": 21,
+  "crossRouteUniqueDecodedBytes": 1405153,
+  "assets": [
+    {
+      "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+      "status": 200,
+      "decodedBytes": 28907,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/27t_qfc-3_lzs.js",
+      "status": 200,
+      "decodedBytes": 229156,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/1gyk2jivcdvi5.js",
+      "status": 200,
+      "decodedBytes": 165736,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/turbopack-1gclyfwsczswr.js",
+      "status": 200,
+      "decodedBytes": 9721,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/3bcy96go67exa.js",
+      "status": 200,
+      "decodedBytes": 17016,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/2zbeh9udnz9hw.js",
+      "status": 200,
+      "decodedBytes": 32786,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/1blvbam_irlj_.js",
+      "status": 200,
+      "decodedBytes": 13482,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/2cin3-r518p9t.js",
+      "status": 200,
+      "decodedBytes": 11265,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/36306-tzdnxqa.js",
+      "status": 200,
+      "decodedBytes": 15580,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/2rfxeggqfrif8.js",
+      "status": 200,
+      "decodedBytes": 43867,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/00odf5po9tg9i.js",
+      "status": 200,
+      "decodedBytes": 69636,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/0q_kth5ncxnw_.js",
+      "status": 200,
+      "decodedBytes": 391187,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/302mi-6d9imne.js",
+      "status": 200,
+      "decodedBytes": 646,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "/_next/static/chunks/1fkk5dscq9h3_.js",
+      "status": 200,
+      "decodedBytes": 542,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": null
+    },
+    {
+      "path": "/_next/static/chunks/3_lexbhoo_apl.js",
+      "status": 200,
+      "decodedBytes": 108049,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/1nmnxmcfvo9qr.js",
+      "status": 200,
+      "decodedBytes": 37471,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "status": 200,
+      "decodedBytes": 112594,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/310vm2bl3xxpt.js",
+      "status": 200,
+      "decodedBytes": 5364,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/3w1ayjjrcxl14.js",
+      "status": 200,
+      "decodedBytes": 6017,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/1tutrbup8zk_2.js",
+      "status": 200,
+      "decodedBytes": 43372,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "/_next/static/chunks/300-ad5xprvk3.js",
+      "status": 200,
+      "decodedBytes": 62759,
+      "contentType": "application/javascript; charset=UTF-8",
+      "contentEncoding": "gzip"
+    }
+  ]
+}

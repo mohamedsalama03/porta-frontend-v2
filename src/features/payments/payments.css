@@ -1,0 +1,109 @@
+.payment-actions {
+  padding: 22px;
+}
+.payment-actions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.payment-actions h2,
+.payment-confirmation h2 {
+  font-size: 15px;
+  margin: 0;
+}
+.payment-actions > p,
+.payment-confirmation > p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 12px 0 20px;
+}
+.payment-fields {
+  border: 0;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  min-width: 0;
+}
+.payment-fields label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  font-size: 12px;
+}
+.payment-fields .field {
+  width: 100%;
+}
+.payment-notes {
+  grid-column: 1 / -1;
+}
+.payment-confirmation {
+  margin: auto;
+  padding: 24px;
+  width: min(520px, calc(100vw - 32px));
+  max-height: 90dvh;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--foreground);
+  background: var(--surface);
+}
+.payment-confirmation::backdrop {
+  background: rgb(10 20 18 / 0.4);
+}
+.payment-review {
+  margin: 24px 0;
+  display: grid;
+  gap: 15px;
+}
+.payment-review > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+}
+.payment-review dt {
+  color: var(--muted);
+}
+.payment-review dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.payment-confirm-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 24px;
+}
+.payment-error,
+.payment-field-error {
+  color: var(--danger);
+  font-size: 12px;
+  line-height: 1.9;
+}
+.payment-success {
+  color: var(--success);
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+@media (max-width: 600px) {
+  .payment-actions {
+    padding: 18px;
+  }
+  .payment-actions-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .payment-fields {
+    grid-template-columns: 1fr;
+  }
+  .payment-confirmation .payment-actions-heading {
+    flex-direction: row;
+    align-items: center;
+  }
+}

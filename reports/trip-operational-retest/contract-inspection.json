@@ -1,0 +1,148 @@
+{
+  "observedAtUtc": "2026-09-13T18:42:05.583Z",
+  "backendRevisionSuppliedByUser": "064f2903b7f612ff486428d00039387538a040e9",
+  "contractPath": "contracts/porta-api-v1.openapi.json",
+  "expectedSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+  "observedSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+  "expectedHashMatches": true,
+  "contractSyncStatus": "COMPLETE",
+  "previousInspection": {
+    "observedAtUtc": "2026-09-13T18:23:47.3877085Z",
+    "observedSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+    "contractSyncStatus": "PAUSED_AWAITING_USER_MANUAL_REPLACEMENT",
+    "userConfirmation": {
+      "replacementPending": true,
+      "oldHashIsCorrectForCurrentFile": true,
+      "alternateApprovedFrontendPathAvailable": false,
+      "reportedChangeScope": "Backend contract descriptions only; replacement bytes have not yet been inspected locally.",
+      "instruction": "Pause contract-dependent retesting until the user manually replaces the local OpenAPI file, then verify the expected SHA-256 and run npm run api:check.",
+      "pollingAuthorized": false
+    },
+    "apiCheck": {
+      "command": "npm run api:check",
+      "exitCode": 0,
+      "provenance": "The root acceptance agent reported running this initial check after baseline capture.",
+      "appliesToSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+      "certifiesRequestedNewContract": false,
+      "interpretation": "The passing initial drift check establishes agreement with the currently present old contract only; it does not certify that the expected approved replacement is present."
+    },
+    "resolution": "User manually replaced the approved local file and resumed verification after baseline capture."
+  },
+  "commands": [
+    {
+      "command": "npm run api:check",
+      "exitCode": 1,
+      "output": "\n> porta-delivery-admin@0.1.0 api:check\n> node scripts/generate-contract.mjs --check\n\nfile:///D:/customers/porta%20frontend/scripts/generate-contract.mjs:203\r\n    throw new Error('Generated API schemas are stale. Run npm run api:generate.');\r\n          ^\r\n\r\nError: Generated API schemas are stale. Run npm run api:generate.\r\n    at file:///D:/customers/porta%20frontend/scripts/generate-contract.mjs:203:11\r\n\r\nNode.js v24.18.0\r\n",
+      "phase": "Initial check after approved replacement",
+      "interpretation": "Generated artifact still recorded old hash; regeneration required."
+    },
+    {
+      "command": "npm run api:generate",
+      "exitCode": 0,
+      "output": "\n> porta-delivery-admin@0.1.0 api:generate\n> node scripts/generate-contract.mjs\n\nGenerated 63 component schemas and 51 operations from the local contract.\n",
+      "phase": "Approved repository generator"
+    },
+    {
+      "command": "npm run api:check",
+      "exitCode": 0,
+      "output": "\n> porta-delivery-admin@0.1.0 api:check\n> node scripts/generate-contract.mjs --check\n\nGenerated schemas match the approved local contract.\n",
+      "phase": "Final drift check",
+      "certifiesRequestedNewContract": true
+    }
+  ],
+  "generation": {
+    "method": "Repository-defined npm run api:generate only; no manual generated-schema edits.",
+    "script": "scripts/generate-contract.mjs",
+    "output": "src/lib/api/generated.ts",
+    "regenerated": true,
+    "manualGeneratedEdits": false,
+    "preservedBeforeArtifact": "reports/trip-operational-retest/generated-before-sync.ts",
+    "beforeSha256": "ed1c8dacf52fc4200affc535671ac5bc91529fe6e061b0247ca522ddc7cb6d78",
+    "afterSha256": "42ca37414b727fb7243262731078efe98fd713653197618ca6cc2b18c5499bc3",
+    "bytesBefore": 49226,
+    "bytesAfter": 49226,
+    "changedLineCount": 1,
+    "changedLines": [
+      {
+        "line": 2,
+        "before": "// SHA-256: 90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+        "after": "// SHA-256: 2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658"
+      }
+    ],
+    "bodyExcludingHashHeaderIdentical": true,
+    "bodySha256Before": "a6113ab0ba9d4707bdb893d401ce76507453ceef0b909df696ef4abd38f5ea72",
+    "bodySha256After": "a6113ab0ba9d4707bdb893d401ce76507453ceef0b909df696ef4abd38f5ea72",
+    "componentSchemaCount": 63,
+    "operationCount": 51,
+    "pathCount": 38,
+    "operationMetadataIdentical": true
+  },
+  "contractChangeProof": {
+    "method": "In-memory reconstruction from new raw bytes: restore old attach description, remove added detach description property and restore one extra trailing newline.",
+    "reconstructedOldSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+    "reconstructedOldBytes": 216868,
+    "expectedPreviousSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+    "exactPreviousHashMatched": true,
+    "reconstructedOldContractWrittenToDisk": false,
+    "semanticChanges": [
+      "paths./api/v1/admin/trips/{trip}/shipments.post.description replaced with explicit preconditions and driver synchronization.",
+      "paths./api/v1/admin/trips/{trip}/shipments/{shipment}.delete.description added with detach preconditions and cleared shipment fields."
+    ],
+    "formattingChanges": [
+      "One extra trailing newline present in the old contract was removed."
+    ],
+    "apiRoutesChanged": false,
+    "schemasChanged": false,
+    "enumsChanged": false,
+    "permissionsChanged": false,
+    "otherContractContentChanged": false
+  },
+  "approvedDescriptions": {
+    "attach": {
+      "method": "POST",
+      "path": "/api/v1/admin/trips/{trip}/shipments",
+      "permission": "trips.assign_shipments",
+      "bodySchema": "AttachShipmentsInput",
+      "description": "Requires a SCHEDULED or LOADING trip and 1–200 distinct existing shipment IDs. Every shipment must be RECEIVED or PREPARING, have no trip membership (including this trip), and match the trip's origin_city_id, destination_city_id and branch_id exactly. Both branch IDs may be null; null does not match an assigned branch. PREPARING is required for departure, not attachment. The trip driver is optional; if assigned, the driver must be active. Attachment atomically sets each shipment's assigned_driver_id to the trip's driver_id, including null, without changing shipment status; prior driver equality is not required. Domain conflicts return 409 with a safe reason message and no partial membership changes. A successful same-key, same-body retry replays the result; a fresh-key attempt to attach an existing member conflicts."
+    },
+    "detach": {
+      "method": "DELETE",
+      "path": "/api/v1/admin/trips/{trip}/shipments/{shipment}",
+      "permission": "trips.assign_shipments",
+      "description": "Requires a SCHEDULED or LOADING trip and a shipment currently belonging to that trip, with the existing trip access and assignment permission. Detachment atomically clears the shipment's trip_id and assigned_driver_id, preserving shipment status. Wrong membership returns 404; a trip outside the loadable states returns 409."
+    }
+  },
+  "preservedLiveProgressReview": {
+    "source": "reports/trip-operational-retest/progress.json",
+    "sourceWasHistoricalPausedSnapshotWhenReviewed": true,
+    "descriptionContradictionsFound": false,
+    "newTripId": "01m2e07783fw899t87062pvnvd",
+    "shipmentId": "01m2dwmhj3j3qgvga408yc7z58",
+    "historicalTripMustRemainUntouched": "01m2dwqsp1angqezd73gaagytt",
+    "alignment": [
+      "Preserved new trip is SCHEDULED with matching QA route and null branch; shipment was RECEIVED with matching route and null branch and no trip before attachment.",
+      "One attachment produced one membership without advancing shipment status.",
+      "Shipment driver already equaled trip driver, so observations confirm aligned values but not correction of a divergent driver.",
+      "One detach cleared shipment trip/driver display, preserved RECEIVED status and left the trip driver unchanged.",
+      "Historical trip is excluded from writes and from proof of corrected datetime behavior."
+    ],
+    "limitations": [
+      "This is saved UI evidence review; no browser or HTTP request was made by this inspection.",
+      "The progress file contains the earlier paused contract metadata; completed synchronization supersedes that historical state for final reporting.",
+      "Raw HTTP statuses, actual Idempotency-Key bytes and outgoing/returned timestamp payloads were unavailable in preserved UI evidence."
+    ]
+  },
+  "nextStep": "Root may complete authorized focused retest and regression gates with the synchronized contract; no application-logic workaround or new endpoint is needed.",
+  "inspectionActions": {
+    "backendAccess": false,
+    "httpRequests": false,
+    "browserActions": false,
+    "applicationLogicChanges": false,
+    "applicationArtifactChanges": [
+      "src/lib/api/generated.ts — SHA-256 comment line only, written by the repository generator."
+    ],
+    "contractFileEditedByAgent": false,
+    "approvedContractReplacementPerformedByUser": true,
+    "testsRunBeyondContractCommands": false
+  }
+}

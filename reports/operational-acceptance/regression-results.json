@@ -1,0 +1,393 @@
+{
+  "recordedAt": "2026-09-13T17:42:06.940Z",
+  "progress": "COMPLETE",
+  "regressionAssessment": "All seven required checks have a successful final-source run. Final unit success uses the supported process-local single-worker override; standard-worker timeout evidence is retained.",
+  "commands": [
+    {
+      "command": "npm run api:check",
+      "attempt": 1,
+      "startedAt": "2026-09-13T17:28:35.770Z",
+      "finishedAt": "2026-09-13T17:28:39.458Z",
+      "exitCode": 0,
+      "phase": "Earlier F2 checks before F5 stabilized",
+      "capturedSummary": "Generated schemas match the approved local contract."
+    },
+    {
+      "command": "npm run lint",
+      "attempt": 1,
+      "startedAt": "2026-09-13T17:28:35.785Z",
+      "finishedAt": "2026-09-13T17:29:30.846Z",
+      "exitCode": 0,
+      "phase": "Earlier F2 checks before F5 stabilized",
+      "capturedSummary": "Exit 0; no lint diagnostics."
+    },
+    {
+      "command": "npm run typecheck",
+      "attempt": 1,
+      "startedAt": "2026-09-13T17:28:35.785Z",
+      "finishedAt": "2026-09-13T17:29:30.846Z",
+      "exitCode": 0,
+      "phase": "Earlier F2 checks before F5 stabilized",
+      "capturedSummary": "Route types generated successfully; tsc --noEmit exited 0."
+    },
+    {
+      "command": "npm run test",
+      "attempt": 1,
+      "startedAt": "2026-09-13T17:28:35.785Z",
+      "finishedAt": "2026-09-13T17:29:10.643Z",
+      "exitCode": 1,
+      "output": "\n> porta-delivery-admin@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.0 D:/customers/porta frontend\n\n ❯ tests/unit/shipments-live.test.tsx (9 tests | 1 failed) 12461ms\n   ❯ approved shipment contract integration (9)\n     × requires a fresh quote and handles confirmed creation with view permission false 5039ms\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/unit/shipments-live.test.tsx > approved shipment contract integration > requires a fresh quote and handles confirmed creation with view permission false\nError: Test timed out in 5000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n ❯ tests/unit/shipments-live.test.tsx:307:25\n    305|   });\n    306|\n    307|   it.each([true, false])(\n       |                         ^\n    308|     'requires a fresh quote and handles confirmed creation with view p…\n    309|     async (canView) => {\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n Test Files  1 failed | 21 passed (22)\n      Tests  1 failed | 139 passed (140)\n   Start at  19:28:40\n   Duration  27.70s (environment 41%, tests 22%, import 20%, transform 9%, setup 6%)\n\nEnvironment  jsdom was created 22 times · 64.89s total, 41% of tracked time\n             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)\n             learn more: https://vitest.dev/guide/improving-performance#test-environments\n\n",
+      "phase": "Earlier F2 checks before F5 stabilized"
+    },
+    {
+      "command": "npm run test",
+      "attempt": 2,
+      "reason": "Serial rerun after the first concurrent run hit one unchanged 5000 ms test timeout; authorized by root.",
+      "startedAt": "2026-09-13T17:29:41.086Z",
+      "finishedAt": "2026-09-13T17:29:57.600Z",
+      "exitCode": 0,
+      "phase": "Earlier F2 checks before F5 stabilized",
+      "capturedSummary": "Test Files  22 passed (22)\nTests  140 passed (140)\nDuration  13.07s (environment 44%, tests 26%, import 18%, setup 7%, transform 4%)"
+    },
+    {
+      "command": "npm run test:e2e",
+      "attempt": 1,
+      "startedAt": "2026-09-13T17:30:09.975Z",
+      "finishedAt": "2026-09-13T17:30:59.501Z",
+      "exitCode": 0,
+      "phase": "Earlier F2 checks before F5 stabilized",
+      "capturedSummary": "16 passed (46.5s)"
+    },
+    {
+      "command": "npm run api:check",
+      "attempt": 2,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:33:55.931Z",
+      "finishedAt": "2026-09-13T17:33:57.580Z",
+      "exitCode": 0,
+      "capturedSummary": "Generated schemas match the approved local contract."
+    },
+    {
+      "command": "npm run lint",
+      "attempt": 2,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:33:55.931Z",
+      "finishedAt": "2026-09-13T17:34:14.325Z",
+      "exitCode": 0,
+      "capturedSummary": "Exit 0; no lint diagnostics."
+    },
+    {
+      "command": "npm run typecheck",
+      "attempt": 2,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:33:55.931Z",
+      "finishedAt": "2026-09-13T17:34:04.323Z",
+      "exitCode": 0,
+      "capturedSummary": "Route types generated successfully; tsc --noEmit exited 0."
+    },
+    {
+      "command": "npm run test",
+      "attempt": 3,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:34:21.227Z",
+      "finishedAt": "2026-09-13T17:34:39.455Z",
+      "exitCode": 1,
+      "output": "\n> porta-delivery-admin@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.0 D:/customers/porta frontend\n\n ❯ tests/unit/shipments-live.test.tsx (9 tests | 1 failed) 9770ms\n   ❯ approved shipment contract integration (9)\n     × requires a fresh quote and handles confirmed creation with view permission true 5017ms\n\n⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/unit/shipments-live.test.tsx > approved shipment contract integration > requires a fresh quote and handles confirmed creation with view permission true\nError: Test timed out in 5000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n ❯ tests/unit/shipments-live.test.tsx:307:25\n    305|   });\n    306|\n    307|   it.each([true, false])(\n       |                         ^\n    308|     'requires a fresh quote and handles confirmed creation with view p…\n    309|     async (canView) => {\n\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n\n Test Files  1 failed | 21 passed (22)\n      Tests  1 failed | 141 passed (142)\n   Start at  19:34:22\n   Duration  16.61s (environment 45%, tests 28%, import 16%, setup 7%, transform 3%)\n\nEnvironment  jsdom was created 22 times · 43.61s total, 45% of tracked time\n             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)\n             learn more: https://vitest.dev/guide/improving-performance#test-environments\n\n"
+    },
+    {
+      "command": "npm run test",
+      "attempt": 4,
+      "phase": "Final source after F2 and F5 fixes",
+      "reason": "Bounded unchanged full-suite run after isolated parameter cases passed; installed Vitest supports this process-local worker cap. Default timeouts, assertions, per-file isolation, and full selection retained.",
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "startedAt": "2026-09-13T17:36:24.197Z",
+      "finishedAt": "2026-09-13T17:37:03.700Z",
+      "exitCode": 0,
+      "capturedSummary": "Test Files  22 passed (22)\nTests  142 passed (142)\nDuration  38.14s (environment 42%, tests 30%, import 18%, setup 7%, transform 2%)"
+    },
+    {
+      "command": "npm run test:e2e",
+      "attempt": 2,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:37:18.508Z",
+      "finishedAt": "2026-09-13T17:38:02.608Z",
+      "exitCode": 0,
+      "capturedSummary": "16 passed (40.6s)"
+    },
+    {
+      "command": "npm run test:live",
+      "attempt": 1,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:38:08.153Z",
+      "finishedAt": "2026-09-13T17:38:13.260Z",
+      "exitCode": 0,
+      "capturedSummary": "3 passed (3.4s)"
+    },
+    {
+      "command": "npm run build",
+      "attempt": 1,
+      "phase": "Final source after F2 and F5 fixes",
+      "startedAt": "2026-09-13T17:38:18.897Z",
+      "finishedAt": "2026-09-13T17:38:38.319Z",
+      "exitCode": 0,
+      "capturedSummary": "Generated schemas match the approved local contract.\n✓ Compiled successfully in 8.9s\nFinished TypeScript in 4.4s ...\n✓ Generating static pages using 7 workers (8/8) in 423ms"
+    }
+  ],
+  "previousStageSummary": [
+    {
+      "command": "npm run api:check",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test",
+      "attempt": 1,
+      "result": "FAIL",
+      "exitCode": 1,
+      "filesPassed": 21,
+      "filesFailed": 1,
+      "testsPassed": 139,
+      "testsFailed": 1,
+      "totalTests": 140,
+      "runnerDurationSeconds": 27.7,
+      "note": "Existing shipment-create test with view permission false exceeded its unchanged 5000 ms timeout during concurrent execution."
+    },
+    {
+      "command": "npm run test",
+      "attempt": 2,
+      "result": "PASS",
+      "exitCode": 0,
+      "filesPassed": 22,
+      "testsPassed": 140,
+      "totalTests": 140,
+      "runnerDurationSeconds": 13.07,
+      "note": "Exact command rerun serially after other checks ended; no source/config/timeout changes by this agent. Non-recurrence is consistent with load sensitivity but does not establish cause."
+    },
+    {
+      "command": "npm run test:e2e",
+      "result": "PASS",
+      "exitCode": 0,
+      "testsPassed": 16,
+      "totalTests": 16,
+      "runnerDurationSeconds": 46.5
+    },
+    {
+      "command": "npm run test:live",
+      "progress": "PENDING",
+      "reason": "Held at root instruction while pricing fix is under investigation."
+    },
+    {
+      "command": "npm run build",
+      "progress": "PENDING",
+      "reason": "Held at root instruction while pricing fix is under investigation."
+    }
+  ],
+  "finalGateResults": [
+    {
+      "command": "npm run api:check",
+      "result": "PASS",
+      "exitCode": 0,
+      "detail": "Generated schemas match the approved local contract."
+    },
+    {
+      "command": "npm run lint",
+      "result": "PASS",
+      "exitCode": 0,
+      "detail": "No lint errors or warnings."
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "PASS",
+      "exitCode": 0,
+      "detail": "Route type generation and tsc --noEmit completed."
+    },
+    {
+      "command": "npm run test",
+      "result": "PASS",
+      "exitCode": 0,
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "filesPassed": 22,
+      "filesFailed": 0,
+      "testsPassed": 142,
+      "testsFailed": 0,
+      "testsSkipped": 0,
+      "totalTests": 142,
+      "runnerDurationSeconds": 38.14,
+      "qualification": "Pass applies to the supported one-worker environment override. The standard-worker run timed out; assertions, timeout, isolation, and full test selection were unchanged."
+    },
+    {
+      "command": "npm run test:e2e",
+      "result": "PASS",
+      "exitCode": 0,
+      "testsPassed": 16,
+      "totalTests": 16,
+      "runnerDurationSeconds": 40.6
+    },
+    {
+      "command": "npm run test:live",
+      "result": "PASS",
+      "exitCode": 0,
+      "testsPassed": 3,
+      "totalTests": 3,
+      "runnerDurationSeconds": 3.4,
+      "scope": "Public catalogs, unauthenticated session/CSRF discovery, and private-route redirect; separate from root authenticated acceptance."
+    },
+    {
+      "command": "npm run build",
+      "result": "PASS",
+      "exitCode": 0,
+      "compileSeconds": 8.9,
+      "typecheckSeconds": 4.4,
+      "staticPagesGenerated": 8,
+      "staticPagesTotal": 8,
+      "staticGenerationMilliseconds": 423,
+      "prebuildApiCheck": "PASS"
+    }
+  ],
+  "unitTimeoutInvestigation": {
+    "standardWorkerFailures": [
+      {
+        "phase": "Earlier concurrent gates",
+        "parameter": "view permission false",
+        "filesPassed": 21,
+        "filesFailed": 1,
+        "testsPassed": 139,
+        "testsFailed": 1,
+        "totalTests": 140,
+        "runnerDurationSeconds": 27.7,
+        "timeoutMilliseconds": 5000
+      },
+      {
+        "phase": "Final source, after other gates finished",
+        "parameter": "view permission true",
+        "filesPassed": 21,
+        "filesFailed": 1,
+        "testsPassed": 141,
+        "testsFailed": 1,
+        "totalTests": 142,
+        "runnerDurationSeconds": 16.61,
+        "timeoutMilliseconds": 5000
+      }
+    ],
+    "testFile": "tests/unit/shipments-live.test.tsx",
+    "testDeclarationLine": 307,
+    "testName": "requires a fresh quote and handles confirmed creation with view permission %s",
+    "focusedDiagnostic": {
+      "command": "npm run test -- tests/unit/shipments-live.test.tsx -t \"requires a fresh quote and handles confirmed creation\"",
+      "exitCode": 0,
+      "testsPassed": 2,
+      "testsUnselected": 7,
+      "runnerDurationSeconds": 7.44,
+      "purpose": "Investigate the two unchanged parameterized cases; not a replacement for the full gate.",
+      "output": "\n> porta-delivery-admin@0.1.0 test\n> vitest run tests/unit/shipments-live.test.tsx -t requires a fresh quote and handles confirmed creation\n\n\n RUN  v5.0.0 D:/customers/porta frontend\n\n\n Test Files  1 passed (1)\n      Tests  2 passed | 7 skipped (9)\n   Start at  19:35:07\n   Duration  7.44s (tests 71%, import 15%, environment 9%, transform 3%, setup 2%)\n\n"
+    },
+    "sourceFindings": [
+      "Unchanged cases include two real quote debounce waits and user-event form typing.",
+      "Installed Vitest defaults to available CPU parallelism minus one workers.",
+      "node_modules/vitest/dist/chunks/index.B89dZ0-N.js:14514 explicitly reads process.env.VITEST_MAX_WORKERS into resolved.maxWorkers.",
+      "Local Vitest maxWorkers type documentation describes the worker count cap."
+    ],
+    "resolution": "One bounded exact npm run test with process-local VITEST_MAX_WORKERS=1 passed all142 tests. The prior environment value was restored in finally; no source/configuration changes.",
+    "causeAssessment": "Isolated and one-worker passes are consistent with scheduling/load sensitivity, but do not prove a definitive cause of the standard-worker timeout.",
+    "testGatesUnchanged": true
+  },
+  "sourceComparison": {
+    "comparedAt": "2026-09-13T17:42:06.938Z",
+    "baselinePath": "reports/operational-acceptance/baseline.json",
+    "baselineFileCount": 168,
+    "currentScopedFileCount": 171,
+    "changed": [
+      {
+        "path": "src\\features\\catalog\\actions.tsx",
+        "baselineSha256": "8DF22DBE2A37EAA4201A9DD673D3817DDDE0732823641AD95BF4353F69A84E7F",
+        "currentSha256": "7283EF1CE99B17991FE8006256450B239EE1BB8BBA57A387A624FB63B04551A8"
+      },
+      {
+        "path": "src\\features\\operations\\editor.tsx",
+        "baselineSha256": "85AC97D894941AA0C288AD301DF9B42D395B5019EC6070156B3A5843901FA9DF",
+        "currentSha256": "80C2A0D8349A20854480C7196F2A9CDDF89B12529864BCB710F08F13C9231D30"
+      },
+      {
+        "path": "tests\\unit\\catalog-actions.test.tsx",
+        "baselineSha256": "697F836630BA2DAA7B2E13B4B2B6B04EF1AFBA82F20DD73C12CE27AF1C973F98",
+        "currentSha256": "BE5F4FB5C800608BD41EBF9800A9A2537CFBF92B8D84FE130EBF9677CC9A7BCC"
+      },
+      {
+        "path": "tests\\unit\\operation-writes.test.tsx",
+        "baselineSha256": "E05D2D8F1C46BA23A4E222C7F51375469096979DB6340FD851F6F621336B5AD6",
+        "currentSha256": "407C4237ED4E0B9609C67BCE1304AB010CA872485DD70C5F4739A467F0F1258A"
+      }
+    ],
+    "missing": [],
+    "addedWithinSourceDocConfigScope": [
+      "docs\\ADMIN-DASHBOARD-OPERATIONAL-ACCEPTANCE-REPORT.md",
+      "docs\\OPERATIONAL-ACCEPTANCE-FINDINGS.md",
+      "docs\\OPERATIONAL-ACCEPTANCE-TEST-DATA-PLAN.md"
+    ],
+    "contractSha256": "90D5A0905238D2C9447E1002332FB65B63B1DC552C4C98B441627B9C809B6AE4",
+    "expectedChangedFiles": [
+      "src\\features\\catalog\\actions.tsx",
+      "src\\features\\operations\\editor.tsx",
+      "tests\\unit\\catalog-actions.test.tsx",
+      "tests\\unit\\operation-writes.test.tsx"
+    ],
+    "matchesExpectedChangedFiles": true,
+    "missingFileCount": 0,
+    "changedApplicationFiles": 2,
+    "changedTestFiles": 2,
+    "contractUnchanged": true,
+    "scopeNote": "Same baseline scope: root source/config/docs and src/tests/scripts/docs/contracts. Excludes reports, build/dependency/test-output directories, and tsconfig.tsbuildinfo. Three added documentation artifacts are listed separately.",
+    "addedFiles": [
+      {
+        "path": "docs\\ADMIN-DASHBOARD-OPERATIONAL-ACCEPTANCE-REPORT.md",
+        "sha256": "255616994C7CF05C2403872B57A19E8E33E14BDAC69BA5CD9F363AACE496B19C"
+      },
+      {
+        "path": "docs\\OPERATIONAL-ACCEPTANCE-FINDINGS.md",
+        "sha256": "1E351CC4DDE967EC4E86662666046E9DBCA29B2C883243189E3586C9E834E89A"
+      },
+      {
+        "path": "docs\\OPERATIONAL-ACCEPTANCE-TEST-DATA-PLAN.md",
+        "sha256": "340501AFA0FF12E5E94EE4BABC0E6E84CCAC59AC4CFB014F334D80117CF40136"
+      }
+    ]
+  },
+  "serverCheck": {
+    "listeners": [
+      {
+        "LocalAddress": "127.0.0.1",
+        "LocalPort": 3001,
+        "OwningProcess": 1144
+      },
+      {
+        "LocalAddress": "127.0.0.1",
+        "LocalPort": 3000,
+        "OwningProcess": 26148
+      }
+    ],
+    "existingPort3000Preserved": true,
+    "existingPort3000Pid": 26148,
+    "note": "No server stopped. Separately owned port3001 listener PID1144 was observed and left untouched; this agent did not start production."
+  },
+  "limitations": [
+    "Standard-worker full-unit execution timed out; final success with a supported worker limit is not an unqualified default-environment pass.",
+    "Historical failed attempts and earlier passes are preserved.",
+    "Regression success does not establish operational acceptance; root reports live trip defects separately.",
+    "No source/test/config/dependency changes by this regression agent, and no production/performance/extra campaign."
+  ],
+  "evidenceFormat": "Exact command attempts and success summaries, with complete failed-attempt timeout output retained. Routine duplicate success logs omitted."
+}

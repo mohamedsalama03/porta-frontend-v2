@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.next-*/
+.env*
+!.env.example
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.impeccable/config.local.json

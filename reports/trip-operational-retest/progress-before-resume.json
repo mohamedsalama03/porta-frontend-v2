@@ -1,0 +1,246 @@
+{
+  "recordedAt": "2026-09-13T18:28:33.571Z",
+  "progress": "PAUSED_AWAITING_APPROVED_CONTRACT",
+  "isFinal": false,
+  "pauseReason": "The user confirmed that the new approved contract copy is still pending and explicitly paused contract-dependent retesting until replacement.",
+  "environment": {
+    "frontend": "http://localhost:3000",
+    "backend": "http://localhost:8080",
+    "backendRevisionUnderRetest": "064f2903b7f612ff486428d00039387538a040e9"
+  },
+  "contract": {
+    "path": "contracts/porta-api-v1.openapi.json",
+    "currentSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+    "expectedSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+    "matchesExpected": false,
+    "replacement": "PENDING",
+    "generation": "NOT RUN",
+    "note": "The current file remains the earlier contract. A successful earlier drift check applies to that earlier file only."
+  },
+  "authentication": {
+    "session": "Reused existing authenticated staff browser session.",
+    "displayedUser": "Porta Test Admin",
+    "credentialsOrCookiesExported": false
+  },
+  "evidenceProvenance": {
+    "source": "Actual rendered API-backed UI observations supplied by the root acceptance agent.",
+    "limits": [
+      "Raw HTTP response statuses and bodies were unavailable.",
+      "Input serialization was reviewed through the existing source path only; actual outgoing wire timestamps were not captured.",
+      "UI observations are preserved as preliminary evidence while formal contract verification and regression gates remain pending.",
+      "Driver values matched after attachment, but the shipment was already assigned to that driver; a divergent-to-aligned synchronization case was not exercised."
+    ]
+  },
+  "fixtures": {
+    "cityA": {
+      "id": "01m2dw63kc994q8ysh8tgq16ac",
+      "role": "QA origin",
+      "temporarilyActivated": true,
+      "finalObservedActive": false
+    },
+    "cityB": {
+      "id": "01m2dw74z270ck5fxhnj9rdjm1",
+      "role": "QA destination",
+      "temporarilyActivated": true,
+      "finalObservedActive": false
+    },
+    "newTrip": {
+      "id": "01m2e07783fw899t87062pvnvd",
+      "status": "SCHEDULED",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "branchId": null,
+      "branchEvidence": "The editor's branch field was confirmed blank.",
+      "driverId": "01m2dwbywn3hzh7wpftdvg5h0k",
+      "finalMembershipCount": 0,
+      "finalObservedDepartureLocal": "2026-09-14T10:00",
+      "finalObservedArrivalLocal": "2026-09-14T13:00",
+      "distinguishingContext": "New disposable trip using the existing QA city references; the historical shifted trip was not reused as proof."
+    },
+    "shipment": {
+      "id": "01m2dwmhj3j3qgvga408yc7z58",
+      "trackingNumber": "PTA-260913-894B6DA768A453B6",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "branchId": null,
+      "initialState": {
+        "status": "RECEIVED",
+        "tripId": null,
+        "assignedDriverId": "01m2dwbywn3hzh7wpftdvg5h0k"
+      },
+      "attachedState": {
+        "status": "RECEIVED",
+        "tripId": "01m2e07783fw899t87062pvnvd",
+        "assignedDriverId": "01m2dwbywn3hzh7wpftdvg5h0k"
+      },
+      "finalObservedState": {
+        "status": "RECEIVED",
+        "tripId": null,
+        "assignedDriverId": null
+      },
+      "finalRelationEvidence": "A newly opened shipment page showed both trip and driver as غير متاح after detach."
+    },
+    "historicalTrip": {
+      "id": "01m2dwqsp1angqezd73gaagytt",
+      "writesPerformed": false
+    }
+  },
+  "liveObservations": {
+    "tripCreateDatetime": {
+      "preliminaryObservedResult": "PASS",
+      "enteredLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      },
+      "detailLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      },
+      "afterFullReloadLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      }
+    },
+    "tripGetRoundTrip": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "Full reload retained 10:00/12:00 for the newly created trip."
+    },
+    "tripEditDatetime": {
+      "preliminaryObservedResult": "PASS",
+      "enteredLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "detailLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "reopenedEditorExactLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "afterFullReloadLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      }
+    },
+    "attachmentFixture": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "The new trip and disposable shipment used matching QA routes and null branches. The shipment was RECEIVED and had no trip before attachment.",
+      "tripDriverAndShipmentDriverInitiallyMatched": true
+    },
+    "tripShipmentAttach": {
+      "preliminaryObservedResult": "PASS",
+      "uiSubmissions": 1,
+      "observations": [
+        "The existing attach UI accepted one submission.",
+        "Trip membership became one with exactly one shipment row.",
+        "The shipment trip relation pointed to the new trip.",
+        "The assigned driver still matched the trip driver.",
+        "The shipment stayed RECEIVED and no conflict was displayed.",
+        "Reopening the trip confirmed membership remained one."
+      ],
+      "exactHttpStatus": null
+    },
+    "receivedAttachment": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "The disposable shipment remained RECEIVED throughout the successful attachment; no status advancement was used."
+    },
+    "tripShipmentDetach": {
+      "preliminaryObservedResult": "PASS",
+      "uiSubmissions": 1,
+      "observations": [
+        "The existing detach UI accepted one submission.",
+        "Trip membership became zero.",
+        "A newly opened shipment page showed the trip and assigned driver cleared.",
+        "Shipment status remained RECEIVED.",
+        "The trip's own driver remained unchanged."
+      ],
+      "exactHttpStatus": null
+    }
+  },
+  "sourceReview": {
+    "serializationPath": "Read-only review of the existing frontend path, not an outgoing request capture.",
+    "applicationLogicChanges": 0,
+    "timezoneCompensationIntroduced": false,
+    "qualification": "No application-source change occurred during this paused retest; formal contract-dependent verification is pending."
+  },
+  "cleanup": {
+    "progress": "COMPLETE_FOR_TEMPORARY_CITY_ACTIVATIONS",
+    "verifiedRestoration": [
+      "City A was saved with active=false and its row visibly showed غير نشط.",
+      "City B was saved with active=false and its row visibly showed غير نشط."
+    ],
+    "otherCleanupWrites": false,
+    "newTripRetained": true,
+    "historicalTripModified": false,
+    "finalMembership": 0,
+    "browserHandoffPath": "/cities",
+    "note": "Only the temporary city activations were restored. The new QA trip remains retained with its own driver; the disposable shipment is detached with no assigned driver."
+  },
+  "checks": {
+    "initialApiCheck": {
+      "command": "npm run api:check",
+      "exitCode": 0,
+      "scope": "Earlier root-run drift check against the old contract currently present; does not verify the pending new copy."
+    },
+    "focusedTests": {
+      "progress": "PENDING",
+      "reason": "Awaiting approved contract replacement."
+    },
+    "fullGates": [
+      {
+        "command": "npm run api:check",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run lint",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run typecheck",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run test",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run test:e2e",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run test:live",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      },
+      {
+        "command": "npm run build",
+        "progress": "PENDING",
+        "reason": "Awaiting approved contract replacement."
+      }
+    ],
+    "unitEnvironmentPlan": "When later authorized, use the already verified supported process-local VITEST_MAX_WORKERS=1 override without changing assertions, timeouts, test counts, or configuration."
+  },
+  "sourceComparison": {
+    "comparedAt": "2026-09-13T18:27:19.8054951Z",
+    "baselinePath": "reports/trip-operational-retest/baseline.json",
+    "baselineFileCount": 171,
+    "currentScopedFileCount": 171,
+    "changed": [],
+    "missing": [],
+    "addedWithinSourceDocConfigScope": [],
+    "contractSha256": "90D5A0905238D2C9447E1002332FB65B63B1DC552C4C98B441627B9C809B6AE4",
+    "applicationSourceChanges": 0,
+    "scopeNote": "Reports and generated/dependency/build/test-output directories are excluded from this comparison."
+  },
+  "formalAcceptance": {
+    "progress": "PENDING",
+    "reason": "New approved contract copy, any required generation, focused tests, and all seven regression gates remain pending. No final acceptance verdict is assigned."
+  }
+}

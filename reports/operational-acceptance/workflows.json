@@ -1,0 +1,564 @@
+{
+  "acceptanceDate": "2026-09-13",
+  "progress": "COMPLETE",
+  "prefix": "PORTA-QA-20260913-1715",
+  "environment": {
+    "frontend": "http://localhost:3000",
+    "backend": "http://localhost:8080",
+    "backendRevision": "02770a1bf7633203b928cfe48948962c9597019c",
+    "contractPath": "contracts/porta-api-v1.openapi.json",
+    "contractSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4"
+  },
+  "scopePlan": "docs/OPERATIONAL-ACCEPTANCE-TEST-DATA-PLAN.md",
+  "evidenceProvenance": {
+    "source": "Live browser findings supplied by the root acceptance agent.",
+    "captureLimits": [
+      "These are reported UI observations, not raw HTTP request/response captures.",
+      "Exact HTTP status codes and Idempotency-Key values were not captured for the driver validation attempts.",
+      "Source-mapped error classification and the unchanged idempotency helper do not establish captured wire behavior."
+    ]
+  },
+  "sourceIntegrity": {
+    "baselinePath": "reports/operational-acceptance/baseline.json",
+    "baselineFiles": 168,
+    "expectedChangedPaths": [
+      "src/features/operations/editor.tsx",
+      "src/features/catalog/actions.tsx",
+      "tests/unit/operation-writes.test.tsx",
+      "tests/unit/catalog-actions.test.tsx"
+    ],
+    "finalComparison": "reports/operational-acceptance/source-comparison.json"
+  },
+  "records": [
+    {
+      "entity": "city",
+      "label": "City A",
+      "id": "01m2dw63kc994q8ysh8tgq16ac",
+      "code": "QA0913A1715",
+      "state": {
+        "active": false
+      },
+      "edits": [
+        "English name changed to use the -EDIT suffix."
+      ],
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained inactive; backend-confirmed UI refresh."
+      }
+    },
+    {
+      "entity": "city",
+      "label": "City B",
+      "id": "01m2dw74z270ck5fxhnj9rdjm1",
+      "code": "QA0913B1715",
+      "state": {
+        "active": false
+      },
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained inactive; backend-confirmed UI refresh."
+      }
+    },
+    {
+      "entity": "branch",
+      "label": "QA-BRANCH-A",
+      "id": "01m2dw8zjbr2r5g052wc43ax60",
+      "identifierNote": "Observed from a real select option value in the existing UI.",
+      "cityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "edits": [
+        "Address changed to use the EDIT suffix."
+      ],
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained inactive; backend-confirmed UI refresh."
+      },
+      "state": {
+        "active": false
+      }
+    },
+    {
+      "entity": "shipment-type",
+      "label": "QA-TYPE",
+      "id": "01m2dwa7mad0dnxcb6swgzype0",
+      "identifierNote": "Observed from a real select option value in the existing UI.",
+      "code": "QA0913T1715",
+      "edits": [
+        "Description edited."
+      ],
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained inactive; backend-confirmed UI refresh."
+      },
+      "state": {
+        "active": false
+      }
+    },
+    {
+      "entity": "driver",
+      "label": "QA driver",
+      "id": "01m2dwbywn3hzh7wpftdvg5h0k",
+      "nameNote": "Created with a QA full_name using the acceptance naming scheme.",
+      "syntheticPhoneEntered": "0910000001",
+      "normalizedPhoneObserved": "+218910000001",
+      "licenseAfterEdit": "PORTA-QA-20260913-1715-LICENSE",
+      "state": {
+        "active": true,
+        "assignment": "Assigned to retained RECEIVED QA shipment only; trip driver reference cleared."
+      },
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained active because shipment work remains and no documented shipment-driver unassignment exists."
+      }
+    },
+    {
+      "entity": "pricing-rule",
+      "label": "QA route/type pricing rule",
+      "id": null,
+      "identifierNote": "The pricing-rule identifier is not displayed in the observed UI.",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "shipmentTypeId": "01m2dwa7mad0dnxcb6swgzype0",
+      "amountAtCreate": {
+        "currency": "LYD",
+        "display": "1.234",
+        "millimes": 1234
+      },
+      "doorAmount": {
+        "currency": "LYD",
+        "display": "0.100",
+        "millimes": 100
+      },
+      "amountAfterEdit": {
+        "currency": "LYD",
+        "display": "1.235",
+        "millimes": 1235
+      },
+      "state": {
+        "active": false,
+        "successfulRuleCount": 1
+      },
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained inactive; backend-confirmed UI refresh."
+      }
+    },
+    {
+      "entity": "shipment",
+      "label": "Disposable QA shipment",
+      "id": "01m2dwmhj3j3qgvga408yc7z58",
+      "trackingNumber": "PTA-260913-894B6DA768A453B6",
+      "namesNote": "Synthetic sender and recipient names use the QA acceptance naming scheme.",
+      "syntheticPhonesEntered": [
+        "0910000002",
+        "0920000002"
+      ],
+      "phoneObservation": "Both synthetic phone numbers were normalized in the returned resource.",
+      "amount": {
+        "currency": "LYD",
+        "millimes": 1235
+      },
+      "state": {
+        "status": "RECEIVED",
+        "paymentMethod": "CASH_ON_DELIVERY",
+        "paymentStatus": "PENDING",
+        "driverId": "01m2dwbywn3hzh7wpftdvg5h0k",
+        "tripId": null
+      },
+      "edits": [
+        "The note was edited successfully with an EDIT marker."
+      ],
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained RECEIVED, payment PENDING, 1235 millimes, assigned QA driver, no trip, prefixed contacts and EDIT note. No lifecycle or payment mutation."
+      }
+    },
+    {
+      "entity": "trip",
+      "label": "Disposable QA route trip",
+      "id": "01m2dwqsp1angqezd73gaagytt",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "driverId": null,
+      "branchId": null,
+      "state": {
+        "statusLabel": "SCHEDULED",
+        "shipmentMemberCount": 0,
+        "displayedDepartureLibya": "2026-09-14T12:00",
+        "displayedArrivalLibya": "2026-09-14T15:00"
+      },
+      "scheduleObservation": "Created successfully, but displayed/edit-form times shifted two hours later than the entered Libya-local values.",
+      "cleanup": {
+        "progress": "COMPLETE",
+        "finalState": "Retained SCHEDULED with zero members; optional driver and branch links cleared through PATCH. No cancellation control exists in current UI."
+      }
+    }
+  ],
+  "workflows": {
+    "cityCreate": {
+      "result": "PASS",
+      "observations": [
+        "Submitting empty required fields produced frontend validation.",
+        "City A was created and appeared as a single list row.",
+        "City B was then created; the list showed two city rows."
+      ]
+    },
+    "cityEdit": {
+      "result": "PASS",
+      "observations": [
+        "City A's English name was changed to use the -EDIT suffix and the UI reflected the edit."
+      ]
+    },
+    "branchCreate": {
+      "result": "PASS",
+      "observations": [
+        "QA-BRANCH-A was created using City A from real backend-backed city options.",
+        "The list refreshed."
+      ]
+    },
+    "branchEdit": {
+      "result": "PASS",
+      "observations": [
+        "The branch address was edited with an EDIT suffix and the refreshed list reflected it."
+      ]
+    },
+    "shipmentTypeCreate": {
+      "result": "PASS",
+      "observations": [
+        "QA-TYPE was created with code QA0913T1715 and the list refreshed."
+      ]
+    },
+    "shipmentTypeEdit": {
+      "result": "PASS",
+      "observations": [
+        "The shipment-type description was edited successfully."
+      ]
+    },
+    "driverCreate": {
+      "result": "PASS",
+      "observations": [
+        "The initial synthetic phone 000 was rejected with a validation message mapped to the form field and a visible request ID.",
+        "A controlled retry of the unchanged rejected input was also rejected with a second request ID.",
+        "Using the edit action for the rejected request allowed correction to synthetic phone 0910000001.",
+        "The corrected input created one driver; the returned phone displayed as +218910000001."
+      ]
+    },
+    "driverEdit": {
+      "result": "PASS",
+      "observations": [
+        "The license was edited to PORTA-QA-20260913-1715-LICENSE."
+      ]
+    },
+    "driverActiveFilter": {
+      "result": "PASS",
+      "observations": [
+        "active=true included the active driver.",
+        "active=false excluded it while active."
+      ]
+    },
+    "driverInactiveFilter": {
+      "result": "PASS",
+      "observations": [
+        "The driver was deactivated while unassigned.",
+        "active=false included the inactive driver.",
+        "The driver was reactivated and its active state was confirmed."
+      ]
+    },
+    "pricingCreate": {
+      "result": "PASS",
+      "observations": [
+        "One QA pricing rule was created at exactly 1.234 LYD with a 0.100 LYD door amount.",
+        "The authoritative list displayed the created rule."
+      ]
+    },
+    "pricingEdit": {
+      "result": "PASS",
+      "observations": [
+        "The rule was edited to exactly 1.235 LYD (1235 millimes).",
+        "No visible decimal rounding discrepancy was observed.",
+        "Fresh-load edit initially lost saved references (F5); fixed and live retested with all three authoritative QA selections preserved. Active-only cleanup then succeeded."
+      ]
+    },
+    "pricingActiveFilter": {
+      "result": "PASS",
+      "observations": [
+        "active=true included the QA pricing rule."
+      ]
+    },
+    "pricingConflictUx": {
+      "result": "PASS",
+      "observations": [
+        "One overlapping QA create attempt was rejected with a generic Arabic conflict message and a visible request ID.",
+        "Only one rule remained; no overwrite or automatic retry was observed."
+      ],
+      "requestId": "9978a909-4878-4881-a0b1-ce1f42d9a83a",
+      "exactHttpStatus": null,
+      "limitation": "Conflict UI was observed; an exact HTTP 409 response was not captured."
+    },
+    "quote": {
+      "result": "PASS",
+      "observations": [
+        "The authoritative quote showed 1.235 LYD.",
+        "Clearing size removed the quote and disabled create.",
+        "Restoring SMALL restored the quote."
+      ],
+      "limitation": "These supplied observations verify quote rendering and stale-input clearing, not wire-level debounce or cancellation timing."
+    },
+    "shipmentCreate": {
+      "result": "PASS",
+      "observations": [
+        "One disposable shipment was created and its detail rendered.",
+        "The returned tracking number was PTA-260913-894B6DA768A453B6.",
+        "The authoritative amount was 1235 millimes, status RECEIVED, and COD payment state PENDING.",
+        "Synthetic sender/recipient phones were normalized.",
+        "A later list load showed exactly one shipment; final detail reload preserved tracking, amount, status, driver, and no trip."
+      ],
+      "shipmentId": "01m2dwmhj3j3qgvga408yc7z58",
+      "limitation": "Actual Idempotency-Key bytes were not captured."
+    },
+    "shipmentEdit": {
+      "result": "PASS",
+      "observations": [
+        "The editable note accepted the EDIT change.",
+        "Tracking number, amount, and shipment status remained unchanged."
+      ]
+    },
+    "driverAssignment": {
+      "result": "PASS",
+      "observations": [
+        "The active QA driver assignment succeeded through the existing UI.",
+        "The authoritative shipment response reflected driver 01m2dwbywn3hzh7wpftdvg5h0k."
+      ]
+    },
+    "paymentRead": {
+      "result": "PASS",
+      "observations": [
+        "The disposable shipment payment ledger rendered its empty state."
+      ]
+    },
+    "paymentWrite": {
+      "result": "NOT TESTED — SAFE PAYMENT FIXTURE REQUIRED",
+      "observations": [
+        "No financial write was performed."
+      ]
+    },
+    "tripCreate": {
+      "result": "FAIL",
+      "resourceCreationSucceeded": true,
+      "observations": [
+        "A scheduled QA route/driver/branch trip was created with zero shipment members.",
+        "Entered Libya-local times 2026-09-14T10:00 and 2026-09-14T12:00 appeared as 12:00 and 14:00 in detail and edit."
+      ],
+      "findingId": "trip-local-time-shift"
+    },
+    "tripEdit": {
+      "result": "FAIL",
+      "observations": [
+        "A controlled edit verified DOM input values 2026-09-14T10:00 and 2026-09-14T13:00 before submission.",
+        "The resulting detail displayed 12:00 and 15:00."
+      ],
+      "findingId": "trip-local-time-shift"
+    },
+    "tripShipmentAttach": {
+      "result": "FAIL",
+      "observations": [
+        "The existing documented attach UI was used with the one disposable shipment identifier.",
+        "The attempt returned a conflict message and request ID.",
+        "The trip still had zero members."
+      ],
+      "requestId": "c7d81d01-00dc-4bbf-ab23-8d34dc5d39e2",
+      "exactHttpStatus": null,
+      "selectionObservation": "The attach control accepts manual identifiers only; server-backed shipment search is not present.",
+      "findingId": "trip-attachment-rejected"
+    },
+    "tripShipmentDetach": {
+      "result": "NOT APPLICABLE",
+      "observations": [
+        "No shipment is attached because the attach attempt failed; there is no membership to detach."
+      ]
+    },
+    "pricingInactiveFilter": {
+      "result": "PASS",
+      "observations": [
+        "Deactivation removed the QA rule from active=true and active=false displayed the single retained inactive rule at 1.235 LYD plus 0.100 door surcharge."
+      ]
+    },
+    "live422": {
+      "result": "PASS",
+      "scope": "Backend field-validation mapping, support IDs, correction and recovery observed; raw wire status unavailable."
+    },
+    "users": {
+      "result": "NOT AUTHORIZED",
+      "observations": [
+        "Current /users route displays the permission guard."
+      ]
+    },
+    "audit": {
+      "result": "NOT AUTHORIZED",
+      "observations": [
+        "Current /audit route displays the permission guard; no audit bypass."
+      ]
+    },
+    "reports": {
+      "result": "PASS",
+      "observations": [
+        "Dashboard and reports display one shipment, one active trip, zero revenue, and QA destination; no schema error."
+      ]
+    },
+    "live429": {
+      "result": "NOT TESTED — SAFE 429 TRIGGER REQUIRED"
+    },
+    "responsive": {
+      "limitation": "Requested390x844 and768x1024 overrides both left actual1052x912 unchanged; reset afterward.",
+      "documentOverflow": false,
+      "desktop": "PASS",
+      "tablet": "BLOCKED — ENVIRONMENT",
+      "testedPages": [
+        "dashboard",
+        "shipments",
+        "shipment detail",
+        "trips",
+        "pricing",
+        "reports"
+      ],
+      "observedViewport": {
+        "width": 1052,
+        "height": 912
+      },
+      "mobile": "BLOCKED — ENVIRONMENT",
+      "rtl": true
+    },
+    "accessibility": {
+      "reducedMotion": "NOT TESTED in authenticated browser",
+      "dialogFocus": "PASS",
+      "authenticatedAxe": "BLOCKED — ENVIRONMENT",
+      "observations": [
+        "Trip edit opened by click with focus on Close; Shift+Tab moved to Save; Tab returned to Close; Escape closed and returned focus to trigger.",
+        "Visible labels and textual statuses observed; long-label shipment table scrolls within its container."
+      ]
+    },
+    "performance": {
+      "limitation": "Supported tooling cannot run authenticated Lighthouse/profiling with this session; no credentials or cookies exported, no metrics invented.",
+      "result": "BLOCKED — ENVIRONMENT"
+    }
+  },
+  "validationEvidence": {
+    "progress": "UI_VALIDATION_OBSERVED",
+    "entity": "driver",
+    "submittedRejectedPhone": "000",
+    "classification": "Validation error mapped into the UI by the existing source error handling.",
+    "attempts": [
+      {
+        "attempt": "Initial invalid input",
+        "requestId": "68b22efa-e206-4369-a3b4-7f3120423e17",
+        "exactHttpStatus": null,
+        "observedResult": "Field error displayed; input rejected."
+      },
+      {
+        "attempt": "Controlled retry of identical rejected input",
+        "requestId": "d2a4e3a5-b0e8-4f14-a5e4-0602fa2c09c0",
+        "exactHttpStatus": null,
+        "observedResult": "Field error displayed; input rejected again."
+      }
+    ],
+    "recovery": "The rejected request was edited and corrected; one driver was successfully created.",
+    "limitation": "A literal HTTP 422 was not captured. Do not relabel this as wire-verified 422 evidence."
+  },
+  "idempotencyEvidence": {
+    "liveSameKeyReplayResult": "NOT TESTED",
+    "observedBehavior": "The existing controlled retry UI retried identical rejected driver input. After correction, the list contained one created driver.",
+    "sourceEvidence": "The idempotency helper remained unchanged against the baseline.",
+    "capturedIdempotencyKeys": [],
+    "limitation": "Neither the actual key values nor a successful same-key replay response was captured. Identical input and unchanged source alone do not prove wire-level same-key replay.",
+    "differentPayloadSameKey": "NOT TESTED — HARNESS REQUIRED"
+  },
+  "pendingWork": [],
+  "cleanup": {
+    "progress": "COMPLETE",
+    "inactiveRecordCount": 5,
+    "note": "No destructive deletion, unrelated data mutation, financial write, or unsupported lifecycle change.",
+    "retainedRecordCount": 8,
+    "finalStates": "Two inactive cities, inactive branch/type/pricing, active assigned QA driver, RECEIVED QA shipment, SCHEDULED empty QA trip with driver/branch cleared."
+  },
+  "conflictEvidence": [
+    {
+      "workflow": "Overlapping QA pricing create",
+      "requestId": "9978a909-4878-4881-a0b1-ce1f42d9a83a",
+      "exactHttpStatus": null,
+      "observedResult": "Generic Arabic conflict feedback; one pricing rule remained, with no overwrite or retry."
+    },
+    {
+      "workflow": "Attach disposable QA shipment to disposable QA trip",
+      "requestId": "c7d81d01-00dc-4bbf-ab23-8d34dc5d39e2",
+      "exactHttpStatus": null,
+      "observedResult": "Conflict feedback; trip membership remained zero."
+    }
+  ],
+  "openFindings": [
+    {
+      "id": "trip-local-time-shift",
+      "progress": "OPEN",
+      "confirmedObservation": "Create and controlled edit both displayed times two hours later than the entered Libya-local values.",
+      "attempts": [
+        {
+          "operation": "create",
+          "enteredLocal": [
+            "2026-09-14T10:00",
+            "2026-09-14T12:00"
+          ],
+          "observedLocal": [
+            "2026-09-14T12:00",
+            "2026-09-14T14:00"
+          ],
+          "observationSurface": "Detail and edit"
+        },
+        {
+          "operation": "controlled edit",
+          "domVerifiedEnteredLocal": [
+            "2026-09-14T10:00",
+            "2026-09-14T13:00"
+          ],
+          "observedLocal": [
+            "2026-09-14T12:00",
+            "2026-09-14T15:00"
+          ],
+          "observationSurface": "Detail"
+        }
+      ],
+      "classification": "BACKEND IMPLEMENTATION DEFECT — inferred attribution",
+      "diagnosticHypothesis": "Frontend conversion/formatter/transport independently verified correct; exact backend timestamp handling cause is not proven.",
+      "limitation": "The supplied browser observations do not independently establish the raw outgoing and returned timestamp values."
+    },
+    {
+      "id": "trip-attachment-rejected",
+      "progress": "OPEN",
+      "confirmedObservation": "One QA shipment attach attempt was rejected and membership remained zero.",
+      "requestId": "c7d81d01-00dc-4bbf-ab23-8d34dc5d39e2",
+      "classification": "BACKEND CONTRACT GAP — unresolved conflict reason/eligibility",
+      "limitation": "The conflict cause and exact raw HTTP status are not established by the supplied findings."
+    },
+    {
+      "id": "trip-attachment-selection",
+      "progress": "OBSERVED",
+      "confirmedObservation": "The existing attach control provides manual IDs only and no server-backed search.",
+      "acceptanceGap": "The requested server-backed selection/search behavior could not be exercised through this control.",
+      "classification": "DEFERRED FEATURE"
+    }
+  ],
+  "fixedFindings": [
+    {
+      "description": "Neutral operation409 guidance and supportID; focused regression passed.",
+      "result": "FIXED",
+      "classification": "FRONTEND DEFECT",
+      "id": "F2"
+    },
+    {
+      "description": "Controlled catalog selects preserve saved IDs when async options arrive; branch/pricing regressions passed; live fresh pricing edit and cleanup passed.",
+      "result": "FIXED",
+      "classification": "FRONTEND DEFECT",
+      "id": "F5"
+    }
+  ],
+  "finalResult": "ADMIN DASHBOARD OPERATIONAL ACCEPTANCE NOT PASSED",
+  "regressionEvidence": "reports/operational-acceptance/regression-results.json",
+  "finalReport": "docs/ADMIN-DASHBOARD-OPERATIONAL-ACCEPTANCE-REPORT.md"
+}

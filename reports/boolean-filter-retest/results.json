@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-13",
+  "backendRevisionSuppliedByUser": "02770a1bf7633203b928cfe48948962c9597019c",
+  "apiOrigin": "http://localhost:8080",
+  "browserEvidence": "reports/boolean-filter-retest/browser-check.json",
+  "sourceComparison": "reports/boolean-filter-retest/source-comparison.json",
+  "requiredGatesRunAfterFocusedRetest": true,
+  "gates": [
+    { "script": "npm run api:check", "exitCode": 0, "result": "PASS", "detail": "Generated schemas match the approved contract." },
+    { "script": "npm run lint", "exitCode": 0, "result": "PASS", "detail": "No errors or warnings." },
+    { "script": "npm run typecheck", "exitCode": 0, "result": "PASS", "detail": "Route type generation and TypeScript checks passed." },
+    { "script": "npm run test", "exitCode": 0, "result": "PASS", "passedTests": 139, "totalTests": 139, "passedFiles": 22, "totalFiles": 22 },
+    { "script": "npm run test:e2e", "exitCode": 0, "result": "PASS", "passedTests": 16, "totalTests": 16 },
+    { "script": "npm run test:live", "exitCode": 0, "result": "PASS", "passedTests": 3, "totalTests": 3 },
+    { "script": "npm run build", "exitCode": 0, "result": "PASS", "detail": "Prebuild contract check, compilation, TypeScript and 8/8 static pages passed." }
+  ],
+  "applicationSourceChanges": [],
+  "contractChanged": false,
+  "frontendWorkaroundAdded": false,
+  "booleanFilterIntegrationBlocker": "BOOLEAN FILTER INTEGRATION BLOCKER: CLOSED",
+  "finalResult": "FOCUSED ACCEPTANCE PASSED"
+}

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-13T12:59:27.893Z",
+  "frontendOrigin": "http://localhost:3000",
+  "apiOrigin": "http://localhost:8080",
+  "scope": "Read-only browser checks in the user-established staff session. No credentials exported and no operational or financial writes performed.",
+  "emptyListsRendered": ["shipments", "trips", "drivers", "cities", "branches", "shipment-types", "pricing"],
+  "cityEditorOpensAndRestoresFocus": true,
+  "shipmentCreateDisabledWithEmptyCatalogs": true,
+  "paymentEntryRequiresShipmentId": true,
+  "reportAccepted": false,
+  "reportRequestId": "23534a86-53f7-4d34-ae8e-2393fb9eb592",
+  "reportSchemaIssues": [
+    { "path": "data.shipments_by_status.[entry]", "expected": "nonnegative integer", "receivedKind": "string" },
+    { "path": "data.shipments_by_origin_city.[entry]", "expected": "nonnegative integer", "receivedKind": "string" },
+    { "path": "data.shipments_by_destination_city.[entry]", "expected": "nonnegative integer", "receivedKind": "string" }
+  ],
+  "pending": ["report contract agreement", "populated scoped reads", "login submission and logout", "approved disposable write acceptance", "idempotency and conflict acceptance", "payment workflow acceptance"]
+}

@@ -1,0 +1,51 @@
+.user-editor {
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  background: var(--surface);
+  overflow-y: auto;
+}
+.user-editor::backdrop {
+  background: rgb(12 25 23 / 40%);
+}
+.user-editor-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+.user-editor-heading h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.user-editor-heading p,
+.user-authority-note {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+.user-editor-fields {
+  display: grid;
+  gap: 1rem;
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+.user-authority-note {
+  margin-block: 1.25rem;
+}
+.user-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.3rem;
+}
+.user-save-note {
+  color: var(--accent);
+  font-size: 0.85rem;
+}

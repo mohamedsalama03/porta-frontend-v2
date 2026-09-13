@@ -1,0 +1,377 @@
+{
+  "recordedAt": "2026-09-13T18:28:33.571Z",
+  "progress": "COMPLETE",
+  "isFinal": true,
+  "environment": {
+    "frontend": "http://localhost:3000",
+    "backend": "http://localhost:8080",
+    "backendRevisionUnderRetest": "064f2903b7f612ff486428d00039387538a040e9"
+  },
+  "contract": {
+    "path": "contracts/porta-api-v1.openapi.json",
+    "currentSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+    "expectedSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+    "matchesExpected": true,
+    "replacement": "COMPLETE; manually supplied by user",
+    "generation": "COMPLETE; npm run api:generate",
+    "driftResult": "PASS after regeneration; initial stale-hash check exited 1",
+    "generatedArtifactChanges": "src/lib/api/generated.ts line 2 SHA-256 comment only",
+    "routesSchemasEnumsChanged": false,
+    "evidencePath": "reports/trip-operational-retest/contract-inspection.json"
+  },
+  "authentication": {
+    "session": "Reused existing authenticated staff browser session.",
+    "displayedUser": "Porta Test Admin",
+    "credentialsOrCookiesExported": false
+  },
+  "evidenceProvenance": {
+    "source": "Actual rendered API-backed UI observations supplied by the root acceptance agent.",
+    "limits": [
+      "Raw HTTP response statuses and bodies were unavailable.",
+      "Input serialization was reviewed through the existing source path only; actual outgoing wire timestamps were not captured.",
+      "Original UI observations are preserved unchanged; synchronized contract review and all required regression gates now support the final focused acceptance result.",
+      "Driver values matched after attachment, but the shipment was already assigned to that driver; a divergent-to-aligned synchronization case was not exercised."
+    ]
+  },
+  "fixtures": {
+    "cityA": {
+      "id": "01m2dw63kc994q8ysh8tgq16ac",
+      "role": "QA origin",
+      "temporarilyActivated": true,
+      "finalObservedActive": false
+    },
+    "cityB": {
+      "id": "01m2dw74z270ck5fxhnj9rdjm1",
+      "role": "QA destination",
+      "temporarilyActivated": true,
+      "finalObservedActive": false
+    },
+    "newTrip": {
+      "id": "01m2e07783fw899t87062pvnvd",
+      "status": "SCHEDULED",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "branchId": null,
+      "branchEvidence": "The editor's branch field was confirmed blank.",
+      "driverId": "01m2dwbywn3hzh7wpftdvg5h0k",
+      "finalMembershipCount": 0,
+      "finalObservedDepartureLocal": "2026-09-14T10:00",
+      "finalObservedArrivalLocal": "2026-09-14T13:00",
+      "distinguishingContext": "New disposable trip using the existing QA city references; the historical shifted trip was not reused as proof."
+    },
+    "shipment": {
+      "id": "01m2dwmhj3j3qgvga408yc7z58",
+      "trackingNumber": "PTA-260913-894B6DA768A453B6",
+      "originCityId": "01m2dw63kc994q8ysh8tgq16ac",
+      "destinationCityId": "01m2dw74z270ck5fxhnj9rdjm1",
+      "branchId": null,
+      "initialState": {
+        "status": "RECEIVED",
+        "tripId": null,
+        "assignedDriverId": "01m2dwbywn3hzh7wpftdvg5h0k"
+      },
+      "attachedState": {
+        "status": "RECEIVED",
+        "tripId": "01m2e07783fw899t87062pvnvd",
+        "assignedDriverId": "01m2dwbywn3hzh7wpftdvg5h0k"
+      },
+      "finalObservedState": {
+        "status": "RECEIVED",
+        "tripId": null,
+        "assignedDriverId": null
+      },
+      "finalRelationEvidence": "A newly opened shipment page showed both trip and driver as غير متاح after detach."
+    },
+    "historicalTrip": {
+      "id": "01m2dwqsp1angqezd73gaagytt",
+      "writesPerformed": false
+    }
+  },
+  "liveObservations": {
+    "tripCreateDatetime": {
+      "preliminaryObservedResult": "PASS",
+      "enteredLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      },
+      "detailLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      },
+      "afterFullReloadLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T12:00"
+      }
+    },
+    "tripGetRoundTrip": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "Full reload retained 10:00/12:00 for the newly created trip."
+    },
+    "tripEditDatetime": {
+      "preliminaryObservedResult": "PASS",
+      "enteredLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "detailLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "reopenedEditorExactLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      },
+      "afterFullReloadLocal": {
+        "departure": "2026-09-14T10:00",
+        "arrival": "2026-09-14T13:00"
+      }
+    },
+    "attachmentFixture": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "The new trip and disposable shipment used matching QA routes and null branches. The shipment was RECEIVED and had no trip before attachment.",
+      "tripDriverAndShipmentDriverInitiallyMatched": true
+    },
+    "tripShipmentAttach": {
+      "preliminaryObservedResult": "PASS",
+      "uiSubmissions": 1,
+      "observations": [
+        "The existing attach UI accepted one submission.",
+        "Trip membership became one with exactly one shipment row.",
+        "The shipment trip relation pointed to the new trip.",
+        "The assigned driver still matched the trip driver.",
+        "The shipment stayed RECEIVED and no conflict was displayed.",
+        "Reopening the trip confirmed membership remained one."
+      ],
+      "exactHttpStatus": null
+    },
+    "receivedAttachment": {
+      "preliminaryObservedResult": "PASS",
+      "observed": "The disposable shipment remained RECEIVED throughout the successful attachment; no status advancement was used."
+    },
+    "tripShipmentDetach": {
+      "preliminaryObservedResult": "PASS",
+      "uiSubmissions": 1,
+      "observations": [
+        "The existing detach UI accepted one submission.",
+        "Trip membership became zero.",
+        "A newly opened shipment page showed the trip and assigned driver cleared.",
+        "Shipment status remained RECEIVED.",
+        "The trip's own driver remained unchanged."
+      ],
+      "exactHttpStatus": null
+    }
+  },
+  "sourceReview": {
+    "serializationPath": "Read-only review of the existing frontend path, not an outgoing request capture.",
+    "applicationLogicChanges": 0,
+    "timezoneCompensationIntroduced": false,
+    "qualification": "No application-logic changes; generated hash comment only. Existing Africa/Tripoli conversion was inspected and focused tests passed."
+  },
+  "cleanup": {
+    "progress": "COMPLETE_FOR_TEMPORARY_CITY_ACTIVATIONS",
+    "verifiedRestoration": [
+      "City A was saved with active=false and its row visibly showed غير نشط.",
+      "City B was saved with active=false and its row visibly showed غير نشط."
+    ],
+    "otherCleanupWrites": false,
+    "newTripRetained": true,
+    "historicalTripModified": false,
+    "finalMembership": 0,
+    "browserHandoffPath": "/cities",
+    "note": "Only the temporary city activations were restored. The new QA trip remains retained with its own driver; the disposable shipment is detached with no assigned driver."
+  },
+  "checks": {
+    "initialApiCheck": {
+      "command": "npm run api:check",
+      "exitCode": 0,
+      "scope": "Historical pre-replacement drift check against the old contract then present; retained for chronology, not current-contract verification."
+    },
+    "focusedTests": {
+      "id": "focused",
+      "command": "npx vitest run tests/unit/operation-writes.test.tsx tests/unit/idempotency.test.ts tests/unit/formatters.test.ts",
+      "attempt": 1,
+      "startedAt": "2026-09-13T18:43:23.128Z",
+      "finishedAt": "2026-09-13T18:44:00.832Z",
+      "exitCode": 0,
+      "result": "PASS",
+      "logPath": "reports/trip-operational-retest/logs/01-focused.log",
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "summary": {
+        "filesPassed": 3,
+        "filesFailed": 0,
+        "testsPassed": 15,
+        "testsFailed": 0,
+        "testsSkipped": 0,
+        "totalTests": 15,
+        "runnerDurationSeconds": 28.38
+      }
+    },
+    "fullGates": [
+      {
+        "id": "api-check",
+        "command": "npm run api:check",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:44:16.067Z",
+        "finishedAt": "2026-09-13T18:44:17.279Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/02-api-check.log",
+        "summary": "Generated schemas match the approved local contract."
+      },
+      {
+        "id": "lint",
+        "command": "npm run lint",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:44:25.292Z",
+        "finishedAt": "2026-09-13T18:45:02.568Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/03-lint.log",
+        "summary": "No lint diagnostics."
+      },
+      {
+        "id": "typecheck",
+        "command": "npm run typecheck",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:45:09.502Z",
+        "finishedAt": "2026-09-13T18:45:15.817Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/04-typecheck.log",
+        "summary": "Route type generation and tsc --noEmit completed."
+      },
+      {
+        "id": "unit",
+        "command": "npm run test",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:45:26.604Z",
+        "finishedAt": "2026-09-13T18:46:03.512Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/05-unit.log",
+        "environmentOverride": {
+          "VITEST_MAX_WORKERS": "1"
+        },
+        "summary": {
+          "filesPassed": 22,
+          "filesFailed": 0,
+          "testsPassed": 142,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "totalTests": 142,
+          "runnerDurationSeconds": 35.49
+        }
+      },
+      {
+        "id": "e2e",
+        "command": "npm run test:e2e",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:46:17.503Z",
+        "finishedAt": "2026-09-13T18:46:58.992Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/06-e2e.log",
+        "summary": {
+          "testsPassed": 16,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "totalTests": 16,
+          "runnerDurationSeconds": 38.9
+        }
+      },
+      {
+        "id": "live",
+        "command": "npm run test:live",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:47:07.44Z",
+        "finishedAt": "2026-09-13T18:47:12.215Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/07-live.log",
+        "summary": {
+          "testsPassed": 3,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "totalTests": 3,
+          "runnerDurationSeconds": 3.2
+        }
+      },
+      {
+        "id": "build",
+        "command": "npm run build",
+        "attempt": 1,
+        "startedAt": "2026-09-13T18:47:20.352Z",
+        "finishedAt": "2026-09-13T18:47:29.843Z",
+        "exitCode": 0,
+        "result": "PASS",
+        "logPath": "reports/trip-operational-retest/logs/08-build.log",
+        "summary": {
+          "compileMilliseconds": 1453,
+          "typecheckSeconds": 2.9,
+          "staticPagesGenerated": 8,
+          "staticPagesTotal": 8,
+          "staticGenerationMilliseconds": 326,
+          "prebuildApiCheckExitCode": 0
+        }
+      }
+    ],
+    "allRequiredGatesPassed": true,
+    "unitExecution": {
+      "environmentOverride": {
+        "VITEST_MAX_WORKERS": "1"
+      },
+      "scope": "Process-local on both focused and full unit commands.",
+      "restoredAfterEachCommand": true,
+      "reason": "Known prior resource-sensitive default-worker test timeouts; supported Vitest worker cap selected before this run.",
+      "assertionsChanged": false,
+      "timeoutsChanged": false,
+      "testConfigurationChanged": false,
+      "testSelectionWeakened": false
+    },
+    "evidencePath": "reports/trip-operational-retest/regression-results.json"
+  },
+  "sourceComparison": {
+    "comparedAtUtc": "2026-09-13T18:48:27.4775096Z",
+    "baselinePath": "reports/trip-operational-retest/baseline.json",
+    "baselineFileCount": 171,
+    "currentFileCount": 172,
+    "changed": [
+      {
+        "path": "contracts/porta-api-v1.openapi.json",
+        "beforeSha256": "90d5a0905238d2c9447e1002332fb65b63b1dc552c4c98b441627b9c809b6ae4",
+        "afterSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658"
+      },
+      {
+        "path": "src/lib/api/generated.ts",
+        "beforeSha256": "ed1c8dacf52fc4200affc535671ac5bc91529fe6e061b0247ca522ddc7cb6d78",
+        "afterSha256": "42ca37414b727fb7243262731078efe98fd713653197618ca6cc2b18c5499bc3"
+      }
+    ],
+    "missing": [],
+    "added": [
+      "docs/TRIP-OPERATIONAL-RETEST-REPORT.md"
+    ],
+    "applicationLogicChanges": [],
+    "applicationLogicChangeCount": 0,
+    "gitMetadata": "Unavailable; retained SHA-256 baseline used. No repository initialized.",
+    "scope": "Root files and src/tests/scripts/docs/contracts, excluding tsconfig.tsbuildinfo; reports/dependencies/build/test-output directories excluded."
+  },
+  "formalAcceptance": {
+    "progress": "COMPLETE",
+    "f1": "F1 FRONTEND RETEST: PASS",
+    "f3": "F3 FRONTEND RETEST: PASS",
+    "result": "TRIP OPERATIONAL RETEST PASSED",
+    "reportPath": "docs/TRIP-OPERATIONAL-RETEST-REPORT.md",
+    "scope": "New disposable trip datetime, branch-matched RECEIVED attachment/detachment, contract synchronization, and frontend regression gates."
+  },
+  "finalizedAtUtc": "2026-09-13T18:49:10.6456339Z",
+  "pausedSnapshotPath": "reports/trip-operational-retest/progress-before-resume.json",
+  "resume": {
+    "instruction": "Preserve completed successful live observations unless the approved contract or regression gates contradict them.",
+    "liveChecksRepeated": false,
+    "contradictionsFound": false,
+    "preservation": "Original liveObservations retained unchanged and accepted for the final focused result."
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "route": "/login",
+    "mode": "production foundation; no operational data; simulated mobile navigation",
+    "performance": 0.92,
+    "accessibility": 1,
+    "bestPractices": 1,
+    "lcpMs": 3322.635,
+    "cls": 0.02960684219269215,
+    "totalBlockingTimeMs": 109,
+    "inp": "Not measured; requires real interaction/field evidence after integration.",
+    "scriptTransferBytes": 304114,
+    "scriptResourceBytes": 1037038,
+    "warnings": []
+  },
+  {
+    "route": "/dashboard",
+    "mode": "production foundation; no operational data; simulated mobile navigation",
+    "performance": 0.91,
+    "accessibility": 1,
+    "bestPractices": 1,
+    "lcpMs": 3466.1699999999996,
+    "cls": 0,
+    "totalBlockingTimeMs": 70,
+    "inp": "Not measured; requires real interaction/field evidence after integration.",
+    "scriptTransferBytes": 326619,
+    "scriptResourceBytes": 1094281,
+    "warnings": []
+  }
+]

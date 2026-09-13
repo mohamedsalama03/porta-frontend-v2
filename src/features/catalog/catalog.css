@@ -1,0 +1,81 @@
+.catalog-dialog {
+  width: min(690px, calc(100vw - 32px));
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  color: var(--foreground);
+  overflow-y: auto;
+}
+.catalog-dialog::backdrop {
+  background: rgb(15 23 42 / 45%);
+}
+.catalog-dialog-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 26px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.catalog-dialog-heading h2 {
+  font-size: 21px;
+  margin: 3px 0 0;
+}
+.catalog-dialog form {
+  padding: 22px 26px 0;
+}
+.catalog-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+}
+.catalog-form-grid .field {
+  min-width: 0;
+}
+.catalog-form-grid input,
+.catalog-form-grid select,
+.catalog-form-grid textarea {
+  width: 100%;
+}
+.catalog-form-grid small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.catalog-full-field {
+  grid-column: 1 / -1;
+}
+.catalog-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 20px 0;
+  margin-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.catalog-attempt-note {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 16px;
+}
+.catalog-saved {
+  color: var(--accent);
+  font-size: 12px;
+  margin-inline: 8px;
+}
+.catalog-edit-trigger {
+  min-height: 34px;
+  padding: 5px 9px;
+  font-size: 11px;
+}
+@media (max-width: 560px) {
+  .catalog-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .catalog-dialog-heading {
+    padding: 18px;
+  }
+  .catalog-dialog form {
+    padding: 18px 18px 0;
+  }
+}
