@@ -1,0 +1,85 @@
+[WebServer] (node:33672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:26844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:21188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:16148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:13116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:26544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:31488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:7344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:26316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:31972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 1 worker
+
+(node:19584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:202:1 › anonymous RTL route has safe metadata, explicit search and accessible empty/invalid validation (3.5s)
+  ok  2 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:227:1 › trimmed lookup renders safe status and authoritative timeline order in Tripoli time (1.5s)
+  x   3 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:253:1 › deep link performs a single effective lookup and refresh is explicit with no focus, reconnect or polling fetches (10.4s)
+(node:33208) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:276:1 › invalid and ambiguous URL numbers do not issue a lookup or expose private query data in metadata (2.5s)
+  ok  5 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:289:1 › copy confirms success and clipboard denial offers a manual fallback (2.0s)
+  ok  6 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:311:1 › unknown tracking is safe, preserves the identifier and permits an explicit new lookup (2.2s)
+  ok  7 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:330:3 › network refresh failure keeps the last valid result and retries only on customer action (2.1s)
+  ok  8 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:330:3 › 503 refresh failure keeps the last valid result and retries only on customer action (2.6s)
+  ok  9 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:358:1 › 429 honors Retry-After across identifier edits without automatically retrying (5.6s)
+  ok 10 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:384:1 › editing cancels obsolete lookup and a delayed result cannot replace the next identifier (1.4s)
+  ok 11 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:413:1 › unapproved private fields invalidate the response and never render sensitive values (1.2s)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"unrecognized_keys","path":["data"],"receivedKind":"object"}] (src/lib/api/diagnostics.ts:113:11)
+  ok 12 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:449:1 › every approved status remains readable at mobile, tablet and desktop widths with accessible themes (4.7s)
+  ok 13 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:501:1 › order confirmation links only its authoritative tracking number and tracking navigation never repeats creation (4.2s)
+
+
+  1) [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:253:1 › deep link performs a single effective lookup and refresh is explicit with no focus, reconnect or polling fetches
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: 'تحديث الحالة', exact: true })
+    Expected: focused
+    Received: inactive
+    Timeout:  7000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: 'تحديث الحالة', exact: true }) with timeout 7000ms
+      - waiting for getByRole('button', { name: 'تحديث الحالة', exact: true })
+        17 × locator resolved to <button type="button" class="button button-secondary">…</button>
+           - unexpected value "inactive"
+
+
+      270 |   await refresh.click();
+      271 |   await expect.poll(() => trackingRequests(trackingApi).length).toBe(2);
+    > 272 |   await expect(refresh).toBeFocused();
+          |                         ^
+      273 |   await expect(resultHeading(page)).toBeVisible();
+      274 | });
+      275 |
+        at D:\customers\porta frontend\tests\e2e\public-tracking.spec.ts:272:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\public-tracking-deep-link--54c24-econnect-or-polling-fetches-public-tracking-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\public-tracking-deep-link--54c24-econnect-or-polling-fetches-public-tracking-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\public-tracking-deep-link--54c24-econnect-or-polling-fetches-public-tracking-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\public-tracking-deep-link--54c24-econnect-or-polling-fetches-public-tracking-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:253:1 › deep link performs a single effective lookup and refresh is explicit with no focus, reconnect or polling fetches
+  12 passed (1.4m)

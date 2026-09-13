@@ -1,0 +1,134 @@
+{
+  "scope": "Production route-entry chunks excluding common framework runtime. Size comparison, not authenticated Admin load-time measurement.",
+  "buildId": "ndeBqn8NE1A1o4JSagQCQ",
+  "records": [
+    {
+      "route": "(public)/track",
+      "entryChunkCount": 9,
+      "decodedBytes": 560237,
+      "gzipBytes": 143607,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/public-order/query-provider.tsx",
+        "[project]/src/app/(public)/track/error.tsx",
+        "[project]/src/features/public-tracking/tracking-form.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/0dkq49s7t7tis.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/41xhwclgde3wr.js",
+        "static/chunks/18tm_3qm_m535.js",
+        "static/chunks/0g8k2n_9exai-.js",
+        "static/chunks/3b93d7asqtpac.js"
+      ]
+    },
+    {
+      "route": "(public)/order",
+      "entryChunkCount": 10,
+      "decodedBytes": 614985,
+      "gzipBytes": 160550,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/public-order/query-provider.tsx",
+        "[project]/src/app/(public)/order/error.tsx",
+        "[project]/src/features/public-order/form.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/0dkq49s7t7tis.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/41xhwclgde3wr.js",
+        "static/chunks/27q2x8_5zvj5d.js",
+        "static/chunks/3b93d7asqtpac.js",
+        "static/chunks/0eqtbjk2aepfz.js",
+        "static/chunks/2oizdfojeq8pi.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/dashboard",
+      "entryChunkCount": 12,
+      "decodedBytes": 732097,
+      "gzipBytes": 194986,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/17upyyrrc6mgz.js",
+        "static/chunks/36306-tzdnxqa.js",
+        "static/chunks/3b93d7asqtpac.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/2hltnu8vxw5fj.js",
+        "static/chunks/302mi-6d9imne.js",
+        "static/chunks/3jlgq5e9vnvuk.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/[module]",
+      "entryChunkCount": 14,
+      "decodedBytes": 843703,
+      "gzipBytes": 224057,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/settings/preferences-settings.tsx",
+        "[project]/src/features/shipments/live.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "tableSignatures": [
+        "getCoreRowModel",
+        "getFilteredRowModel",
+        "getPaginationRowModel"
+      ],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/17upyyrrc6mgz.js",
+        "static/chunks/36306-tzdnxqa.js",
+        "static/chunks/3b93d7asqtpac.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/2hltnu8vxw5fj.js",
+        "static/chunks/302mi-6d9imne.js",
+        "static/chunks/2489u2trwnrfp.js",
+        "static/chunks/1tutrbup8zk_2.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/300-ad5xprvk3.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    }
+  ],
+  "forbiddenSources": [],
+  "tableSignatures": [],
+  "result": "PASS"
+}

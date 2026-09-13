@@ -1,0 +1,12 @@
+{
+  "repository": "D:\\customers\\porta frontend",
+  "startingBranch": "main",
+  "startingHead": "46080fa147a7a94008bcfbc8422bf5347f3b5bef",
+  "startingWorktree": "clean",
+  "featureBranch": "feat/public-tracking",
+  "main": "46080fa147a7a94008bcfbc8422bf5347f3b5bef",
+  "backendRevisionProvidedByUser": "064f2903b7f612ff486428d00039387538a040e9",
+  "openApiSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+  "generatedArtifactChanges": [],
+  "newFeaturesOutsideScope": false
+}

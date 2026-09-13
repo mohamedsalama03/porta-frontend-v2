@@ -184,7 +184,7 @@ test('anonymous route is isolated from staff and required errors focus the first
   await expect(page.locator('.application-shell, .shell-sidebar')).toHaveCount(0);
   await expect(page.getByRole('link', { name: /تسجيل الدخول|لوحة التحكم/ })).toHaveCount(0);
   await page.keyboard.press('Tab');
-  await expect(page.getByRole('link', { name: 'انتقل إلى نموذج الطلب' })).toBeFocused();
+  await expect(page.getByRole('link', { name: 'انتقل إلى المحتوى' })).toBeFocused();
   await page.keyboard.press('Enter');
   await expect(page.locator('main')).toBeFocused();
   await selectRoute(page);

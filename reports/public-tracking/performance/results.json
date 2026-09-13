@@ -1,0 +1,521 @@
+{
+  "scope": "Production localhost lab navigation: empty shell and loaded deterministic tracking. Excludes real API latency and field INP.",
+  "base": "http://localhost:3001",
+  "buildId": "ndeBqn8NE1A1o4JSagQCQ",
+  "startedAt": "2026-09-13T22:02:06.215Z",
+  "results": [
+    {
+      "mode": "mobile",
+      "state": "empty",
+      "scores": {
+        "performance": 0.92,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "lcpMs": 3233.0054999999998,
+        "cls": 0.002498498994200335,
+        "tbtMs": 136.00000000000023,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "transferBytes": 335810,
+        "decodedBytes": 1139495,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferSize": 2578,
+            "resourceSize": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferSize": 9325,
+            "resourceSize": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferSize": 72280,
+            "resourceSize": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferSize": 44455,
+            "resourceSize": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferSize": 4458,
+            "resourceSize": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferSize": 5300,
+            "resourceSize": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferSize": 11678,
+            "resourceSize": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferSize": 6196,
+            "resourceSize": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2cin3-r518p9t.js",
+            "transferSize": 5212,
+            "resourceSize": 11265
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0dkq49s7t7tis.js",
+            "transferSize": 4253,
+            "resourceSize": 11871
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferSize": 91564,
+            "resourceSize": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/41xhwclgde3wr.js",
+            "transferSize": 10760,
+            "resourceSize": 27935
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/18tm_3qm_m535.js",
+            "transferSize": 1385,
+            "resourceSize": 826
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0g8k2n_9exai-.js",
+            "transferSize": 11189,
+            "resourceSize": 29614
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3b93d7asqtpac.js",
+            "transferSize": 7065,
+            "resourceSize": 35520
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferSize": 2984,
+            "resourceSize": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferSize": 15006,
+            "resourceSize": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0eqtbjk2aepfz.js",
+            "transferSize": 13480,
+            "resourceSize": 37486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2oizdfojeq8pi.js",
+            "transferSize": 15261,
+            "resourceSize": 46880
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27q2x8_5zvj5d.js",
+            "transferSize": 1381,
+            "resourceSize": 822
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "apiCalls": [],
+      "unexpected": []
+    },
+    {
+      "mode": "mobile",
+      "state": "loaded",
+      "scores": {
+        "performance": 0.86,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "lcpMs": 3841.11255,
+        "cls": 0.021339638950465156,
+        "tbtMs": 185,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "transferBytes": 335810,
+        "decodedBytes": 1139495,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferSize": 2578,
+            "resourceSize": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferSize": 9325,
+            "resourceSize": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferSize": 72280,
+            "resourceSize": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferSize": 44455,
+            "resourceSize": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferSize": 4458,
+            "resourceSize": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferSize": 5300,
+            "resourceSize": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferSize": 11678,
+            "resourceSize": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferSize": 6196,
+            "resourceSize": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2cin3-r518p9t.js",
+            "transferSize": 5212,
+            "resourceSize": 11265
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0dkq49s7t7tis.js",
+            "transferSize": 4253,
+            "resourceSize": 11871
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferSize": 91564,
+            "resourceSize": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/41xhwclgde3wr.js",
+            "transferSize": 10760,
+            "resourceSize": 27935
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/18tm_3qm_m535.js",
+            "transferSize": 1385,
+            "resourceSize": 826
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0g8k2n_9exai-.js",
+            "transferSize": 11189,
+            "resourceSize": 29614
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3b93d7asqtpac.js",
+            "transferSize": 7065,
+            "resourceSize": 35520
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferSize": 2984,
+            "resourceSize": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferSize": 15006,
+            "resourceSize": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0eqtbjk2aepfz.js",
+            "transferSize": 13480,
+            "resourceSize": 37486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2oizdfojeq8pi.js",
+            "transferSize": 15261,
+            "resourceSize": 46880
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27q2x8_5zvj5d.js",
+            "transferSize": 1381,
+            "resourceSize": 822
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "apiCalls": [
+        {
+          "method": "GET",
+          "path": "/api/v1/tracking/PTA-260913-TRACKINGVISUAL01"
+        }
+      ],
+      "unexpected": []
+    },
+    {
+      "mode": "desktop",
+      "state": "empty",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "lcpMs": 669.4905,
+        "cls": 0.008290616700230569,
+        "tbtMs": 0,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "transferBytes": 335810,
+        "decodedBytes": 1139495,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferSize": 2578,
+            "resourceSize": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferSize": 9325,
+            "resourceSize": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferSize": 72280,
+            "resourceSize": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferSize": 44455,
+            "resourceSize": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferSize": 4458,
+            "resourceSize": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferSize": 5300,
+            "resourceSize": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferSize": 11678,
+            "resourceSize": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferSize": 6196,
+            "resourceSize": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2cin3-r518p9t.js",
+            "transferSize": 5212,
+            "resourceSize": 11265
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0dkq49s7t7tis.js",
+            "transferSize": 4253,
+            "resourceSize": 11871
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferSize": 91564,
+            "resourceSize": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/41xhwclgde3wr.js",
+            "transferSize": 10760,
+            "resourceSize": 27935
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/18tm_3qm_m535.js",
+            "transferSize": 1385,
+            "resourceSize": 826
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0g8k2n_9exai-.js",
+            "transferSize": 11189,
+            "resourceSize": 29614
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3b93d7asqtpac.js",
+            "transferSize": 7065,
+            "resourceSize": 35520
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferSize": 2984,
+            "resourceSize": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferSize": 15006,
+            "resourceSize": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0eqtbjk2aepfz.js",
+            "transferSize": 13480,
+            "resourceSize": 37486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2oizdfojeq8pi.js",
+            "transferSize": 15261,
+            "resourceSize": 46880
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27q2x8_5zvj5d.js",
+            "transferSize": 1381,
+            "resourceSize": 822
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "apiCalls": [],
+      "unexpected": []
+    },
+    {
+      "mode": "desktop",
+      "state": "loaded",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "lcpMs": 813.6565499999999,
+        "cls": 0.01882565449610367,
+        "tbtMs": 0,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "transferBytes": 335810,
+        "decodedBytes": 1139495,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferSize": 2578,
+            "resourceSize": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferSize": 9325,
+            "resourceSize": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferSize": 72280,
+            "resourceSize": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferSize": 44455,
+            "resourceSize": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferSize": 4458,
+            "resourceSize": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferSize": 5300,
+            "resourceSize": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferSize": 11678,
+            "resourceSize": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferSize": 6196,
+            "resourceSize": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2cin3-r518p9t.js",
+            "transferSize": 5212,
+            "resourceSize": 11265
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0dkq49s7t7tis.js",
+            "transferSize": 4253,
+            "resourceSize": 11871
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferSize": 91564,
+            "resourceSize": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/41xhwclgde3wr.js",
+            "transferSize": 10760,
+            "resourceSize": 27935
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/18tm_3qm_m535.js",
+            "transferSize": 1385,
+            "resourceSize": 826
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0g8k2n_9exai-.js",
+            "transferSize": 11189,
+            "resourceSize": 29614
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3b93d7asqtpac.js",
+            "transferSize": 7065,
+            "resourceSize": 35520
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferSize": 2984,
+            "resourceSize": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferSize": 15006,
+            "resourceSize": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0eqtbjk2aepfz.js",
+            "transferSize": 13480,
+            "resourceSize": 37486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2oizdfojeq8pi.js",
+            "transferSize": 15261,
+            "resourceSize": 46880
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27q2x8_5zvj5d.js",
+            "transferSize": 1381,
+            "resourceSize": 822
+          }
+        ]
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "apiCalls": [
+        {
+          "method": "GET",
+          "path": "/api/v1/tracking/PTA-260913-TRACKINGVISUAL01"
+        }
+      ],
+      "unexpected": []
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-13T22:02:41.335Z",
+  "status": "MEASURED"
+}

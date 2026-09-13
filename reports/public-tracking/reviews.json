@@ -1,0 +1,28 @@
+{
+  "detector": {
+    "runs": 1,
+    "findings": []
+  },
+  "inspectionBatches": 2,
+  "visualReview": {
+    "limits": [
+      "Physical devices",
+      "Manual assistive technology",
+      "Production field performance"
+    ],
+    "scope": "Independent screenshot and source review; no firsthand browser or HTTP verification",
+    "validCaptures": 40,
+    "screenshotsInspected": 40,
+    "agent": "tracking_finish_reviewer",
+    "materialFindings": [],
+    "disposition": "ship"
+  },
+  "correctnessReview": {
+    "findings": [
+      "Edited-identifier rate-limit retry button fixed and verified by review and browser test"
+    ],
+    "agent": "tracking_contract",
+    "result": "No remaining concrete supported-flow defect found",
+    "scope": "Independent source review of tracking API, query ownership, errors, privacy and order handoff"
+  }
+}

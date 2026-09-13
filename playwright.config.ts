@@ -16,12 +16,21 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      testIgnore: '**/public-order.spec.ts',
+      testIgnore: ['**/public-order.spec.ts', '**/public-tracking.spec.ts'],
       use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'public-order-chromium',
       testMatch: '**/public-order.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: 'http://localhost:3102',
+        serviceWorkers: 'block',
+      },
+    },
+    {
+      name: 'public-tracking-chromium',
+      testMatch: '**/public-tracking.spec.ts',
       use: {
         ...devices['Desktop Chrome'],
         baseURL: 'http://localhost:3102',

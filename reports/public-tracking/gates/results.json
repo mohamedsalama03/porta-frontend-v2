@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "gates": [
+    {
+      "command": "npm run api:check",
+      "exitCode": 0,
+      "started": "2026-09-13T23:57:04.5904416+02:00",
+      "ended": "2026-09-13T23:57:07.2464002+02:00"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "started": "2026-09-14T00:07:08.9852897+02:00",
+      "ended": "2026-09-14T00:07:19.6032753+02:00"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "started": "2026-09-14T00:07:09.2405547+02:00",
+      "ended": "2026-09-14T00:07:13.0948877+02:00"
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "started": "2026-09-13T23:57:05.421015+02:00",
+      "ended": "2026-09-13T23:58:26.6455276+02:00"
+    },
+    {
+      "command": "npm run test:live",
+      "exitCode": 0,
+      "started": "2026-09-13T23:59:14.0098987+02:00",
+      "ended": "2026-09-13T23:59:20.6176877+02:00"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "started": "2026-09-13T23:59:21.2796959+02:00",
+      "ended": "2026-09-13T23:59:42.0498898+02:00"
+    },
+    {
+      "command": "npm run test:e2e",
+      "exitCode": 0,
+      "log": "test-e2e.log",
+      "passed": 42
+    }
+  ],
+  "unitTests": 203,
+  "unitFiles": 31,
+  "focusedTrackingTests": 31,
+  "publicOrderUnitTests": 30,
+  "browserTests": 42,
+  "existingAdminFoundationBrowserTests": 16,
+  "publicOrderBrowserTests": 13,
+  "publicTrackingBrowserTests": 13,
+  "liveTests": 5,
+  "productionBuildId": "ndeBqn8NE1A1o4JSagQCQ"
+}

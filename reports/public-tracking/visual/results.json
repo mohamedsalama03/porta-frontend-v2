@@ -1,0 +1,1322 @@
+{
+  "scope": "Synthetic intercepted tracking presentation only; every other external/API request blocked.",
+  "base": "http://localhost:3000",
+  "startedAt": "2026-09-13T21:58:27.432Z",
+  "results": [
+    {
+      "name": "light-390-empty",
+      "state": "empty",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-empty.png"
+    },
+    {
+      "name": "light-390-loading",
+      "state": "loading",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-loading.png"
+    },
+    {
+      "name": "light-390-success",
+      "state": "success",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-success.png"
+    },
+    {
+      "name": "light-390-delivered",
+      "state": "delivered",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-delivered.png"
+    },
+    {
+      "name": "light-390-not-found",
+      "state": "not-found",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-not-found.png"
+    },
+    {
+      "name": "light-390-error",
+      "state": "error",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-error.png"
+    },
+    {
+      "name": "light-390-PREPARING",
+      "state": "PREPARING",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-PREPARING.png"
+    },
+    {
+      "name": "light-390-IN_TRANSIT",
+      "state": "IN_TRANSIT",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-IN_TRANSIT.png"
+    },
+    {
+      "name": "light-390-ARRIVED_CITY",
+      "state": "ARRIVED_CITY",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-ARRIVED_CITY.png"
+    },
+    {
+      "name": "light-390-READY_FOR_PICKUP",
+      "state": "READY_FOR_PICKUP",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-390-READY_FOR_PICKUP.png"
+    },
+    {
+      "name": "light-430-empty",
+      "state": "empty",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-empty.png"
+    },
+    {
+      "name": "light-430-loading",
+      "state": "loading",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-loading.png"
+    },
+    {
+      "name": "light-430-success",
+      "state": "success",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-success.png"
+    },
+    {
+      "name": "light-430-delivered",
+      "state": "delivered",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-delivered.png"
+    },
+    {
+      "name": "light-430-not-found",
+      "state": "not-found",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-not-found.png"
+    },
+    {
+      "name": "light-430-error",
+      "state": "error",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-430-error.png"
+    },
+    {
+      "name": "light-768-empty",
+      "state": "empty",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-empty.png"
+    },
+    {
+      "name": "light-768-loading",
+      "state": "loading",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-loading.png"
+    },
+    {
+      "name": "light-768-success",
+      "state": "success",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-success.png"
+    },
+    {
+      "name": "light-768-delivered",
+      "state": "delivered",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-delivered.png"
+    },
+    {
+      "name": "light-768-not-found",
+      "state": "not-found",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-not-found.png"
+    },
+    {
+      "name": "light-768-error",
+      "state": "error",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-768-error.png"
+    },
+    {
+      "name": "light-1024-empty",
+      "state": "empty",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-empty.png"
+    },
+    {
+      "name": "light-1024-loading",
+      "state": "loading",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-loading.png"
+    },
+    {
+      "name": "light-1024-success",
+      "state": "success",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-success.png"
+    },
+    {
+      "name": "light-1024-delivered",
+      "state": "delivered",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-delivered.png"
+    },
+    {
+      "name": "light-1024-not-found",
+      "state": "not-found",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-not-found.png"
+    },
+    {
+      "name": "light-1024-error",
+      "state": "error",
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1024-error.png"
+    },
+    {
+      "name": "light-1440-empty",
+      "state": "empty",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-empty.png"
+    },
+    {
+      "name": "light-1440-loading",
+      "state": "loading",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-loading.png"
+    },
+    {
+      "name": "light-1440-success",
+      "state": "success",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-success.png"
+    },
+    {
+      "name": "light-1440-delivered",
+      "state": "delivered",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-delivered.png"
+    },
+    {
+      "name": "light-1440-not-found",
+      "state": "not-found",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-not-found.png"
+    },
+    {
+      "name": "light-1440-error",
+      "state": "error",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 50
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/light-1440-error.png"
+    },
+    {
+      "name": "dark-390-empty",
+      "state": "empty",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-empty.png"
+    },
+    {
+      "name": "dark-390-loading",
+      "state": "loading",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-loading.png"
+    },
+    {
+      "name": "dark-390-success",
+      "state": "success",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-success.png"
+    },
+    {
+      "name": "dark-390-delivered",
+      "state": "delivered",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "نسخ رقم التتبع",
+            "height": 48
+          },
+          {
+            "name": "تحديث الحالة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-delivered.png"
+    },
+    {
+      "name": "dark-390-not-found",
+      "state": "not-found",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-not-found.png"
+    },
+    {
+      "name": "dark-390-error",
+      "state": "error",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "rtl": "rtl",
+        "overflow": false,
+        "inputSize": "16px",
+        "targets": [
+          {
+            "name": "Porta Delivery — طلب شحن",
+            "height": 44
+          },
+          {
+            "name": "",
+            "height": 50
+          },
+          {
+            "name": "تتبع الشحنة",
+            "height": 48
+          },
+          {
+            "name": "إعادة المحاولة",
+            "height": 48
+          }
+        ],
+        "privateText": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/public-tracking/visual/dark-390-error.png"
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-13T21:58:56.844Z",
+  "status": "PASS"
+}

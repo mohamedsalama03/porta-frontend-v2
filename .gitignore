@@ -15,3 +15,7 @@ reports/public-order/performance/mobile.html
 reports/public-order/performance/desktop.html
 reports/public-order/performance/mobile.json
 reports/public-order/performance/desktop.json
+reports/public-tracking/performance/mobile-*.html
+reports/public-tracking/performance/desktop-*.html
+reports/public-tracking/performance/mobile-*.json
+reports/public-tracking/performance/desktop-*.json

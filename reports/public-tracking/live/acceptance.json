@@ -1,0 +1,46 @@
+{
+  "trackingNumber": "PTA-260913-9B906F9B74FA87ED",
+  "readOnly": true,
+  "anonymousContext": true,
+  "operation": "GET /api/v1/tracking/{trackingNumber}",
+  "startedAt": "2026-09-13T21:59:19.532Z",
+  "lookupHttpStatus": 200,
+  "contractValid": true,
+  "currentStatus": "RECEIVED",
+  "timelineEventCount": 1,
+  "responseFields": [
+    "created_at",
+    "current_status",
+    "destination_city",
+    "estimated_delivery",
+    "origin_city",
+    "shipment_type",
+    "status_label",
+    "tracking_number",
+    "tracking_timeline"
+  ],
+  "privacyDomChecks": {
+    "noPrivateFieldLabels": true,
+    "noInternalIdentifiers": true,
+    "noPrivatePhoneValues": true
+  },
+  "privacyDomPassed": true,
+  "refreshHttpStatus": 200,
+  "refreshContractValid": true,
+  "trackingPersisted": false,
+  "result": "PASS",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/tracking/PTA-260913-9B906F9B74FA87ED",
+      "authorizationPresent": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/tracking/PTA-260913-9B906F9B74FA87ED",
+      "authorizationPresent": false
+    }
+  ],
+  "blockedRequests": [],
+  "completedAt": "2026-09-13T21:59:20.426Z"
+}
