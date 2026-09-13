@@ -46,7 +46,10 @@ test('feature shells expose no write action and every section renders', async ({
   ]) {
     await page.goto(`/preview/${section}`);
     await expect(page.locator('main h1')).toBeVisible();
-    await expect(page.getByText('هذا القسم بانتظار ربط الخدمة.')).toBeVisible();
+    // Assert the active workspace, excluding transient streaming content outside its landmark.
+    await expect(
+      page.getByRole('main').getByText('هذا القسم بانتظار ربط الخدمة.', { exact: true }),
+    ).toBeVisible();
     for (const button of await page.locator('main .page-heading button').all())
       await expect(button).toBeDisabled();
   }

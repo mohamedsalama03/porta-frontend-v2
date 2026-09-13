@@ -8,3 +8,10 @@ test-results/
 playwright-report/
 *.tsbuildinfo
 .impeccable/config.local.json
+.impeccable/review/
+reports/public-order/visual-harness-interrupted-*/
+reports/public-order/visual/*-interrupted.png
+reports/public-order/performance/mobile.html
+reports/public-order/performance/desktop.html
+reports/public-order/performance/mobile.json
+reports/public-order/performance/desktop.json
