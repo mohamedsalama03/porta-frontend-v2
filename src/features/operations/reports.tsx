@@ -429,13 +429,14 @@ export function LiveReports({ dashboard = false }: { dashboard?: boolean }) {
       ) : query.data ? (
         <ReportContent report={query.data.data} dashboard={dashboard} />
       ) : (
-        <div className="report-loading" aria-label="جارٍ تحميل التقرير">
-          <div className="report-metrics">
+        <div className="report-loading" role="status" aria-atomic="true">
+          <span className="sr-only">جارٍ تحميل التقرير</span>
+          <div className="report-metrics" aria-hidden="true">
             {Array.from({ length: 4 }, (_, index) => (
               <div className="skeleton report-metric-skeleton" key={index} />
             ))}
           </div>
-          <div className="skeleton report-chart-skeleton" />
+          <div className="skeleton report-chart-skeleton" aria-hidden="true" />
         </div>
       )}
     </div>

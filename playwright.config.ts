@@ -21,8 +21,18 @@ export default defineConfig({
         '**/public-tracking.spec.ts',
         '**/driver-workspace.spec.ts',
         '**/driver-trip-actions.spec.ts',
+        '**/dashboard-loading.spec.ts',
       ],
       use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'admin-chromium',
+      testMatch: '**/dashboard-loading.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: 'http://localhost:3102',
+        serviceWorkers: 'block',
+      },
     },
     {
       name: 'driver-chromium',
