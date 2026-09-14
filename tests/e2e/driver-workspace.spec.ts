@@ -35,7 +35,9 @@ const test = base.extend<{ driverApi: DriverApi }>({
     async ({ context, baseURL }, use) => {
       const fixture = createDriverFixtures(new URL(baseURL!).origin);
       getAuthMeResponseSchema.parse(driverSessionFixture());
-      getDriverTripsTripResponseSchema.parse(driverEnvelope(driverTripFixture()));
+      getDriverTripsTripResponseSchema.parse(
+        driverEnvelope(driverTripFixture(), { allowed_actions: [] }),
+      );
       getDriverShipmentsShipmentResponseSchema.parse(driverEnvelope(driverShipmentFixture()));
       getDriverTripsResponseSchema.parse(
         driverEnvelope(fixture.state.trips, { next_cursor: null }),

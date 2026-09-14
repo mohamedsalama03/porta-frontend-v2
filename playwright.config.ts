@@ -20,12 +20,13 @@ export default defineConfig({
         '**/public-order.spec.ts',
         '**/public-tracking.spec.ts',
         '**/driver-workspace.spec.ts',
+        '**/driver-trip-actions.spec.ts',
       ],
       use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'driver-chromium',
-      testMatch: '**/driver-workspace.spec.ts',
+      testMatch: ['**/driver-workspace.spec.ts', '**/driver-trip-actions.spec.ts'],
       use: {
         ...devices['Desktop Chrome'],
         baseURL: 'http://localhost:3102',

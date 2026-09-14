@@ -5,6 +5,7 @@ import { createIdempotentAction } from '@/lib/api/idempotency';
 import { ApiError } from '@/lib/api/errors';
 import { driverShipmentSchema, driverTripSchema } from '@/lib/api/generated';
 import * as driverApi from '@/features/driver-workspace/api';
+import * as tripQueries from '@/features/driver-workspace/trip-queries';
 import { DriverShipmentActions } from '@/features/driver-workspace/actions';
 import { DriverShipmentCard, DriverTripCard } from '@/features/driver-workspace/cards';
 import { driverKeys, type DriverShipment } from '@/features/driver-workspace/model';
@@ -43,6 +44,7 @@ function mount(initial = shipment) {
 }
 beforeEach(() => {
   auth.user.permissions = ['shipments.change_status'];
+  vi.spyOn(tripQueries, 'refreshTripAfterShipment').mockResolvedValue();
 });
 afterEach(() => {
   vi.restoreAllMocks();
@@ -149,6 +151,28 @@ describe('driver deliberate mutation', () => {
     expect(
       client.getQueryData<DriverShipment>(driverKeys.shipment(shipment.id))?.current_status,
     ).toBe('READY_FOR_PICKUP');
+    expect(tripQueries.refreshTripAfterShipment).toHaveBeenCalledWith(
+      client,
+      shipment.trip_id,
+      expect.any(Function),
+      shipment.id,
+    );
+  });
+  it('keeps a confirmed shipment write confirmed when trip capability recovery fails', async () => {
+    vi.mocked(tripQueries.refreshTripAfterShipment).mockRejectedValue(
+      new ApiError({ code: 'network' }),
+    );
+    vi.spyOn(driverApi, 'createDriverStatusAction').mockImplementation(() =>
+      createIdempotentAction(async () => ({ ...shipment, current_status: 'READY_FOR_PICKUP' })),
+    );
+    mount();
+    fireEvent.click(screen.getByRole('button', { name: 'تأكيد جاهزية الاستلام' }));
+    fireEvent.click(screen.getByRole('button', { name: 'تأكيد الإجراء' }));
+    expect(await screen.findByRole('heading', { name: 'تم تحديث حالة الشحنة' })).toBeVisible();
+    expect(
+      await screen.findByText(/تم حفظ الإجراء. تعذّر تحديث بعض البيانات المرتبطة/),
+    ).toBeVisible();
+    expect(screen.queryByRole('button', { name: 'إعادة محاولة الإجراء' })).not.toBeInTheDocument();
   });
   it('keeps same logical idempotency key after an unknown network outcome', async () => {
     const keys: string[] = [];
@@ -254,13 +278,13 @@ describe('driver deliberate mutation', () => {
     fireEvent.click(retry);
     expect(read).toHaveBeenCalledTimes(1);
   });
-  it('does not restore the session cache if logout overlaps successful invalidation', async () => {
+  it('does not restore the session cache if logout overlaps cancellation before a success update', async () => {
     vi.spyOn(driverApi, 'createDriverStatusAction').mockImplementation(() =>
       createIdempotentAction(async () => ({ ...shipment, current_status: 'READY_FOR_PICKUP' })),
     );
     const view = mount();
     let finish!: () => void;
-    const invalidate = vi.spyOn(view.client, 'invalidateQueries').mockImplementation(
+    const cancel = vi.spyOn(view.client, 'cancelQueries').mockImplementation(
       () =>
         new Promise<void>((resolve) => {
           finish = resolve;
@@ -268,7 +292,7 @@ describe('driver deliberate mutation', () => {
     );
     fireEvent.click(screen.getByRole('button', { name: 'تأكيد جاهزية الاستلام' }));
     fireEvent.click(screen.getByRole('button', { name: 'تأكيد الإجراء' }));
-    await waitFor(() => expect(invalidate).toHaveBeenCalled());
+    await waitFor(() => expect(cancel).toHaveBeenCalled());
     view.unmount();
     view.client.clear();
     await act(async () => finish());

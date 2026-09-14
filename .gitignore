@@ -23,3 +23,7 @@ reports/driver-interface/performance/mobile-*.html
 reports/driver-interface/performance/desktop-*.html
 reports/driver-interface/performance/mobile-*.json
 reports/driver-interface/performance/desktop-*.json
+reports/driver-trip-actions/performance/mobile-*.html
+reports/driver-trip-actions/performance/desktop-*.html
+reports/driver-trip-actions/performance/mobile-*.json
+reports/driver-trip-actions/performance/desktop-*.json

@@ -78,6 +78,9 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
     authenticated: true,
     session: driverSessionFixture(),
     paginated: false,
+    // Capabilities are supplied explicitly by each scenario, never inferred from status.
+    /** @type {Record<string, string[]>} */
+    tripActions: {},
     trips: [
       driverTripFixture(),
       { ...driverTripFixture(), id: driverFixtureIds.nextTrip, status: 'SCHEDULED' },
@@ -134,9 +137,14 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
     ]).get(path);
     const list = /^\/api\/v1\/driver\/(trips|shipments)$/.exec(path);
     const detail =
-      /^\/api\/v1\/driver\/(trips|shipments)\/([0-9A-HJKMNP-TV-Z]{26})(\/status)?$/.exec(path);
+      /^\/api\/v1\/driver\/(trips|shipments)\/([0-9A-HJKMNP-TV-Za-hjkmnp-tv-z]{26})(\/(?:status|start|arrive|complete))?$/.exec(
+        path,
+      );
     const isStatus = detail?.[1] === 'shipments' && detail[3] === '/status';
-    const allowedMethod = auth || (list || (detail && !detail[3]) ? 'GET' : isStatus ? 'POST' : '');
+    const isTripAction =
+      detail?.[1] === 'trips' && ['/start', '/arrive', '/complete'].includes(detail[3]);
+    const allowedMethod =
+      auth || (list || (detail && !detail[3]) ? 'GET' : isStatus || isTripAction ? 'POST' : '');
     const permittedQuery = list
       ? ['cursor', 'per_page', 'status', ...(list[1] === 'shipments' ? ['trip_id'] : [])]
       : [];
@@ -156,6 +164,18 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
     if (method === 'OPTIONS') return result({ status: 204 });
     const body = details.body;
     if (
+      isTripAction &&
+      (!body ||
+        typeof body !== 'object' ||
+        Array.isArray(body) ||
+        Object.keys(body).length !== 0 ||
+        !details.headers?.['idempotency-key']?.match(/^[a-zA-Z0-9_-]{32,128}$/) ||
+        details.headers?.['x-xsrf-token'] !== driverFixtureCsrf)
+    ) {
+      state.unexpected.push(`INVALID TRIP ACTION WRITE ${path}`);
+      return { kind: 'abort' };
+    }
+    if (
       isStatus &&
       (!body ||
         typeof body !== 'object' ||
@@ -172,7 +192,7 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
       method,
       path,
       query: Object.fromEntries(url.searchParams),
-      ...(isStatus
+      ...(isStatus || isTripAction
         ? { idempotencyKey: details.headers?.['idempotency-key'], body: details.body }
         : {}),
     };
@@ -205,7 +225,9 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
         );
       if (url.searchParams.has('trip_id'))
         data = data.filter(
-          (item) => 'trip_id' in item && item.trip_id === url.searchParams.get('trip_id'),
+          (item) =>
+            'trip_id' in item &&
+            item.trip_id?.toUpperCase() === url.searchParams.get('trip_id')?.toUpperCase(),
         );
       const pageSize = Number(url.searchParams.get('per_page') ?? 20);
       const next = state.paginated && !url.searchParams.has('cursor') && data.length > 1;
@@ -223,14 +245,23 @@ export function createDriverFixtures(frontend, apiOrigin = 'http://localhost:808
     }
     const resource =
       detail?.[1] === 'trips'
-        ? state.trips.find((trip) => trip.id === detail[2])
-        : state.shipments.find((shipment) => shipment.id === detail?.[2]);
+        ? state.trips.find((trip) => trip.id.toUpperCase() === detail[2].toUpperCase())
+        : state.shipments.find(
+            (shipment) => shipment.id.toUpperCase() === detail?.[2]?.toUpperCase(),
+          );
     if (!resource) return result({ status: 404 });
+    // A test must explicitly supply each trip-action outcome through onRequest.
+    if (isTripAction) return result({ status: 409 });
     if (isStatus) {
       if ('current_status' in resource && body && typeof body === 'object' && 'status' in body)
         resource.current_status = String(body.status);
     }
-    return result({ json: driverEnvelope(resource) });
+    return result({
+      json: driverEnvelope(
+        resource,
+        detail?.[1] === 'trips' ? { allowed_actions: state.tripActions[resource.id] ?? [] } : {},
+      ),
+    });
   }
   return { state, resolve };
 }

@@ -46,7 +46,7 @@ const shipment: DriverShipment = {
 };
 const detail = (data: unknown) => ({
   data,
-  meta: { private_fixture: 'Discard loose detail metadata' },
+  meta: { allowed_actions: [], private_fixture: 'Never render loose detail metadata' },
   request_id: requestId,
 });
 const list = (data: unknown[], nextCursor: string | null = null) => ({
@@ -77,7 +77,7 @@ describe('approved driver transport and privacy', () => {
       data: [trip],
       meta: { next_cursor: 'next/+page' },
     });
-    expect(await client.getDriverTrip(tripId)).toEqual(trip);
+    expect(await client.getDriverTrip(tripId)).toEqual(detail(trip));
     expect(
       await client.getDriverShipments({
         trip_id: tripId,
@@ -108,7 +108,7 @@ describe('approved driver transport and privacy', () => {
       status: 'SCHEDULED',
     };
     const fetcher = vi.fn<typeof fetch>().mockResolvedValue(Response.json(detail(minimalTrip)));
-    expect(await workspace(fetcher).getDriverTrip(tripId)).toEqual(minimalTrip);
+    expect(await workspace(fetcher).getDriverTrip(tripId)).toEqual(detail(minimalTrip));
     expect(fetcher).toHaveBeenCalledTimes(1);
   });
 
