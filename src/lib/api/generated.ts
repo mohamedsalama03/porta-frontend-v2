@@ -1,5 +1,5 @@
 // Generated from contracts/porta-api-v1.openapi.json. Do not edit.
-// SHA-256: 2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658
+// SHA-256: 222f184e98664f2e93a24e4313c8d652513ff339f7a6665a30f9f975bc02adf0
 import { z } from 'zod';
 
 export const ulidSchema = z.ulid().regex(new RegExp('^[0-7][0-9A-HJKMNP-TV-Za-hjkmnp-tv-z]{25}$'));
@@ -500,6 +500,21 @@ export const driverShipmentSchema = z.strictObject({
   shipment_type: cityNameSchema.optional(),
 });
 export type DriverShipment = z.infer<typeof driverShipmentSchema>;
+
+export const driverTripActionInputSchema = z
+  .strictObject({})
+  .refine((value) => Object.keys(value).length <= 0, { message: 'Too many properties' });
+export type DriverTripActionInput = z.infer<typeof driverTripActionInputSchema>;
+
+export const driverTripActionMetaSchema = z.looseObject({
+  allowed_actions: z
+    .array(z.enum(['START', 'CONFIRM_ARRIVAL', 'COMPLETE']))
+    .max(3)
+    .refine((items) => new Set(items.map((item) => JSON.stringify(item))).size === items.length, {
+      message: 'Values must be unique',
+    }),
+});
+export type DriverTripActionMeta = z.infer<typeof driverTripActionMetaSchema>;
 
 export const driverTripSchema = z.strictObject({
   id: ulidSchema,
@@ -1144,7 +1159,43 @@ export const getDriverTripsTripPathSchema = z.strictObject({ trip: ulidSchema })
 
 export const getDriverTripsTripResponseSchema = z.strictObject({
   data: driverTripSchema,
-  meta: metaSchema,
+  meta: driverTripActionMetaSchema,
+  request_id: z.uuid(),
+});
+
+export const postDriverTripsTripStartQuerySchema = z.strictObject({});
+
+export const postDriverTripsTripStartPathSchema = z.strictObject({ trip: ulidSchema });
+
+export const postDriverTripsTripStartBodySchema = driverTripActionInputSchema;
+
+export const postDriverTripsTripStartResponseSchema = z.strictObject({
+  data: driverTripSchema,
+  meta: driverTripActionMetaSchema,
+  request_id: z.uuid(),
+});
+
+export const postDriverTripsTripArriveQuerySchema = z.strictObject({});
+
+export const postDriverTripsTripArrivePathSchema = z.strictObject({ trip: ulidSchema });
+
+export const postDriverTripsTripArriveBodySchema = driverTripActionInputSchema;
+
+export const postDriverTripsTripArriveResponseSchema = z.strictObject({
+  data: driverTripSchema,
+  meta: driverTripActionMetaSchema,
+  request_id: z.uuid(),
+});
+
+export const postDriverTripsTripCompleteQuerySchema = z.strictObject({});
+
+export const postDriverTripsTripCompletePathSchema = z.strictObject({ trip: ulidSchema });
+
+export const postDriverTripsTripCompleteBodySchema = driverTripActionInputSchema;
+
+export const postDriverTripsTripCompleteResponseSchema = z.strictObject({
+  data: driverTripSchema,
+  meta: driverTripActionMetaSchema,
   request_id: z.uuid(),
 });
 
@@ -1486,6 +1537,24 @@ export const approvedOperations = {
     method: 'GET',
     permission: null,
     idempotent: false,
+  },
+  postDriverTripsTripStart: {
+    path: '/api/v1/driver/trips/{trip}/start',
+    method: 'POST',
+    permission: null,
+    idempotent: true,
+  },
+  postDriverTripsTripArrive: {
+    path: '/api/v1/driver/trips/{trip}/arrive',
+    method: 'POST',
+    permission: null,
+    idempotent: true,
+  },
+  postDriverTripsTripComplete: {
+    path: '/api/v1/driver/trips/{trip}/complete',
+    method: 'POST',
+    permission: null,
+    idempotent: true,
   },
   getDriverShipments: {
     path: '/api/v1/driver/shipments',

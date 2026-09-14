@@ -15,6 +15,7 @@ const allowed = new Set([
   'properties',
   'required',
   'additionalProperties',
+  'maxProperties',
   'items',
   'enum',
   'const',
@@ -97,6 +98,11 @@ function emit(schema) {
       code = `${schema.additionalProperties === false ? 'z.strictObject' : 'z.looseObject'}({${fields.join(',')}})`;
       if (schema.additionalProperties && typeof schema.additionalProperties === 'object')
         code += `.catchall(${emit(schema.additionalProperties)})`;
+      if (schema.maxProperties !== undefined) {
+        if (!Number.isSafeInteger(schema.maxProperties) || schema.maxProperties < 0)
+          throw new Error('maxProperties must be a nonnegative safe integer');
+        code += `.refine((value) => Object.keys(value).length <= ${schema.maxProperties}, {message:"Too many properties"})`;
+      }
       break;
     }
     case 'string': {

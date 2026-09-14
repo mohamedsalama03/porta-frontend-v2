@@ -4564,7 +4564,7 @@
                       "$ref": "#/components/schemas/DriverTrip"
                     },
                     "meta": {
-                      "$ref": "#/components/schemas/Meta"
+                      "$ref": "#/components/schemas/DriverTripActionMeta"
                     },
                     "request_id": {
                       "type": "string",
@@ -4602,7 +4602,386 @@
           "500": {
             "$ref": "#/components/responses/ApiError"
           }
-        }
+        },
+        "description": "Requires an active DRIVER user linked to an active profile and assigned to this trip; trips outside that assignment use scoped 404. Returns the unchanged driver-safe trip data and meta.allowed_actions derived from the shared trip lifecycle prerequisites. Capabilities are an advisory snapshot, rechecked with current ownership and active-profile authorization inside the action transaction. Fetch this detail before offering trip actions and after an idempotent replay or 409; the trip list does not include allowed_actions."
+      }
+    },
+    "/api/v1/driver/trips/{trip}/start": {
+      "post": {
+        "tags": [
+          "Driver work"
+        ],
+        "summary": "Start the authenticated driver's assigned trip",
+        "operationId": "postDriverTripsTripStart",
+        "security": [
+          {
+            "sessionCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "trip",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Ulid"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/IdempotencyKey"
+          },
+          {
+            "$ref": "#/components/parameters/XsrfToken"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful trip action or an authorized replay of its saved response.",
+            "headers": {
+              "X-Request-ID": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "Idempotency-Replayed": {
+                "description": "Present with value true for an identical successful retry.",
+                "schema": {
+                  "type": "string",
+                  "enum": [
+                    "true"
+                  ]
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "data",
+                    "meta",
+                    "request_id"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/DriverTrip"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/DriverTripActionMeta"
+                    },
+                    "request_id": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "401": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "403": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "404": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "409": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "413": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "415": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "419": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "422": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "429": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "500": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "503": {
+            "$ref": "#/components/responses/ApiError"
+          }
+        },
+        "requestBody": {
+          "description": "Send {} with application/json. No request fields are accepted; the body may also be omitted.",
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DriverTripActionInput"
+              },
+              "example": {}
+            }
+          }
+        },
+        "description": "START requires LOADING, an active assigned driver, at least one shipment, and every shipment PREPARING and assigned to that driver. SCHEDULED is not startable; existing Admin preparation must first move the trip to LOADING. Atomically advances the trip to DEPARTED and all shipments to IN_TRANSIT. Requires an active DRIVER user linked to an active profile assigned to this trip; non-driver users receive 403 and absent/inactive profiles or trips outside the assignment receive scoped 404. Ownership and account/profile activity are rechecked under transaction locks, including before a successful replay. Send an empty JSON object {}; an omitted body is accepted. On a fresh request, client-supplied driver IDs, target states, or any other object fields return 422; changing the body of a saved successful request returns the idempotency conflict described below. Malformed or non-object JSON, duplicate keys, and write query parameters return 400. Uses the existing trip state machine, shipment transitions, audit/history and notification outbox behavior. Returns the existing driver-safe trip in data and an advisory meta.allowed_actions snapshot, with no financial, staff, notes, audit, or additional contact fields. Within these three driver trip action routes, the same authenticated account/profile context shares an idempotency-key namespace across actions and trip IDs. The same successful method/path/body replays without duplicate effects; a different action, trip or body with that key returns 409 after current authorization checks. Other route families retain their existing key scope. Replays preserve saved data/meta, set Idempotency-Replayed: true and use a fresh request_id. Refetch driver trip detail after a replay or 409 before choosing another action."
+      }
+    },
+    "/api/v1/driver/trips/{trip}/arrive": {
+      "post": {
+        "tags": [
+          "Driver work"
+        ],
+        "summary": "Confirm arrival of the authenticated driver's assigned trip",
+        "operationId": "postDriverTripsTripArrive",
+        "security": [
+          {
+            "sessionCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "trip",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Ulid"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/IdempotencyKey"
+          },
+          {
+            "$ref": "#/components/parameters/XsrfToken"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful trip action or an authorized replay of its saved response.",
+            "headers": {
+              "X-Request-ID": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "Idempotency-Replayed": {
+                "description": "Present with value true for an identical successful retry.",
+                "schema": {
+                  "type": "string",
+                  "enum": [
+                    "true"
+                  ]
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "data",
+                    "meta",
+                    "request_id"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/DriverTrip"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/DriverTripActionMeta"
+                    },
+                    "request_id": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "401": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "403": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "404": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "409": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "413": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "415": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "419": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "422": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "429": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "500": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "503": {
+            "$ref": "#/components/responses/ApiError"
+          }
+        },
+        "requestBody": {
+          "description": "Send {} with application/json. No request fields are accepted; the body may also be omitted.",
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DriverTripActionInput"
+              },
+              "example": {}
+            }
+          }
+        },
+        "description": "CONFIRM_ARRIVAL requires DEPARTED and every shipment IN_TRANSIT. Atomically advances the trip to ARRIVED and all shipments to ARRIVED_CITY. The driver may then use the existing shipment status endpoint for ARRIVED_CITY to READY_FOR_PICKUP and READY_FOR_PICKUP to DELIVERED. Requires an active DRIVER user linked to an active profile assigned to this trip; non-driver users receive 403 and absent/inactive profiles or trips outside the assignment receive scoped 404. Ownership and account/profile activity are rechecked under transaction locks, including before a successful replay. Send an empty JSON object {}; an omitted body is accepted. On a fresh request, client-supplied driver IDs, target states, or any other object fields return 422; changing the body of a saved successful request returns the idempotency conflict described below. Malformed or non-object JSON, duplicate keys, and write query parameters return 400. Uses the existing trip state machine, shipment transitions, audit/history and notification outbox behavior. Returns the existing driver-safe trip in data and an advisory meta.allowed_actions snapshot, with no financial, staff, notes, audit, or additional contact fields. Within these three driver trip action routes, the same authenticated account/profile context shares an idempotency-key namespace across actions and trip IDs. The same successful method/path/body replays without duplicate effects; a different action, trip or body with that key returns 409 after current authorization checks. Other route families retain their existing key scope. Replays preserve saved data/meta, set Idempotency-Replayed: true and use a fresh request_id. Refetch driver trip detail after a replay or 409 before choosing another action."
+      }
+    },
+    "/api/v1/driver/trips/{trip}/complete": {
+      "post": {
+        "tags": [
+          "Driver work"
+        ],
+        "summary": "Complete the authenticated driver's assigned trip",
+        "operationId": "postDriverTripsTripComplete",
+        "security": [
+          {
+            "sessionCookie": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "trip",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Ulid"
+            }
+          },
+          {
+            "$ref": "#/components/parameters/IdempotencyKey"
+          },
+          {
+            "$ref": "#/components/parameters/XsrfToken"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful trip action or an authorized replay of its saved response.",
+            "headers": {
+              "X-Request-ID": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "Idempotency-Replayed": {
+                "description": "Present with value true for an identical successful retry.",
+                "schema": {
+                  "type": "string",
+                  "enum": [
+                    "true"
+                  ]
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "data",
+                    "meta",
+                    "request_id"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/DriverTrip"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/DriverTripActionMeta"
+                    },
+                    "request_id": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "401": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "403": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "404": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "409": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "413": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "415": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "419": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "422": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "429": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "500": {
+            "$ref": "#/components/responses/ApiError"
+          },
+          "503": {
+            "$ref": "#/components/responses/ApiError"
+          }
+        },
+        "requestBody": {
+          "description": "Send {} with application/json. No request fields are accepted; the body may also be omitted.",
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DriverTripActionInput"
+              },
+              "example": {}
+            }
+          }
+        },
+        "description": "COMPLETE requires ARRIVED and every shipment DELIVERED; READY_FOR_PICKUP is insufficient. Advances the trip to COMPLETED using the existing trip audit behavior, without additional shipment transitions, timestamps, or financial effects. Requires an active DRIVER user linked to an active profile assigned to this trip; non-driver users receive 403 and absent/inactive profiles or trips outside the assignment receive scoped 404. Ownership and account/profile activity are rechecked under transaction locks, including before a successful replay. Send an empty JSON object {}; an omitted body is accepted. On a fresh request, client-supplied driver IDs, target states, or any other object fields return 422; changing the body of a saved successful request returns the idempotency conflict described below. Malformed or non-object JSON, duplicate keys, and write query parameters return 400. Uses the existing trip state machine, shipment transitions, audit/history and notification outbox behavior. Returns the existing driver-safe trip in data and an advisory meta.allowed_actions snapshot, with no financial, staff, notes, audit, or additional contact fields. Within these three driver trip action routes, the same authenticated account/profile context shares an idempotency-key namespace across actions and trip IDs. The same successful method/path/body replays without duplicate effects; a different action, trip or body with that key returns 409 after current authorization checks. Other route families retain their existing key scope. Replays preserve saved data/meta, set Idempotency-Replayed: true and use a fresh request_id. Refetch driver trip detail after a replay or 409 before choosing another action."
       }
     },
     "/api/v1/driver/shipments": {
@@ -7422,6 +7801,37 @@
           "shipment_size"
         ],
         "additionalProperties": false
+      },
+      "DriverTripActionInput": {
+        "type": "object",
+        "description": "Empty object for an explicit driver trip action. The action and authenticated driver determine the transition.",
+        "properties": {},
+        "maxProperties": 0,
+        "additionalProperties": false
+      },
+      "DriverTripActionMeta": {
+        "type": "object",
+        "description": "Driver trip detail and action response metadata. This advisory capability snapshot is derived from shared lifecycle prerequisites for the authorized driver and is rechecked at mutation time. An idempotent replay preserves the saved snapshot; refetch detail for current capabilities.",
+        "properties": {
+          "allowed_actions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "START",
+                "CONFIRM_ARRIVAL",
+                "COMPLETE"
+              ]
+            },
+            "uniqueItems": true,
+            "maxItems": 3,
+            "description": "START: LOADING with an active assigned driver and nonempty, consistently assigned PREPARING shipments. CONFIRM_ARRIVAL: DEPARTED with every shipment IN_TRANSIT. COMPLETE: ARRIVED with every shipment DELIVERED. Empty when no driver trip action is currently available."
+          }
+        },
+        "required": [
+          "allowed_actions"
+        ],
+        "additionalProperties": true
       },
       "DriverTrip": {
         "type": "object",
