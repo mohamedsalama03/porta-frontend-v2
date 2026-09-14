@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { getDriverTrips, getDriverShipments } from './api';
-import { driverKeys } from './model';
+import { driverKeys, driverShipmentIdentity } from './model';
 import { useDriverRead } from './use-driver-read';
 import { DriverTripCard, DriverShipmentCard } from './cards';
 import { DriverReadFeedback, DriverSkeleton, DriverEmpty } from './ui';
@@ -55,7 +55,7 @@ export function DriverHome() {
           (shipments.data.data.length ? (
             <ul className="driver-work-list">
               {shipments.data.data.slice(0, 3).map((shipment) => (
-                <DriverShipmentCard key={shipment.id} shipment={shipment} />
+                <DriverShipmentCard key={driverShipmentIdentity(shipment.id)} shipment={shipment} />
               ))}
             </ul>
           ) : (

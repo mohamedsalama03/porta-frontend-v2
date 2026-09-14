@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { shipmentStatusSchema } from '@/lib/api/generated';
 import { getDriverShipments } from './api';
-import { driverKeys, parseDriverShipmentsQuery, driverQueryString } from './model';
+import { driverKeys, driverShipmentIdentity, parseDriverShipmentsQuery, driverQueryString } from './model';
 import { driverShipmentStatusLabels } from './status';
 import { useDriverRead } from './use-driver-read';
 import { DriverShipmentCard } from './cards';
@@ -64,7 +64,7 @@ export function DriverShipmentList({ tripId }: { tripId?: string }) {
             (query.data.data.length ? (
               <ul className="driver-work-list">
                 {query.data.data.map((shipment) => (
-                  <DriverShipmentCard key={shipment.id} shipment={shipment} />
+                  <DriverShipmentCard key={driverShipmentIdentity(shipment.id)} shipment={shipment} />
                 ))}
               </ul>
             ) : (

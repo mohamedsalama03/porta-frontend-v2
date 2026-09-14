@@ -1,6 +1,6 @@
 import type { Query, QueryClient } from '@tanstack/react-query';
 import { getDriverShipment, getDriverTrip } from './api';
-import { driverKeys } from './model';
+import { driverKeys, driverShipmentIdentity } from './model';
 import { readDriverResource } from './use-driver-read';
 
 type CurrentSession = () => boolean;
@@ -21,7 +21,9 @@ export async function refreshDriverTripDependents(
           (includeShipments &&
             (query.queryKey[1] === 'shipments' ||
               (query.queryKey[1] === 'shipment' &&
-                String(query.queryKey[2]).toLowerCase() !== excludeShipmentId?.toLowerCase())))),
+                (!excludeShipmentId ||
+                  driverShipmentIdentity(String(query.queryKey[2])) !==
+                    driverShipmentIdentity(excludeShipmentId)))))),
     }),
   );
   await client.invalidateQueries({

@@ -3,6 +3,7 @@ import {
   getDriverShipmentsQuerySchema,
   getDriverTripsQuerySchema,
   getDriverTripsTripResponseSchema,
+  ulidSchema,
   type CursorMeta,
   type DriverTripActionMeta,
 } from '@/lib/api/generated';
@@ -49,6 +50,12 @@ export function driverQueryString(query: DriverTripsQuery | DriverShipmentsQuery
 }
 
 const driverKey = ['driver-workspace'] as const;
+
+/** One frontend identity for a shipment ULID; opaque filters and invalid route values stay intact. */
+export function driverShipmentIdentity(id: string): string {
+  return ulidSchema.safeParse(id).success ? id.toUpperCase() : id;
+}
+
 export const driverKeys = {
   all: driverKey,
   context: () => [...driverKey, 'context'] as const,
@@ -58,7 +65,7 @@ export const driverKeys = {
   trip: (id: string) => [...driverKey, 'trip', id.toUpperCase()] as const,
   shipments: (query: DriverShipmentsQuery = {}) =>
     [...driverKey, 'shipments', { ...query, per_page: query.per_page ?? 20 }] as const,
-  shipment: (id: string) => [...driverKey, 'shipment', id] as const,
+  shipment: (id: string) => [...driverKey, 'shipment', driverShipmentIdentity(id)] as const,
 };
 
 /** Only dial a plain phone number. Never turn URI parameters, USSD or arbitrary text into actions. */

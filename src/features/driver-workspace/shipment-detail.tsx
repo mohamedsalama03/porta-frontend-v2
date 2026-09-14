@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 import { ulidSchema } from '@/lib/api/generated';
 import { getDriverShipment } from './api';
-import { driverKeys, safeTelHref } from './model';
+import { driverKeys, driverShipmentIdentity, safeTelHref } from './model';
 import {
   driverShipmentStatusLabels,
   driverDeliveryMethodLabels,
@@ -123,7 +123,7 @@ export function DriverShipmentDetail({ id }: { id: string }) {
                   </Link>
                 )}
               </section>
-              <DriverShipmentActions key={shipment.id} shipment={shipment} />
+              <DriverShipmentActions key={driverShipmentIdentity(shipment.id)} shipment={shipment} />
             </>
           )}
           <DriverReadFeedback query={query} />
