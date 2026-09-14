@@ -1,0 +1,337 @@
+.driver-shell {
+  min-block-size: 100dvh;
+  padding-block-end: calc(92px + env(safe-area-inset-bottom));
+}
+
+.driver-header {
+  background: var(--surface);
+  border-block-end: 1px solid var(--border);
+}
+
+.driver-header-inner,
+.driver-navigation-inner,
+.driver-main {
+  inline-size: min(100%, 1040px);
+  margin-inline: auto;
+}
+
+.driver-header-inner {
+  min-block-size: 72px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.driver-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-block-size: 48px;
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.driver-brand svg {
+  color: var(--accent);
+  inline-size: 26px;
+  block-size: 26px;
+}
+
+.driver-header-label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.driver-navigation {
+  position: fixed;
+  z-index: 30;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding-block-end: env(safe-area-inset-bottom);
+  background: var(--surface);
+  border-block-start: 1px solid var(--border);
+}
+
+.driver-navigation-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 8px 12px;
+  gap: 4px;
+}
+
+.driver-navigation-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-block-size: 58px;
+  padding: 6px 4px;
+  border-radius: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color var(--duration-fast) var(--ease-out);
+}
+
+.driver-navigation-link svg {
+  inline-size: 21px;
+  block-size: 21px;
+}
+
+.driver-navigation-link[aria-current='page'] {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.driver-navigation-link:hover {
+  color: var(--foreground);
+  background: var(--surface-raised);
+}
+
+.driver-main {
+  padding: 24px 20px 32px;
+  outline: none;
+}
+
+.driver-skip-link {
+  position: fixed;
+  z-index: 60;
+  inset-inline-start: 12px;
+  inset-block-start: 8px;
+  padding: 12px 16px;
+  transform: translateY(-150%);
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+.driver-skip-link:focus {
+  transform: none;
+}
+
+.driver-session-state {
+  min-block-size: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px 20px;
+}
+
+.driver-access-panel {
+  inline-size: min(100%, 460px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.driver-access-icon {
+  inline-size: 30px;
+  block-size: 30px;
+  color: var(--accent);
+}
+
+.driver-access-panel h1,
+.driver-account h1 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.driver-access-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.driver-shell-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-block-size: 48px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+:root[data-theme='dark'] .driver-shell-button {
+  color: var(--background);
+}
+
+.driver-shell-button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.driver-shell-button svg {
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+.driver-shell-button-secondary,
+:root[data-theme='dark'] .driver-shell-button-secondary {
+  background: var(--surface);
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+.driver-shell-button-secondary:hover:not(:disabled) {
+  background: var(--surface-raised);
+}
+
+.driver-scope-notice {
+  padding: 12px 20px;
+  color: var(--warning);
+  background: var(--warning-soft);
+  text-align: center;
+}
+
+.driver-loading {
+  display: grid;
+  gap: 16px;
+  inline-size: 100%;
+  max-inline-size: 680px;
+}
+
+.driver-loading p {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+.driver-loading-card {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.driver-loading-line {
+  display: block;
+  block-size: 14px;
+  inline-size: 100%;
+  background: var(--surface-raised);
+  border-radius: 4px;
+}
+
+.driver-loading-line-short {
+  inline-size: 30%;
+}
+
+.driver-loading-line-medium {
+  inline-size: 65%;
+}
+
+.driver-account {
+  max-inline-size: 680px;
+}
+
+.driver-account-intro {
+  margin: 8px 0 24px;
+  color: var(--muted);
+}
+
+.driver-account-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.driver-account-symbol {
+  flex-shrink: 0;
+  inline-size: 26px;
+  block-size: 26px;
+  color: var(--accent);
+}
+
+.driver-account-profile dl {
+  display: grid;
+  gap: 22px;
+  min-inline-size: 0;
+  margin: 0;
+}
+
+.driver-account-profile dt {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.driver-account-profile dd {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.driver-account-logout {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  margin-block-start: 28px;
+}
+
+.driver-account-logout p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .driver-shell {
+    padding-block-end: 0;
+  }
+
+  .driver-navigation {
+    position: static;
+    border-block-start: 0;
+    border-block-end: 1px solid var(--border);
+    padding-block-end: 0;
+  }
+
+  .driver-navigation-inner {
+    display: flex;
+    padding: 8px 24px;
+    gap: 8px;
+  }
+
+  .driver-navigation-link {
+    flex-direction: row;
+    gap: 9px;
+    min-block-size: 48px;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .driver-header-inner {
+    padding-inline: 32px;
+  }
+
+  .driver-main {
+    padding: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .driver-shell *,
+  .driver-session-state * {
+    transition: none;
+    animation: none;
+  }
+}

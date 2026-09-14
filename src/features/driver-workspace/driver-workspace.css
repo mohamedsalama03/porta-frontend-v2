@@ -1,0 +1,316 @@
+.driver-content {
+  min-width: 0;
+}
+.driver-page-heading {
+  margin-block-end: 24px;
+}
+.driver-page-heading h1 {
+  font-size: 26px;
+}
+.driver-page-heading h2 {
+  font-size: 21px;
+}
+.driver-page-heading p {
+  margin-block-start: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 60ch;
+}
+.driver-section + .driver-section {
+  margin-block-start: 36px;
+}
+.driver-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-end: 16px;
+}
+.driver-section-heading h2 {
+  font-size: 20px;
+}
+.driver-work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.driver-work-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.driver-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-end: 16px;
+}
+.driver-status {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: var(--radius-control);
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-size: 13px;
+  font-weight: 600;
+}
+.driver-status[data-complete='true'] {
+  color: var(--success);
+  background: var(--success-soft);
+}
+.driver-route {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin-block-end: 12px;
+  overflow-wrap: anywhere;
+}
+.driver-route svg {
+  flex: 0 0 auto;
+  color: var(--muted);
+}
+.driver-work-card h3:not(.driver-route) {
+  font-size: 17px;
+  margin-block-end: 8px;
+}
+.driver-secondary {
+  color: var(--muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.driver-tracking-number {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 18px;
+  font-weight: 700;
+  user-select: all;
+}
+.driver-open-link {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block-start: 16px;
+  padding-block-start: 10px;
+  border-block-start: 1px solid var(--border);
+  color: var(--accent);
+  font-weight: 600;
+}
+.driver-open-link:hover,
+.driver-text-link:hover {
+  text-decoration: underline;
+}
+.driver-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+.driver-content > .driver-text-link {
+  margin-block-end: 12px;
+}
+.driver-refresh-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-start: 16px;
+}
+.driver-content .button {
+  min-height: 48px;
+  font-size: 14px;
+}
+.driver-content [aria-disabled='true'] {
+  opacity: 0.52;
+  cursor: not-allowed;
+}
+.driver-filter {
+  display: grid;
+  gap: 8px;
+  margin-block-end: 20px;
+  max-width: 400px;
+}
+.driver-filter label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.driver-filter select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--foreground);
+}
+.driver-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block-start: 24px;
+}
+.driver-empty {
+  padding: 28px 0;
+  color: var(--muted);
+  border-block: 1px solid var(--border);
+  font-size: 15px;
+}
+.driver-feedback {
+  margin-block: 16px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--surface-raised);
+  overflow-wrap: anywhere;
+}
+.driver-feedback > * + * {
+  margin-block-start: 8px;
+}
+.driver-feedback h2 {
+  font-size: 18px;
+}
+.driver-card-skeleton {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  min-height: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.driver-card-skeleton > .skeleton {
+  height: 26px;
+  width: 75%;
+}
+.driver-detail {
+  padding: 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-width: 0;
+}
+.driver-detail > h2 {
+  font-size: 22px;
+  margin-block-start: 16px;
+  overflow-wrap: anywhere;
+}
+.driver-detail-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-block: 24px 0;
+}
+.driver-detail-grid dt {
+  font-size: 12px;
+  color: var(--muted);
+  margin-block-end: 4px;
+}
+.driver-detail-grid dd {
+  margin: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.driver-detail-note {
+  margin-block-start: 24px;
+}
+.driver-address {
+  padding-block-start: 24px;
+  margin-block-start: 24px;
+  border-block-start: 1px solid var(--border);
+}
+.driver-address h3,
+.driver-contact h3 {
+  font-size: 16px;
+  margin-block-end: 8px;
+}
+.driver-address p {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.driver-contacts {
+  display: grid;
+  gap: 24px;
+  margin-block-start: 24px;
+  border-block-start: 1px solid var(--border);
+  padding-block-start: 24px;
+}
+.driver-contact {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  min-width: 0;
+}
+.driver-contact p,
+.driver-contact bdi {
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.driver-action-area {
+  margin-block: 24px;
+}
+.driver-main-action {
+  width: 100%;
+}
+.driver-confirmation {
+  padding: 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.driver-confirmation h2,
+.driver-action-success h2 {
+  font-size: 20px;
+}
+.driver-confirmation > p {
+  margin-block-start: 12px;
+}
+.driver-action-buttons {
+  display: grid;
+  gap: 12px;
+  margin-block-start: 24px;
+}
+.driver-action-success {
+  padding: 20px;
+  margin-block-end: 20px;
+  background: var(--success-soft);
+  color: var(--success);
+  border-radius: var(--radius);
+}
+.driver-action-success p {
+  margin-block-start: 6px;
+}
+.driver-detail + .driver-refresh-row + .driver-section {
+  margin-block-start: 32px;
+}
+@media (min-width: 768px) {
+  .driver-work-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .driver-detail {
+    padding: 28px;
+  }
+  .driver-contacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .driver-action-buttons {
+    display: flex;
+  }
+  .driver-action-buttons .button {
+    flex: 1;
+  }
+}

@@ -1,11 +1,11 @@
 import { z } from 'zod';
 import { getAuthMeResponseSchema, loginInputSchema, meSchema, type Me } from '@/lib/api/generated';
 
-export type SessionUser = Pick<Me, 'name' | 'email' | 'permissions'>;
+export type SessionUser = Pick<Me, 'name' | 'email' | 'role' | 'permissions'>;
 
-/** Project only the display identity and exact permissions after contract validation. */
+/** Project display identity, validated role and exact permissions; omit private identifiers. */
 function projectSessionUser(user: Me): SessionUser {
-  return { name: user.name, email: user.email, permissions: user.permissions };
+  return { name: user.name, email: user.email, role: user.role, permissions: user.permissions };
 }
 
 export const sessionUserSchema = meSchema.transform(projectSessionUser);

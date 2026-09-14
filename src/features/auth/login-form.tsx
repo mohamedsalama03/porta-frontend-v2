@@ -32,7 +32,9 @@ export function LoginForm() {
   });
   const destination = search.has('returnTo')
     ? safeReturnPath(search.get('returnTo'))
-    : getNavigationHref(getNavigationItems(user, 'live')[0]?.key ?? 'settings', 'live');
+    : user?.role === 'DRIVER'
+      ? '/driver'
+      : getNavigationHref(getNavigationItems(user, 'live')[0]?.key ?? 'settings', 'live');
 
   useEffect(() => {
     if (status === 'authenticated') router.replace(destination);
