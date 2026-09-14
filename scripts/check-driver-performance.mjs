@@ -41,20 +41,70 @@ const buildId = (await readFile('.next/BUILD_ID', 'utf8')).trim();
 if (!buildId) throw new Error('A completed production build is required.');
 const output = 'reports/driver-interface/performance';
 await mkdir(output, { recursive: true });
+const routes = [
+  { name: 'home', path: '/driver' },
+  { name: 'trip-detail', path: `/driver/trips/${driverFixtureIds.trip}` },
+];
+const allMeasurements = ['mobile', 'desktop'].flatMap((mode) =>
+  routes.map((route) => `${mode}-${route.name}`),
+);
+const selected = process.env.PORTA_DRIVER_PERFORMANCE_ONLY
+  ? process.env.PORTA_DRIVER_PERFORMANCE_ONLY.split(',').map((name) => name.trim())
+  : null;
+if (selected?.some((name) => !allMeasurements.includes(name))) {
+  throw new Error(`PORTA_DRIVER_PERFORMANCE_ONLY must select from ${allMeasurements.join(', ')}.`);
+}
+const runStartedAt = new Date().toISOString();
+let previous;
+if (selected) {
+  previous = JSON.parse(await readFile(`${output}/results.json`, 'utf8'));
+  if (previous.buildId !== buildId || previous.base !== base || previous.apiOrigin !== apiOrigin) {
+    throw new Error(
+      'Focused measurements can merge only with the same build and frontend/API origins.',
+    );
+  }
+  // Preserve the earlier selected measurements as evidence of why they were rerun.
+  const archiveSuffix = runStartedAt.replaceAll(':', '-');
+  for (const name of new Set(selected)) {
+    for (const extension of ['json', 'html']) {
+      try {
+        const original = await readFile(`${output}/${name}.${extension}`);
+        await writeFile(`${output}/${name}.before-${archiveSuffix}.${extension}`, original);
+      } catch (error) {
+        if (error.code !== 'ENOENT') throw error;
+      }
+    }
+  }
+}
 const report = {
+  ...previous,
   scope:
     'Production localhost Lighthouse lab navigation of loaded driver home and trip detail, with synthetic authenticated identity and assigned work intercepted in memory. No live credentials, operational writes, real API latency or field INP are measured. These results do not establish backend ownership enforcement or a field SLA.',
   base,
   apiOrigin,
   buildId,
-  startedAt: new Date().toISOString(),
-  results: [],
-  failures: [],
+  startedAt: previous?.startedAt ?? runStartedAt,
+  results:
+    previous?.results.filter((record) => !selected.includes(`${record.mode}-${record.page}`)) ?? [],
+  failures:
+    previous?.failures.filter(
+      (failure) => !selected.some((name) => failure.startsWith(`${name}:`)),
+    ) ?? [],
+  reruns: previous
+    ? [
+        ...(previous.reruns ?? []),
+        {
+          startedAt: runStartedAt,
+          selected,
+          reason: 'Focused same-build measurement; prior selected raw reports were archived.',
+          previousFailures: previous.failures,
+          previousResults: previous.results.filter((record) =>
+            selected.includes(`${record.mode}-${record.page}`),
+          ),
+        },
+      ]
+    : [],
 };
-const routes = [
-  { name: 'home', path: '/driver' },
-  { name: 'trip-detail', path: `/driver/trips/${driverFixtureIds.trip}` },
-];
 const browser = await puppeteer.launch({
   executablePath: chromium.executablePath(),
   headless: true,
@@ -63,6 +113,8 @@ const browser = await puppeteer.launch({
 try {
   for (const mode of ['mobile', 'desktop']) {
     for (const route of routes) {
+      const name = `${mode}-${route.name}`;
+      if (selected && !selected.includes(name)) continue;
       const context = await browser.createBrowserContext();
       const page = await context.newPage();
       const fixtures = createDriverFixtures(base, apiOrigin);
@@ -93,7 +145,6 @@ try {
         }
       });
 
-      const name = `${mode}-${route.name}`;
       try {
         const measured = await lighthouse(
           `${base}${route.path}`,
@@ -119,6 +170,7 @@ try {
         const record = {
           mode,
           page: route.name,
+          measuredAt: new Date().toISOString(),
           path: route.path,
           finalUrl: measured.lhr.finalDisplayedUrl,
           scores: Object.fromEntries(
@@ -148,22 +200,58 @@ try {
           interceptionErrors,
           developmentScripts: developmentScripts.map(({ url }) => url),
         };
-        const loaded = await page.evaluate(
-          ({ pageName, tracking }) => {
-            const main = document.querySelector('#driver-main');
-            const text = main?.textContent ?? '';
-            return {
-              shell: Boolean(main),
-              workLoaded: text.includes(tracking),
-              pageLoaded:
-                pageName === 'home'
+        const readLoadedState = ({ pageName, tracking }) => {
+          const main = document.querySelector('#driver-main');
+          const text = main?.textContent ?? '';
+          return {
+            shell: Boolean(main),
+            workLoaded: text.includes(tracking),
+            pageLoaded:
+              pageName === 'home'
+                ? text.includes('من رحلاتك') && text.includes('من شحناتك')
+                : Boolean(main?.querySelector('[aria-label="بيانات الرحلة"]')) &&
+                  text.includes('شحنات الرحلة'),
+          };
+        };
+        const contentArgs = { pageName: route.name, tracking: driverFixtureTracking };
+        const initialLoaded = await page.evaluate(readLoadedState, contentArgs);
+        const validationStartedAt = Date.now();
+        // Lighthouse's BFCacheFailures gatherer leaves/reloads this private no-store
+        // route after recording navigation metrics. Wait for that final page to
+        // rehydrate before checking content; this wait is outside the measured trace.
+        let contentWaitError = null;
+        try {
+          await page.waitForFunction(
+            ({ pageName, tracking }) => {
+              const main = document.querySelector('#driver-main');
+              const text = main?.textContent ?? '';
+              return (
+                Boolean(main) &&
+                text.includes(tracking) &&
+                (pageName === 'home'
                   ? text.includes('من رحلاتك') && text.includes('من شحناتك')
                   : Boolean(main?.querySelector('[aria-label="بيانات الرحلة"]')) &&
-                    text.includes('شحنات الرحلة'),
-            };
-          },
-          { pageName: route.name, tracking: driverFixtureTracking },
-        );
+                    text.includes('شحنات الرحلة'))
+              );
+            },
+            { timeout: 10_000 },
+            contentArgs,
+          );
+        } catch (error) {
+          contentWaitError = error.message;
+        }
+        const loaded = await page.evaluate(readLoadedState, contentArgs);
+        record.contentValidation = {
+          timing:
+            'After all Lighthouse audits; excludes this wait from reported navigation metrics.',
+          initialLoaded,
+          waitMs: Date.now() - validationStartedAt,
+          error: contentWaitError,
+          screenshotRecordedDuringMeasurement: Boolean(
+            measured.lhr.audits['final-screenshot']?.details?.data,
+          ),
+        };
+        await page.screenshot({ path: `${output}/${name}-verified.png`, fullPage: true });
         record.loaded = loaded;
         record.apiIsolation = {
           sessionRead: record.apiCalls.some((call) => call.path === '/api/v1/auth/me'),
@@ -182,6 +270,7 @@ try {
           record.runtimeError ||
           record.unexpected.length ||
           interceptionErrors.length ||
+          contentWaitError ||
           developmentScripts.length ||
           !Object.values(loaded).every(Boolean) ||
           !record.apiIsolation.sessionRead ||
