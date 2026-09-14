@@ -20,6 +20,7 @@ describe('permission presentation', () => {
     expect(sessionResponseSchema.parse(testSessionResponse).data).toEqual({
       name: 'موظف العمليات',
       email: 'operator@example.test',
+      role: 'BRANCH_OPERATOR',
       permissions: ['shipments.view'],
     });
     expect(
@@ -62,6 +63,20 @@ describe('safe authentication redirects', () => {
     const redirect = new URL(loginRedirectUrl(returnTo, true), 'https://frontend.example.test');
     expect(redirect.pathname).toBe('/login');
     expect(redirect.searchParams.get('returnTo')).toBe(returnTo);
+    expect(redirect.searchParams.get('reason')).toBe('expired');
+  });
+
+  it('preserves driver route and status without passing contacts or fragments into login', () => {
+    const redirect = new URL(
+      loginRedirectUrl(
+        '/driver/shipments?status=IN_TRANSIT&per_page=20&phone=0911234567&address=private#contact',
+        true,
+      ),
+      'https://frontend.example.test',
+    );
+    expect(redirect.searchParams.get('returnTo')).toBe(
+      '/driver/shipments?per_page=20&status=IN_TRANSIT',
+    );
     expect(redirect.searchParams.get('reason')).toBe('expired');
   });
 });

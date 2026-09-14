@@ -19,3 +19,7 @@ reports/public-tracking/performance/mobile-*.html
 reports/public-tracking/performance/desktop-*.html
 reports/public-tracking/performance/mobile-*.json
 reports/public-tracking/performance/desktop-*.json
+reports/driver-interface/performance/mobile-*.html
+reports/driver-interface/performance/desktop-*.html
+reports/driver-interface/performance/mobile-*.json
+reports/driver-interface/performance/desktop-*.json

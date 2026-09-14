@@ -7,5 +7,7 @@ export default defineConfig({
     setupFiles: ['./tests/setup.ts'],
     include: ['tests/unit/**/*.test.{ts,tsx}'],
     restoreMocks: true,
+    // Bound concurrent jsdom environments so the expanded suite keeps its 5s checks reliable.
+    maxWorkers: 2,
   },
 });
