@@ -14,6 +14,15 @@ import {
   postDriverShipmentsShipmentStatusBodySchema,
   postDriverShipmentsShipmentStatusPathSchema,
   postDriverShipmentsShipmentStatusResponseSchema,
+  postDriverTripsTripStartBodySchema,
+  postDriverTripsTripStartPathSchema,
+  postDriverTripsTripStartResponseSchema,
+  postDriverTripsTripArriveBodySchema,
+  postDriverTripsTripArrivePathSchema,
+  postDriverTripsTripArriveResponseSchema,
+  postDriverTripsTripCompleteBodySchema,
+  postDriverTripsTripCompletePathSchema,
+  postDriverTripsTripCompleteResponseSchema,
   type DriverShipment,
   type DriverTrip,
 } from '@/lib/api/generated';
@@ -22,12 +31,36 @@ import {
   type DriverPage,
   type DriverShipmentsQuery,
   type DriverTripsQuery,
+  type DriverTripAction,
+  type DriverTripDetail,
 } from './model';
 import type { DriverStatusTarget } from './status';
 
 export type { DriverShipment, DriverTrip } from '@/lib/api/generated';
 export const driverStatusPermission =
   approvedOperations.postDriverShipmentsShipmentStatus.permission;
+
+// This map selects the documented endpoint only; detail metadata decides availability.
+const tripActionOperations = {
+  START: {
+    operation: approvedOperations.postDriverTripsTripStart,
+    pathSchema: postDriverTripsTripStartPathSchema,
+    bodySchema: postDriverTripsTripStartBodySchema,
+    responseSchema: postDriverTripsTripStartResponseSchema,
+  },
+  CONFIRM_ARRIVAL: {
+    operation: approvedOperations.postDriverTripsTripArrive,
+    pathSchema: postDriverTripsTripArrivePathSchema,
+    bodySchema: postDriverTripsTripArriveBodySchema,
+    responseSchema: postDriverTripsTripArriveResponseSchema,
+  },
+  COMPLETE: {
+    operation: approvedOperations.postDriverTripsTripComplete,
+    pathSchema: postDriverTripsTripCompletePathSchema,
+    bodySchema: postDriverTripsTripCompleteBodySchema,
+    responseSchema: postDriverTripsTripCompleteResponseSchema,
+  },
+} as const;
 
 function assertResourceId(expected: string, received: string, requestId: string): void {
   // ULIDs are case-insensitive; do not reject a backend's canonical casing.
@@ -58,7 +91,7 @@ export function createDriverWorkspaceApi(client: ApiClient = api) {
     return { data: response.data, meta: response.meta };
   }
 
-  async function getDriverTrip(id: string, signal?: AbortSignal): Promise<DriverTrip> {
+  async function getDriverTrip(id: string, signal?: AbortSignal): Promise<DriverTripDetail> {
     const parsed = getDriverTripsTripPathSchema.safeParse({ trip: id });
     if (!parsed.success) throw new ApiError({ code: 'invalid_request' });
     const operation = approvedOperations.getDriverTripsTrip;
@@ -71,7 +104,31 @@ export function createDriverWorkspaceApi(client: ApiClient = api) {
       },
     );
     assertResourceId(id, response.data.id, response.request_id);
-    return response.data;
+    return response;
+  }
+
+  function createDriverTripAction(id: string, action: DriverTripAction) {
+    if (!Object.hasOwn(tripActionOperations, action)) {
+      throw new ApiError({ code: 'invalid_request' });
+    }
+    const { operation, pathSchema, bodySchema, responseSchema } = tripActionOperations[action];
+    const path = pathSchema.safeParse({ trip: id });
+    if (!path.success) throw new ApiError({ code: 'invalid_request' });
+    const capturedBody = Object.freeze(bodySchema.parse({}));
+    const capturedPath = operation.path.replace('{trip}', encodeURIComponent(path.data.trip));
+    return createIdempotentAction(async (idempotencyKey): Promise<DriverTripDetail> => {
+      const response = await client.request(capturedPath, {
+        method: operation.method,
+        body: capturedBody,
+        bodySchema,
+        schema: responseSchema,
+        idempotencyKey,
+      });
+      assertResourceId(path.data.trip, response.data.id, response.request_id);
+      // Saved replays may be older than current work. The caller refetches detail
+      // after every success before offering another server-provided capability.
+      return response;
+    });
   }
 
   async function getDriverShipments(
@@ -142,6 +199,7 @@ export function createDriverWorkspaceApi(client: ApiClient = api) {
   return {
     getDriverTrips,
     getDriverTrip,
+    createDriverTripAction,
     getDriverShipments,
     getDriverShipment,
     createDriverStatusAction,
@@ -151,6 +209,7 @@ export function createDriverWorkspaceApi(client: ApiClient = api) {
 export const {
   getDriverTrips,
   getDriverTrip,
+  createDriverTripAction,
   getDriverShipments,
   getDriverShipment,
   createDriverStatusAction,

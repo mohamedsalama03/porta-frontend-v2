@@ -2,13 +2,17 @@ import { z } from 'zod';
 import {
   getDriverShipmentsQuerySchema,
   getDriverTripsQuerySchema,
+  getDriverTripsTripResponseSchema,
   type CursorMeta,
+  type DriverTripActionMeta,
 } from '@/lib/api/generated';
 
 export type { DriverShipment, DriverTrip } from '@/lib/api/generated';
 export type DriverTripsQuery = z.infer<typeof getDriverTripsQuerySchema>;
 export type DriverShipmentsQuery = z.infer<typeof getDriverShipmentsQuerySchema>;
 export type DriverPage<T> = { data: T[]; meta: CursorMeta };
+export type DriverTripDetail = z.infer<typeof getDriverTripsTripResponseSchema>;
+export type DriverTripAction = DriverTripActionMeta['allowed_actions'][number];
 
 type ParsedQuery<T> = { success: true; data: T } | { success: false };
 
@@ -51,7 +55,7 @@ export const driverKeys = {
   me: () => [...driverKey, 'me'] as const,
   trips: (query: DriverTripsQuery = {}) =>
     [...driverKey, 'trips', { ...query, per_page: query.per_page ?? 20 }] as const,
-  trip: (id: string) => [...driverKey, 'trip', id] as const,
+  trip: (id: string) => [...driverKey, 'trip', id.toUpperCase()] as const,
   shipments: (query: DriverShipmentsQuery = {}) =>
     [...driverKey, 'shipments', { ...query, per_page: query.per_page ?? 20 }] as const,
   shipment: (id: string) => [...driverKey, 'shipment', id] as const,

@@ -1,6 +1,16 @@
 .driver-content {
   min-width: 0;
 }
+.driver-trip-actions {
+  margin-block-start: 20px;
+}
+.driver-trip-action-choices {
+  display: grid;
+  gap: 12px;
+}
+.driver-trip-confirmation-route {
+  font-weight: 700;
+}
 .driver-page-heading {
   margin-block-end: 24px;
 }

@@ -46,8 +46,10 @@ export async function revokeDriverResource(
   error: ApiError,
 ): Promise<void> {
   const resource = client.getQueryCache().find({ queryKey, exact: true });
-  if (!resource) return;
+  // An unabortable write may outlive an unused detail query. Revoke any
+  // remaining list copies even after that detail has been garbage collected.
   await revokeListCopies(client, queryKey);
+  if (!resource) return;
   if (client.getQueryCache().find({ queryKey, exact: true }) !== resource) return;
   await client.cancelQueries({ queryKey, exact: true }, { revert: false });
   // Session end can remove this query while cancellation settles. Never recreate it.

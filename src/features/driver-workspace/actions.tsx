@@ -16,6 +16,7 @@ import {
 } from './status';
 import { driverErrorMessage } from './ui';
 import { readDriverResource, revokeDriverResource } from './use-driver-read';
+import { refreshTripAfterShipment } from './trip-queries';
 
 export function DriverShipmentActions({ shipment }: { shipment: DriverShipment }) {
   const auth = useAuth();
@@ -29,6 +30,7 @@ export function DriverShipmentActions({ shipment }: { shipment: DriverShipment }
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<unknown>(null);
   const [confirmed, setConfirmed] = useState(false);
+  const [linkageReadFailed, setLinkageReadFailed] = useState(false);
   const [needsReview, setNeedsReview] = useState(false);
   const [attempted, setAttempted] = useState(false);
   const [cancelRevision, setCancelRevision] = useState(0);
@@ -97,19 +99,24 @@ export function DriverShipmentActions({ shipment }: { shipment: DriverShipment }
     running.current = true;
     setPending(true);
     setError(null);
+    setLinkageReadFailed(false);
     try {
       const data = await attempt.current.run();
       // Never repopulate an ended session's cache if its unabortable write finishes later.
       if (!mounted.current) return;
       await client.cancelQueries({ queryKey: driverKeys.shipment(shipment.id), exact: true });
       if (!mounted.current) return;
-      await client.invalidateQueries({ queryKey: driverKeys.all, refetchType: 'none' });
-      if (!mounted.current) return;
       client.setQueryData(driverKeys.shipment(shipment.id), data);
       setConfirmed(true);
       setConfirmation(null);
       attempt.current = null;
       setAttempted(false);
+      // The write is confirmed even if a subsequent capability read is unavailable.
+      void refreshTripAfterShipment(client, data.trip_id, () => mounted.current, data.id).catch(
+        () => {
+          if (mounted.current) setLinkageReadFailed(true);
+        },
+      );
     } catch (cause) {
       if (!mounted.current) return;
       setError(cause);
@@ -148,6 +155,11 @@ export function DriverShipmentActions({ shipment }: { shipment: DriverShipment }
           </h2>
           <p>الحالة المعروضة مؤكدة من الخدمة.</p>
         </div>
+      )}
+      {linkageReadFailed && (
+        <p className="driver-secondary" role="status">
+          تم حفظ الإجراء. تعذّر تحديث بعض البيانات المرتبطة؛ حدّث الرحلة لمراجعة إجراءاتها الحالية.
+        </p>
       )}
       {error !== null && (
         <div className="driver-feedback" role="alert">

@@ -8,6 +8,7 @@ import { driverTripStatusLabels } from './status';
 import { useDriverRead } from './use-driver-read';
 import { DriverShipmentList } from './shipment-list';
 import { DriverReadFeedback, DriverSkeleton, DriverTime } from './ui';
+import { DriverTripActions } from './trip-actions';
 
 export function DriverTripDetail({ id }: { id: string }) {
   const valid = ulidSchema.safeParse(id).success;
@@ -16,6 +17,7 @@ export function DriverTripDetail({ id }: { id: string }) {
     queryFn: (signal) => getDriverTrip(id, signal),
     enabled: valid,
   });
+  const trip = query.data?.data;
   return (
     <div className="driver-content">
       <Link className="driver-text-link" href="/driver/trips" prefetch={false}>
@@ -32,39 +34,39 @@ export function DriverTripDetail({ id }: { id: string }) {
       ) : (
         <>
           {!query.data && query.isFetching && <DriverSkeleton />}
-          {query.data && (
+          {trip && (
             <section className="driver-detail" aria-label="بيانات الرحلة">
-              <span className="driver-status">{driverTripStatusLabels[query.data.status]}</span>
+              <span className="driver-status">{driverTripStatusLabels[trip.status]}</span>
               <h2 className="driver-detail-route">
-                {query.data.origin_city?.name_ar ?? 'مدينة الإرسال غير متاحة'} —{' '}
-                {query.data.destination_city?.name_ar ?? 'مدينة الوصول غير متاحة'}
+                {trip.origin_city?.name_ar ?? 'مدينة الإرسال غير متاحة'} —{' '}
+                {trip.destination_city?.name_ar ?? 'مدينة الوصول غير متاحة'}
               </h2>
               <dl className="driver-detail-grid">
                 <div>
                   <dt>موعد المغادرة</dt>
                   <dd>
-                    <DriverTime value={query.data.departure_at} />
+                    <DriverTime value={trip.departure_at} />
                   </dd>
                 </div>
-                {query.data.estimated_arrival_at && (
+                {trip.estimated_arrival_at && (
                   <div>
                     <dt>الوصول المتوقع</dt>
                     <dd>
-                      <DriverTime value={query.data.estimated_arrival_at} />
+                      <DriverTime value={trip.estimated_arrival_at} />
                     </dd>
                   </div>
                 )}
-                {query.data.shipments_count !== undefined && (
+                {trip.shipments_count !== undefined && (
                   <div>
                     <dt>عدد الشحنات</dt>
-                    <dd>{query.data.shipments_count}</dd>
+                    <dd>{trip.shipments_count}</dd>
                   </div>
                 )}
               </dl>
-              <p className="driver-secondary driver-detail-note">
-                تُعرض حالة الرحلة هنا، وتُدار إجراءاتها من فريق العمليات.
-              </p>
             </section>
+          )}
+          {query.data && (
+            <DriverTripActions key={id} detail={query.data} readBusy={query.isFetching} />
           )}
           <DriverReadFeedback query={query} />
           {query.data && <DriverShipmentList tripId={id} />}
