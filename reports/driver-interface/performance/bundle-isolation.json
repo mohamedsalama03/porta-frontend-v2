@@ -1,0 +1,356 @@
+{
+  "scope": "Production route-entry client chunks from the completed Next build. Decoded and independent gzip byte estimates exclude the common framework runtime and are not total navigation payloads or authenticated Admin timings. Shared authentication, permissions and generated API-contract code are intentionally allowed; Admin tables, reports, pricing and audit presentation plus public order/tracking presentation are excluded from driver routes.",
+  "buildId": "JmagTaEA0VOTT2vXolXag",
+  "measuredAt": "2026-09-14T08:58:50.417Z",
+  "records": [
+    {
+      "route": "(driver)/driver",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 577630,
+      "gzipBytes": 148946,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/home.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/home.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/1l3h8xxzzr2mk.js"
+      ]
+    },
+    {
+      "route": "(driver)/driver/trips",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 577395,
+      "gzipBytes": 149085,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/trip-list.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/trip-list.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/1ue7lgv0fajb3.js"
+      ]
+    },
+    {
+      "route": "(driver)/driver/trips/[id]",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 579861,
+      "gzipBytes": 149609,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/trip-detail.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/trip-detail.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/3bpfszy7zsnmq.js"
+      ]
+    },
+    {
+      "route": "(driver)/driver/shipments",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 577636,
+      "gzipBytes": 149171,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/shipment-list.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/shipment-list.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/3nm7caaj1flsg.js"
+      ]
+    },
+    {
+      "route": "(driver)/driver/shipments/[id]",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 581664,
+      "gzipBytes": 150225,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/shipment-detail.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/shipment-detail.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/23yqzu_hh5f58.js"
+      ]
+    },
+    {
+      "route": "(driver)/driver/account",
+      "driverRoute": true,
+      "entryChunkCount": 10,
+      "decodedBytes": 566664,
+      "gzipBytes": 145172,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/app/(driver)/driver/error.tsx",
+        "[project]/src/features/driver-workspace/account.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [
+        "[project]/src/features/driver-workspace/session.tsx",
+        "[project]/src/features/driver-workspace/shell-navigation.tsx",
+        "[project]/src/features/driver-workspace/account.tsx"
+      ],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/1a5pwuk5e12rc.js",
+        "static/chunks/0psaddd4a5p7g.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/1-4kpjysk604t.js",
+        "static/chunks/3x23g8wn5s1gm.js",
+        "static/chunks/37lm9qbu3t3n7.js"
+      ]
+    },
+    {
+      "route": "(public)/track",
+      "driverRoute": false,
+      "entryChunkCount": 9,
+      "decodedBytes": 560825,
+      "gzipBytes": 143745,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/public-order/query-provider.tsx",
+        "[project]/src/app/(public)/track/error.tsx",
+        "[project]/src/features/public-tracking/tracking-form.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/0dkq49s7t7tis.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/41xhwclgde3wr.js",
+        "static/chunks/18tm_3qm_m535.js",
+        "static/chunks/16yssryh2it8x.js",
+        "static/chunks/2gg-yrtyhqk1o.js"
+      ]
+    },
+    {
+      "route": "(public)/order",
+      "driverRoute": false,
+      "entryChunkCount": 10,
+      "decodedBytes": 615573,
+      "gzipBytes": 160697,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/public-order/query-provider.tsx",
+        "[project]/src/app/(public)/order/error.tsx",
+        "[project]/src/features/public-order/form.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/0dkq49s7t7tis.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/41xhwclgde3wr.js",
+        "static/chunks/27q2x8_5zvj5d.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0eqtbjk2aepfz.js",
+        "static/chunks/2o_5al3iem6rq.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/dashboard",
+      "driverRoute": false,
+      "entryChunkCount": 12,
+      "decodedBytes": 733348,
+      "gzipBytes": 195620,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [],
+      "tableSignatures": [],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/3nodz9d9v99i2.js",
+        "static/chunks/3vefuf350opp-.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/20cfhonbi7r14.js",
+        "static/chunks/302mi-6d9imne.js",
+        "static/chunks/2k463_qzhqyku.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    },
+    {
+      "route": "(dashboard)/[module]",
+      "driverRoute": false,
+      "entryChunkCount": 14,
+      "decodedBytes": 844954,
+      "gzipBytes": 224712,
+      "clientSources": [
+        "[project]/src/components/ui/motion-provider.tsx",
+        "[project]/src/app/error.tsx",
+        "[project]/src/features/auth/auth-providers.tsx",
+        "[project]/src/features/auth/dashboard-session.tsx",
+        "[project]/src/app/(dashboard)/error.tsx",
+        "[project]/src/features/settings/preferences-settings.tsx",
+        "[project]/src/features/shipments/live.tsx",
+        "[project]/src/features/operations/list.tsx",
+        "[project]/src/features/operations/detail.tsx",
+        "[project]/src/features/operations/reports.tsx",
+        "[project]/src/features/operations/payments.tsx",
+        "[project]/src/features/operations/editor.tsx"
+      ],
+      "forbiddenSources": [],
+      "driverPresentations": [],
+      "tableSignatures": [
+        "getCoreRowModel",
+        "getFilteredRowModel",
+        "getPaginationRowModel"
+      ],
+      "chunks": [
+        "static/chunks/3bcy96go67exa.js",
+        "static/chunks/2zbeh9udnz9hw.js",
+        "static/chunks/1blvbam_irlj_.js",
+        "static/chunks/3nodz9d9v99i2.js",
+        "static/chunks/3vefuf350opp-.js",
+        "static/chunks/2gg-yrtyhqk1o.js",
+        "static/chunks/0q_kth5ncxnw_.js",
+        "static/chunks/20cfhonbi7r14.js",
+        "static/chunks/302mi-6d9imne.js",
+        "static/chunks/3ke3f2x3ohhdp.js",
+        "static/chunks/1tutrbup8zk_2.js",
+        "static/chunks/300-ad5xprvk3.js",
+        "static/chunks/2vqlf7mrzsfk6.js",
+        "static/chunks/0eqtbjk2aepfz.js"
+      ]
+    }
+  ],
+  "failures": [],
+  "result": "PASS"
+}

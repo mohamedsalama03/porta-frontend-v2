@@ -1,0 +1,36 @@
+---
+version: 2
+slug: "src-features-driver-workspace-home-tsx"
+primary_target: "src/features/driver-workspace/home.tsx"
+related_targets: ["src/features/driver-workspace/shell.tsx","src/features/driver-workspace/shell-navigation.tsx","src/features/driver-workspace/shell.css","src/features/driver-workspace/session.tsx","src/features/driver-workspace/trip-list.tsx","src/features/driver-workspace/trip-detail.tsx","src/features/driver-workspace/shipment-list.tsx","src/features/driver-workspace/shipment-detail.tsx","src/features/driver-workspace/actions.tsx","src/features/driver-workspace/account.tsx","src/features/driver-workspace/cards.tsx","src/features/driver-workspace/ui.tsx","src/features/driver-workspace/driver-workspace.css","src/app/(driver)/layout.tsx","src/app/(driver)/driver/page.tsx","src/app/(driver)/driver/loading.tsx","src/app/(driver)/driver/error.tsx"]
+---
+
+# Driver Operational Interface
+
+Mode: Operate. This brief applies to the dedicated `/driver` home, trips, shipments, details and account routes. The explicit Driver phase supersedes the older phase exclusion in root `PRODUCT.md`; it extends the existing visual system without rewriting root `PRODUCT.md`, `DESIGN.md`, their sidecar or historical public-surface briefs.
+
+Status: Implemented presentation, documented on 2026-09-14 (Africa/Tripoli). The independent final visual reviewer returned `ship` after inspecting all 49 final PNGs and sampled source, with no material fixes. This is a scoped visual disposition, not a declaration that final engineering gates, live acceptance or deployment have completed.
+
+Audience and task: Arabic-speaking authenticated drivers using phones to review assigned work, understand route/delivery context, perform an allowed operation deliberately and continue. The service remains authoritative over identity, scope and lifecycle state.
+
+THESIS: Assigned work leads directly to a readable trip or shipment detail and one permitted next operation. Current state and tracking/route identity are legible before optional delivery context; confirmation records an intentional decision.
+
+OWN-WORLD: Preserve Cairo, Arabic RTL, restrained teal actions, neutral light/dark surfaces, thin borders and small Lucide line icons. Establish a dedicated Driver shell instead of admin chrome. The original brief precisely specified this incumbent extension; there was no unresolved identity direction, approved comp requirement or need for generated raster assets.
+
+STORY: Complete the shared sign-in and driver-scope check. Browse a small first-page sample of assigned trips and shipments, open the relevant list/detail, inspect driver-safe delivery/contact fields, and confirm only a documented available shipment action. A refresh failure retains recent authorized reads with an explicit stale-data message. A conflict asks for review of the refreshed authoritative state.
+
+FIRST VIEWPORT: A compact 72px-minimum header contains Porta and the Arabic workspace label. Home begins with its heading and the trips section, then shipments; each shows up to three items from its first server page without promising next/current/complete work or inventing KPIs. The common content width caps at 1040px. Phone task cards use one column and 20px main inline padding. Four labelled destinations sit in fixed safe-area-aware bottom navigation. At 768px navigation becomes a static top row, main padding is 32px and task/contact groups use two columns. Compact detail metadata still uses two wrapping columns on phones.
+
+FORM: Calm task cards with global 12px radii, 8px controls, 16px card gaps and flat bordered surfaces. Main page titles are 26px; route/tracking emphasis is 18px; body text inherits Cairo's readable 1.75 line height. Tracking/telephone values are isolated LTR. Primary actions meet 48px minimum height; secondary links meet 44px where used. Account is a minimal name/email/logout view, not an editor or availability dashboard.
+
+Memorable interaction: One full-width action reveals an inline Arabic confirmation with current state, requested operation and its physical completion condition. Focus moves to the confirmation heading; cancel returns it to the initiating control. Pending blocks duplicates; success waits for the authoritative response. Uncertain retry retains its logical idempotency identity. Neither confirmation nor success requires ornamental motion.
+
+Contract and privacy boundary: Only frontend-local approved driver operations through the centralized HTTP client and strict generated schemas may supply work. No admin presentation or enrichment is imported. DriverShipment explicitly includes recipient and sender contacts; only its supported fields are displayed. Plain validated phone values may become `tel:` actions. No contact persistence, telemetry, audit, ledger, pricing or unrelated private fields are introduced. Trip actions are unavailable by this contract. The only displayed shipment edges are the two explicitly documented status-operation transitions, subject to backend permission; do not extend them into a guessed lifecycle. Driver-facing instants use the shared Africa/Tripoli formatter.
+
+State contract: Separate driver query keys hold reads in memory only, with deliberate manual refresh and no polling, focus/reconnect refresh or automatic retries. Retain data on transient failure with a stale explanation; remove denied resources. Gate content on the shared cookie session and a successful driver-scoped read. Clear private work when the session ends and use the existing safe login return path. Keep labelled skeletons, direct empty states, safe Arabic errors, 409 authoritative review, 422 renewed confirmation and Retry-After cooldowns. No optimistic success, silent overwrite or offline mutation queue.
+
+FINISH: `reports/driver-interface/visual/results.json` reports PASS for 43 measured states: eight states at light 390, 430, 768 and 1440px; home and both details at light 1024px; and all eight states at dark 390px. Six additional scrolled phone action viewports yield 49 PNGs. The independent `FINISH-REVIEW.md` records inspection of every PNG and disposition `ship`. The matrix reports zero axe violations, overflow, undersized controls or inputs, with RTL/theme/reduced-motion/private-storage checks passing. The single mechanical detector record is `[]`.
+
+Evidence limits: The matrix is synthetic intercepted Chromium presentation, with other API/external requests and writes blocked. Full-page phone images retain navigation at the initial viewport fold; the six action viewports separately show unobstructed confirmation controls. Account is source-reviewed only. Loading, pending, keyboard/focus and transient behavior are exercised by separate interaction tests and are not proven by these still images; the finish reviewer did not perform firsthand interaction. No physical-device, manual screen-reader, live-integration, field-SLA or deployment claim follows from this visual packet. Final engineering acceptance and gate counts remain outside this brief.
+
+Unresolved presentation decisions: None within this reviewed scope. GPS, live maps/streams, PWA, scanning, proof of delivery and offline writes remain deferred. Preserve exact source/evidence boundaries when extending the surface. The complete scoped design record is `docs/DRIVER-INTERFACE-DESIGN.md`.

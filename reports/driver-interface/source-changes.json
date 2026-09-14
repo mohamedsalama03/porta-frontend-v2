@@ -1,0 +1,626 @@
+{
+  "baseline": "16cdedd53e21645660bb48e7c6050bde25f53917",
+  "scope": "Baseline through the final staged documentation; final committed verification is in the external source-state record",
+  "changes": [
+    {
+      "status": "M",
+      "path": ".gitignore",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": ".impeccable/surfaces/src-features-driver-workspace-home-tsx.md",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "docs/DRIVER-INTERFACE-DESIGN.md",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "docs/DRIVER-OPERATIONAL-INTERFACE-IMPLEMENTATION-REPORT.md",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "M",
+      "path": "playwright.config.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/acceptance.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/api-check.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/build.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/driver-focused.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/e2e-initial-artifact-collision.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/e2e.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/lint.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/live-initial-harness-bound.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/live.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/performance-focused.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/performance.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/typecheck.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/unit-default-worker-timeouts.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/unit-initial-timeout.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/gates/unit.txt",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/live/anonymous-guard.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/live/public-tracking-regression.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/performance/bundle-isolation.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/performance/desktop-trip-detail-lighthouse-final.jpg",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/performance/desktop-trip-detail-verified.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/performance/results.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/source-changes.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/FINISH-REVIEW.md",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/REVIEW.md",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-confirmation-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-confirmation.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-empty.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-error.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-shipment-detail-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-shipments.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/dark-390-trips.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/detector.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1024-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1024-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1024-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-confirmation.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-empty.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-error.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-shipments.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-1440-trips.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-confirmation-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-confirmation.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-empty.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-error.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-shipment-detail-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-shipments.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-390-trips.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-confirmation-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-confirmation.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-empty.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-error.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-shipment-detail-action-viewport.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-shipments.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-430-trips.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-confirmation.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-empty.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-error.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-home.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-shipment-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-shipments.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-trip-detail.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/light-768-trips.png",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "reports/driver-interface/visual/results.json",
+      "category": "docs-evidence"
+    },
+    {
+      "status": "A",
+      "path": "scripts/check-driver-bundle.mjs",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "scripts/check-driver-interface.mjs",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "scripts/check-driver-performance.mjs",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "scripts/driver-check-fixtures.mjs",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/account/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/error.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/loading.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/shipments/[id]/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/shipments/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/trips/[id]/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/driver/trips/page.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/app/(driver)/layout.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "M",
+      "path": "src/features/auth/login-form.tsx",
+      "category": "shared-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/account.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/actions.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/api.ts",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/cards.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/driver-workspace.css",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/home.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/model.ts",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/session.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/shell-navigation.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/shell.css",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/shell.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/shipment-detail.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/shipment-list.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/states.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/status.ts",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/trip-detail.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/trip-list.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/ui.tsx",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "A",
+      "path": "src/features/driver-workspace/use-driver-read.ts",
+      "category": "new-driver-application"
+    },
+    {
+      "status": "M",
+      "path": "src/lib/auth/contracts.ts",
+      "category": "shared-application"
+    },
+    {
+      "status": "M",
+      "path": "src/lib/auth/redirect.ts",
+      "category": "shared-application"
+    },
+    {
+      "status": "A",
+      "path": "tests/e2e/driver-workspace.spec.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/live/driver-workspace.spec.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "M",
+      "path": "tests/unit/auth-permissions.test.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/unit/driver-api.test.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/unit/driver-model.test.ts",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/unit/driver-query.test.tsx",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/unit/driver-session.test.tsx",
+      "category": "tests-tools"
+    },
+    {
+      "status": "A",
+      "path": "tests/unit/driver-ui-actions.test.tsx",
+      "category": "tests-tools"
+    },
+    {
+      "status": "M",
+      "path": "vitest.config.ts",
+      "category": "tests-tools"
+    }
+  ]
+}

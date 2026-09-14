@@ -1,0 +1,5 @@
+mobile-home: performance=0.81; LCP=3769.61035ms; CLS=0; TBT=343ms; JS=318218 bytes
+mobile-trip-detail: performance=0.82; LCP=4006.5771999999997ms; CLS=0; TBT=282ms; JS=323980 bytes
+desktop-home: performance=1; LCP=805.2102ms; CLS=0; TBT=1ms; JS=318218 bytes
+desktop-trip-detail: performance=1; LCP=799.5466ms; CLS=0.005999054373522459; TBT=10.000000000000114ms; JS=323980 bytes
+FAIL: reports/driver-interface/performance/results.json

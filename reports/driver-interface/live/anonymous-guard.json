@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-09-14T09:06:16.673Z",
+  "readOnly": true,
+  "anonymousContext": true,
+  "sessionStatus": 401,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me"
+    }
+  ],
+  "sessionReadLimit": 4,
+  "blockedRequests": 0,
+  "blockedDetails": [],
+  "authenticatedDriverAcceptance": "NOT TESTED — SAFE DISPOSABLE DRIVER ACCOUNT REQUIRED",
+  "driverMutationAcceptance": "NOT TESTED — SAFE DRIVER MUTATION FIXTURE REQUIRED"
+}

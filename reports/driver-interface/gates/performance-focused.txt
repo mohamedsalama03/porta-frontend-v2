@@ -1,0 +1,3 @@
+desktop-trip-detail: performance=0.99; LCP=856.73865ms; CLS=0; TBT=0ms; JS=323980 bytes
+MEASURED: reports/driver-interface/performance/results.json
+Exit code: 0
