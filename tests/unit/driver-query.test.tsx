@@ -16,8 +16,8 @@ import { driverKeys } from '@/features/driver-workspace/model';
 import { ApiError } from '@/lib/api/errors';
 
 type PrivateData = { id: string; recipient: string };
-const first = { id: 'first', recipient: 'PRIVATE_TEST_RECIPIENT_A' };
-const second = { id: 'second', recipient: 'PRIVATE_TEST_RECIPIENT_B' };
+const first = { id: '01arz3ndektsv4rrffq69g5fad', recipient: 'PRIVATE_TEST_RECIPIENT_A' };
+const second = { id: '01ARZ3NDEKTSV4RRFFQ69G5FAZ', recipient: 'PRIVATE_TEST_RECIPIENT_B' };
 const clients: QueryClient[] = [];
 const read = vi.fn<(id: string, signal: AbortSignal) => Promise<PrivateData>>();
 

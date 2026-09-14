@@ -376,6 +376,31 @@ test('the two documented actions require inline confirmation, prevent duplicate 
   await expectPrivateStorageEmpty(page);
 });
 
+test('lowercase shipment route accepts canonical response identity and both successful shipment actions', async ({
+  page,
+  driverApi,
+}) => {
+  const lowerRoute = `/driver/shipments/${ids.shipment.toLowerCase()}`;
+  await page.goto(lowerRoute);
+  await expect(page).toHaveURL(lowerRoute);
+  await expect(page.getByRole('main')).toContainText(driverFixtureTracking);
+  await (await openConfirmation(page)).click();
+  await expect(page.getByRole('region', { name: 'بيانات الشحنة', exact: true })).toContainText(
+    'جاهزة للاستلام',
+  );
+  await (await openConfirmation(page, 'تأكيد تسليم الشحنة')).click();
+  await expect(page.getByRole('region', { name: 'بيانات الشحنة', exact: true })).toContainText(
+    'تم التسليم',
+  );
+  expect(writes(driverApi).map((request) => ({ path: request.path, body: request.body }))).toEqual([
+    { path: `${shipmentPath}/status`, body: { status: 'READY_FOR_PICKUP' } },
+    { path: `${shipmentPath}/status`, body: { status: 'DELIVERED' } },
+  ]);
+  await expect(page.locator('a[href^="tel:"]')).toHaveCount(2);
+  await expect(actionArea(page).getByRole('button')).toHaveCount(0);
+  await expectPrivateStorageEmpty(page);
+});
+
 test('confirmation cancellation restores focus and performs no operation', async ({
   page,
   driverApi,
@@ -435,6 +460,82 @@ test('409 conflict refreshes the authoritative resource without replaying a stal
   expect(writes(driverApi)).toHaveLength(1);
   await expect(statusHeading(page, 'تم تحديث حالة الشحنة')).toHaveCount(0);
   await expect(page.locator('body')).not.toContainText('PRIVATE_BACKEND_TRACE');
+});
+
+test('lowercase Driver shipment ULID revocation privacy removes every contact and operational detail after canonical action 404', async ({
+  page,
+  driverApi,
+}, testInfo) => {
+  const lowerRoute = `/driver/shipments/${ids.shipment.toLowerCase()}`;
+  const shipment = driverApi.shipments[0];
+  const privateValues = [
+    shipment.sender_name,
+    shipment.sender_phone,
+    shipment.recipient_name,
+    shipment.recipient_phone,
+    shipment.delivery_address,
+    shipment.tracking_number,
+  ];
+  const canonicalResponse = page.waitForResponse(
+    (reply) =>
+      reply.request().method() === 'GET' &&
+      new URL(reply.url()).pathname.toUpperCase() === shipmentPath.toUpperCase(),
+  );
+  await page.goto(lowerRoute);
+  expect((await (await canonicalResponse).json()).data.id).toBe(ids.shipment);
+  await expect(page).toHaveURL(lowerRoute);
+  for (const value of privateValues) await expect(page.getByRole('main')).toContainText(value);
+  await expect(page.locator('a[href^="tel:"]')).toHaveCount(2);
+  expect(shipment.id).toBe(ids.shipment);
+  driverApi.onRequest = (request) =>
+    request.method === 'POST' && request.path === `${shipmentPath}/status`
+      ? { status: 404, json: driverErrorFixture() }
+      : undefined;
+  const response = page.waitForResponse(
+    (reply) =>
+      reply.request().method() === 'POST' && reply.url().endsWith(`${shipmentPath}/status`),
+  );
+  await (await openConfirmation(page)).click();
+  expect((await response).status()).toBe(404);
+  expect(writes(driverApi)).toHaveLength(1);
+  try {
+    await expect
+      .poll(async () => {
+        const body = (await page.locator('body').textContent()) ?? '';
+        return {
+          remainingPrivateValues: privateValues.filter((value) => body.includes(value)),
+          telephoneLinks: await page.locator('a[href^="tel:"]').count(),
+          shipmentDetails: await page
+            .getByRole('region', { name: 'بيانات الشحنة', exact: true })
+            .count(),
+          shipmentActions: await actionArea(page).count(),
+        };
+      })
+      .toEqual({
+        remainingPrivateValues: [],
+        telephoneLinks: 0,
+        shipmentDetails: 0,
+        shipmentActions: 0,
+      });
+  } finally {
+    await testInfo.attach('revocation-dom', {
+      body: await page.getByRole('main').innerText(),
+      contentType: 'text/plain',
+    });
+    await testInfo.attach('scoped-driver-requests', {
+      body: JSON.stringify(
+        { requests: driverApi.requests, unexpected: driverApi.unexpected },
+        null,
+        2,
+      ),
+      contentType: 'application/json',
+    });
+  }
+  await expect(page.getByRole('main').getByRole('alert')).toContainText(
+    'هذا العمل غير متاح لك حاليًا.',
+  );
+  expect(driverApi.unexpected).toEqual([]);
+  await expectPrivateStorageEmpty(page);
 });
 
 for (const status of [403, 404]) {
@@ -770,6 +871,49 @@ test('confirmed logout clears work and a subsequent session cannot inherit previ
     .click();
   await expect(page.getByRole('main')).toContainText('لا توجد شحنات');
   await expect(page.getByText(driverFixtureTracking)).toHaveCount(0);
+  await expectPrivateStorageEmpty(page);
+});
+
+test('lowercase shipment contact data cannot cross logout into a second Driver identity', async ({
+  page,
+  driverApi,
+}) => {
+  const lowerRoute = `/driver/shipments/${ids.shipment.toLowerCase()}`;
+  const shipment = driverApi.shipments[0];
+  const privateValues = [
+    shipment.sender_name,
+    shipment.sender_phone,
+    shipment.recipient_name,
+    shipment.recipient_phone,
+    shipment.delivery_address,
+    shipment.tracking_number,
+  ];
+  await page.goto(lowerRoute);
+  for (const value of privateValues) await expect(page.getByRole('main')).toContainText(value);
+  await page.getByRole('navigation').getByRole('link', { name: 'الحساب', exact: true }).click();
+  await page.getByRole('button', { name: 'تسجيل الخروج', exact: true }).click();
+  await expect(page).toHaveURL(/\/login(?:\?|$)/);
+  driverApi.session.data.id = ids.nextShipment;
+  driverApi.session.data.name = 'سائق الاختبار الثاني';
+  driverApi.session.data.email = 'second-driver@example.test';
+  driverApi.shipments = [];
+  driverApi.trips = [];
+  await login(page);
+  await expect(page).toHaveURL(/\/driver(?:\/account)?(?:\?|$)/);
+  await page
+    .getByRole('navigation', { name: 'أقسام مساحة السائق' })
+    .getByRole('link', { name: 'الشحنات', exact: true })
+    .click();
+  await expect(page.getByRole('main')).toContainText('لا توجد شحنات');
+  for (const value of privateValues) await expect(page.locator('body')).not.toContainText(value);
+  await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
+  await page.goto(lowerRoute);
+  await expect(page.getByRole('main').getByRole('alert')).toContainText(
+    'هذا العمل غير متاح لك حاليًا.',
+  );
+  for (const value of privateValues) await expect(page.locator('body')).not.toContainText(value);
+  await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
+  await expect(actionArea(page)).toHaveCount(0);
   await expectPrivateStorageEmpty(page);
 });
 
