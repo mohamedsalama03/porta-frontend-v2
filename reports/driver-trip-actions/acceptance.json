@@ -1,0 +1,151 @@
+{
+  "result": "DRIVER TRIP ACTIONS FRONTEND INTEGRATION PASSED WITH DOCUMENTED GAPS",
+  "date": "2026-09-14",
+  "timezone": "Africa/Tripoli",
+  "repository": "D:\\customers\\porta frontend",
+  "branch": "feat/driver-trip-actions",
+  "baseline": "b9a6e4a348cb92ee7c20ecf6c842f9c51accbfd9",
+  "backendRevisionSuppliedByUser": "3c838c277b9857dddae0ca16e1efa4f580154aac",
+  "contractSha256": "222f184e98664f2e93a24e4313c8d652513ff339f7a6665a30f9f975bc02adf0",
+  "previousContractSha256": "2b025d1d9c33407920869eea6a0cf5bf5cc6971643b28e6e0c36f54a682ae658",
+  "contractChangedOnlyByApprovedReplacement": true,
+  "generatedContractChanged": true,
+  "generatedManuallyEdited": false,
+  "generatedOperationCount": 54,
+  "apiV1OperationCount": 53,
+  "csrfOperationCount": 1,
+  "componentSchemaCount": 65,
+  "contractDrift": "PASS - synchronized",
+  "actionAuthorization": "NO STATUS-DERIVED ACTION AUTHORIZATION",
+  "operations": [
+    "postDriverTripsTripStart",
+    "postDriverTripsTripArrive",
+    "postDriverTripsTripComplete"
+  ],
+  "requestBody": "{}",
+  "focusedUnit": {
+    "passed": 178,
+    "failed": 0,
+    "files": 8,
+    "durationSeconds": 8.3
+  },
+  "unit": {
+    "passed": 382,
+    "failed": 0,
+    "files": 39,
+    "durationSeconds": 43.02
+  },
+  "e2e": {
+    "failed": 0,
+    "existingDriver": 33,
+    "publicTracking": 13,
+    "publicOrder": 13,
+    "passed": 106,
+    "foundationAdmin": 16,
+    "newTripActions": 31
+  },
+  "live": {
+    "realDriverMutations": 0,
+    "passed": 6,
+    "failed": 0,
+    "readOnly": true,
+    "authenticatedDriverTripActions": "NOT TESTED — SAFE DRIVER FIXTURE REQUIRED"
+  },
+  "visual": {
+    "detectorFindings": 0,
+    "overflowFindings": 0,
+    "undersizedTargets": 0,
+    "pngCount": 53,
+    "states": 50,
+    "result": "PASS",
+    "axeViolations": 0,
+    "independentReview": "ship"
+  },
+  "productionBuildId": "zrIZKaKzzV8BxWUD-wJ5X",
+  "performance": {
+    "desktopLcpMs": 792.75575,
+    "mobileScore": 85,
+    "desktopScore": 100,
+    "desktopTbtMs": 0,
+    "liveApiLatencyMeasured": false,
+    "result": "MEASURED",
+    "rawMeasurementsPreservedDuringScreenshotRepair": true,
+    "mobileTbtMs": 228.5,
+    "fieldInpMeasured": false,
+    "mobileCls": 0,
+    "mobileLcpMs": 3776.04855,
+    "desktopCls": 0.007817571140880834
+  },
+  "bundle": {
+    "decodedBytes": 591979,
+    "gzipBytes": 152727,
+    "result": "PASS",
+    "decodedIncreaseBytes": 12118,
+    "forbiddenSourceImports": 0,
+    "gzipIncreaseBytes": 3118
+  },
+  "gates": [
+    {
+      "gate": "api:check",
+      "exitCode": 0,
+      "seconds": 1.1075582,
+      "finishedAt": "2026-09-14T10:31:54.4836045Z"
+    },
+    {
+      "gate": "lint",
+      "exitCode": 0,
+      "seconds": 9.6128556,
+      "finishedAt": "2026-09-14T10:37:33.6043967Z"
+    },
+    {
+      "gate": "typecheck",
+      "exitCode": 0,
+      "seconds": 5.0681505,
+      "finishedAt": "2026-09-14T10:27:56.077832Z"
+    },
+    {
+      "gate": "test",
+      "exitCode": 0,
+      "seconds": 43.8905365,
+      "finishedAt": "2026-09-14T10:28:39.9721971Z"
+    },
+    {
+      "gate": "test:e2e",
+      "exitCode": 0,
+      "seconds": 165.8228121,
+      "finishedAt": "2026-09-14T10:31:25.7964939Z"
+    },
+    {
+      "gate": "test:live",
+      "exitCode": 0,
+      "seconds": 9.2386935,
+      "finishedAt": "2026-09-14T10:31:35.03727Z"
+    },
+    {
+      "gate": "build",
+      "exitCode": 0,
+      "seconds": 18.3282625,
+      "finishedAt": "2026-09-14T10:31:53.3691934Z"
+    },
+    {
+      "gate": "driver-focused",
+      "exitCode": 0,
+      "seconds": 9.6085617,
+      "finishedAt": "2026-09-14T10:25:49.7074573Z"
+    },
+    {
+      "gate": "production-performance",
+      "exitCode": 0,
+      "seconds": 21.9841259,
+      "finishedAt": "2026-09-14T10:33:02.1557142Z"
+    }
+  ],
+  "remainingGaps": [
+    "TEST DATA GAP: no approved authenticated Driver trip-action fixture",
+    "FRONTEND GAP: physical-device and manual screen-reader acceptance not performed",
+    "ENVIRONMENT GAP: local synthetic lab performance only; no deployment acceptance",
+    "BACKEND CONTRACT GAP: none for the three requested actions; unrelated historical Driver gaps remain",
+    "DEFERRED FEATURE: GPS/maps/streams/polling/PWA/offline/proof of delivery/profile editing/new Admin features/deployment not started"
+  ],
+  "finalSourceState": "C:\\Users\\Mohamed\\.codex\\visualizations\\2026\\09\\13\\01a09a82-f5a8-79a1-aa24-83ca1f166784\\porta-driver-trip-actions-final-source-state.json"
+}

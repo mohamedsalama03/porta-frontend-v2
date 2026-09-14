@@ -1,0 +1,301 @@
+
+> porta-delivery-admin@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:27932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:24564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:18752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:34548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:19308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:18064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:20984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:34484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:17516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:19696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:32092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:31004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 105 tests using 1 worker
+
+(node:24728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 [chromium] › tests\e2e\foundation.spec.ts:4:1 › login is safe and honest without an API and supports password visibility (832ms)
+  ok   2 [chromium] › tests\e2e\foundation.spec.ts:25:1 › unconnected dashboard never displays invented operational data (1.6s)
+[WebServer] (node:16872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:30360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:20172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:34088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok   3 [chromium] › tests\e2e\foundation.spec.ts:34:1 › feature shells expose no write action and every section renders (4.5s)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:8944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:31756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:3600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled
+[WebServer] (node:24796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok   4 [chromium] › tests\e2e\foundation.spec.ts:58:1 › core views pass automated accessibility checks in both themes (10.2s)
+  ok   5 [chromium] › tests\e2e\shell.spec.ts:19:1 › keyboard command search navigates and returns focus on Escape (1.1s)
+[WebServer] (node:1884) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok   6 [chromium] › tests\e2e\shell.spec.ts:46:1 › command dialog keeps keyboard focus away from the workspace (872ms)
+  ok   7 [chromium] › tests\e2e\shell.spec.ts:60:1 › sidebar collapse persists after reload and preserves accessible links (1.3s)
+  ok   8 [chromium] › tests\e2e\shell.spec.ts:78:1 › phone drawer is RTL, traps focus, and returns focus without horizontal overflow (1.8s)
+[WebServer] (node:16872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok   9 [chromium] › tests\e2e\shell.spec.ts:110:1 › phone notification and account popovers fit the viewport (906ms)
+[WebServer] (node:17716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:24908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  10 [chromium] › tests\e2e\shell.spec.ts:133:1 › theme and table density take effect and persist (1.4s)
+  ok  11 [chromium] › tests\e2e\shell.spec.ts:154:1 › keyboard skip link targets the main workspace (655ms)
+[WebServer] (node:30144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  12 [chromium] › tests\e2e\shipments.spec.ts:4:3 › isolated shipment previews › debounces search into the URL, keeps it after reload, and removes the filter chip (1.9s)
+[WebServer] (node:18044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  13 [chromium] › tests\e2e\shipments.spec.ts:23:3 › isolated shipment previews › combines filters, clears cursor state, and follows browser history (1.7s)
+[WebServer] (node:31680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  14 [chromium] › tests\e2e\shipments.spec.ts:45:3 › isolated shipment previews › changes columns in a keyboard-safe dialog and restores focus on Escape (1.2s)
+  ok  15 [chromium] › tests\e2e\shipments.spec.ts:66:3 › isolated shipment previews › copies the sample tracking number with feedback and disables workflow changes (977ms)
+[WebServer] (node:21460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  16 [chromium] › tests\e2e\shipments.spec.ts:82:3 › isolated shipment previews › keeps creation and pricing unavailable without issuing a write (1.1s)
+(node:34124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:24528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  17 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › SCHEDULED with empty metadata exposes no trip mutation (1.6s)
+[WebServer] (node:16124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  18 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › LOADING with empty metadata exposes no trip mutation (805ms)
+[WebServer] (node:18652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  19 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › DEPARTED with empty metadata exposes no trip mutation (848ms)
+  ok  20 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › ARRIVED with empty metadata exposes no trip mutation (881ms)
+[WebServer] (node:24636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  21 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › COMPLETED with empty metadata exposes no trip mutation (895ms)
+  ok  22 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:113:3 › CANCELLED with empty metadata exposes no trip mutation (746ms)
+[WebServer] (node:23796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  23 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:125:3 › START is discovered only from metadata even on a SCHEDULED display status (786ms)
+[WebServer] (node:17360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  24 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:125:3 › CONFIRM_ARRIVAL is discovered only from metadata even on a SCHEDULED display status (799ms)
+  ok  25 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:125:3 › COMPLETE is discovered only from metadata even on a SCHEDULED display status (704ms)
+  ok  26 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:142:1 › multiple capabilities remain available only on current detail and manual refresh removes them (1.3s)
+[WebServer] (node:21216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"invalid_value","path":["meta","allowed_actions","[]"],"receivedKind":"string"}] (src/lib/api/diagnostics.ts:113:11)
+  ok  27 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:168:3 › unknown action metadata fails closed without rendering unapproved controls (783ms)
+[WebServer] (node:19608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"custom","path":["meta","allowed_actions"],"receivedKind":"array"}] (src/lib/api/diagnostics.ts:113:11)
+  ok  28 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:168:3 › duplicate action metadata fails closed without rendering unapproved controls (798ms)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"invalid_type","path":["meta","allowed_actions"],"expected":"array","receivedKind":"missing"}] (src/lib/api/diagnostics.ts:113:11)
+  ok  29 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:168:3 › missing actions metadata fails closed without rendering unapproved controls (698ms)
+[WebServer] (node:19624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  30 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:185:1 › cancel and Escape return focus without sending a request (974ms)
+[WebServer] (node:3524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:29500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  31 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:197:1 › metadata drives START, arrival, shipment actions, and COMPLETE with authoritative cascades (2.6s)
+[WebServer] (node:5668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  32 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:278:1 › replayed success with stale capabilities waits for fresh detail before another action (1.2s)
+[WebServer] (node:29072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  33 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:307:1 › 409 immediately refreshes metadata and removes stale START without automatic retry (1.0s)
+  ok  34 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:329:1 › 404 revokes actionable detail and refreshes assigned lists without Admin fallback (1.1s)
+[WebServer] (node:31496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  35 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:360:3 › network retains one immutable attempt and retries only after deliberate interaction (1.1s)
+[WebServer] (node:32984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  36 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:360:3 › 503 retains one immutable attempt and retries only after deliberate interaction (1.0s)
+[WebServer] (node:8536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  37 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:360:3 › 429 retains one immutable attempt and retries only after deliberate interaction (1.0s)
+[WebServer] (node:25092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  38 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:396:1 › 422 preserves authoritative status and shows safe feedback without raw validation (935ms)
+[WebServer] (node:29560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  39 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:413:3 › logout clears uncertain attempts before another driver session (2.4s)
+[WebServer] (node:24756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:8332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  40 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:413:3 › expiry clears uncertain attempts before another driver session (2.0s)
+[WebServer] (node:31680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  41 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:461:3 › trip confirmation retains context, 48px targets, and no overflow at 390px (827ms)
+[WebServer] (node:29992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  42 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:461:3 › trip confirmation retains context, 48px targets, and no overflow at 430px (903ms)
+[WebServer] (node:3788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  43 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:461:3 › trip confirmation retains context, 48px targets, and no overflow at 768px (878ms)
+[WebServer] (node:24528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  44 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:461:3 › trip confirmation retains context, 48px targets, and no overflow at 1440px (816ms)
+[WebServer] (node:20360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  45 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:482:3 › trip confirmation keyboard and accessibility checks pass in light mode (1.3s)
+[WebServer] (node:10712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  46 [driver-chromium] › tests\e2e\driver-trip-actions.spec.ts:482:3 › trip confirmation keyboard and accessibility checks pass in dark mode (1.3s)
+[WebServer] (node:1368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  47 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:127:1 › session discovery withholds private content and unauthenticated deep links safely return to login (871ms)
+[WebServer] (node:21972) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  48 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:153:1 › shared cookie login returns to the intended driver detail and rechecks scoped access (1.2s)
+[WebServer] (node:12220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  49 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:172:1 › a staff identity cannot make driver or admin requests through the driver workspace (641ms)
+[WebServer] (node:28768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  50 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:184:1 › DRIVER role alone does not bypass an active linked profile rejection (627ms)
+  ok  51 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:200:1 › home offers scoped work and accessible driver navigation without admin chrome or global stats (610ms)
+  ok  52 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:224:1 › trip list uses server cursors and documented status filters (825ms)
+[WebServer] (node:24728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  53 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:251:1 › trip detail reads its own shipments through the scoped trip filter and uses Tripoli time (684ms)
+  ok  54 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:271:1 › shipment list paginates and filters without customer data in URLs (958ms)
+[WebServer] (node:2540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  55 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:301:1 › shipment detail exposes only contract-supported contact, address and route context (596ms)
+[WebServer] (node:15816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  56 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:315:1 › permission-free driver reads assigned work but has no state-changing controls (591ms)
+[WebServer] (node:26488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  57 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:328:1 › the two documented actions require inline confirmation, prevent duplicate submits and wait for authority (927ms)
+[WebServer] (node:28668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  58 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:379:1 › confirmation cancellation restores focus and performs no operation (748ms)
+[WebServer] (node:29004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  59 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:392:1 › an uncertain network mutation retries only on explicit request with the same body and key (870ms)
+[WebServer] (node:25636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  60 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:416:1 › 409 conflict refreshes the authoritative resource without replaying a stale operation (884ms)
+[WebServer] (node:25904) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  61 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:441:3 › POST 403 removes denied shipment details and cached list copies until authoritative reads succeed (1.5s)
+[WebServer] (node:23096) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  62 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:441:3 › POST 404 removes denied shipment details and cached list copies until authoritative reads succeed (1.5s)
+[WebServer] (node:25928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  63 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:531:1 › POST 409 followed by GET 429 blocks review retries and restores fresh status only after the read succeeds (944ms)
+[WebServer] (node:34112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  64 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:596:1 › 422 uses safe Arabic feedback and keeps the last authoritative shipment status (724ms)
+[WebServer] (node:32136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  65 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:619:1 › 429 respects Retry-After and retries the same operation only after deliberate interaction (989ms)
+[WebServer] (node:32352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  66 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:643:3 › another driver's trips returns a safe 404 without fallback or enumeration (685ms)
+[WebServer] (node:34412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  67 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:643:3 › another driver's shipments returns a safe 404 without fallback or enumeration (765ms)
+[WebServer] (node:6448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"unrecognized_keys","path":["data"],"receivedKind":"object"}] (src/lib/api/diagnostics.ts:113:11)
+  ok  68 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:665:1 › unexpected administrative fields fail strict schema validation and never render (697ms)
+[WebServer] (node:26680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  69 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:691:1 › a transient manual refresh preserves the most recent successful shipment and shows safe guidance (858ms)
+[WebServer] (node:12272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  70 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:712:1 › revoked shipment access cannot restore cached private data after a later network failure (1.1s)
+[WebServer] (node:30768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  71 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:735:1 › operational 401 clears private content and preserves a safe login return path (902ms)
+[WebServer] (node:2384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  72 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:750:1 › confirmed logout clears work and a subsequent session cannot inherit previous shipment data (1.7s)
+  ok  73 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:776:1 › empty assigned work offers refresh without administrative creation controls (744ms)
+[WebServer] (node:34636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  74 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:790:3 › driver shipment remains readable at 390px with no horizontal overflow (740ms)
+[WebServer] (node:2808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  75 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:790:3 › driver shipment remains readable at 430px with no horizontal overflow (679ms)
+[WebServer] (node:22484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  76 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:790:3 › driver shipment remains readable at 768px with no horizontal overflow (812ms)
+[WebServer] (node:12728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  77 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:790:3 › driver shipment remains readable at 1440px with no horizontal overflow (783ms)
+[WebServer] (node:31040) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  78 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:812:3 › mobile driver detail has no material axe violations in light mode (1.1s)
+[WebServer] (node:24744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ok  79 [driver-chromium] › tests\e2e\driver-workspace.spec.ts:812:3 › mobile driver detail has no material axe violations in dark mode (1.3s)
+(node:14976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  80 [public-order-chromium] › tests\e2e\public-order.spec.ts:175:1 › anonymous route is isolated from staff and required errors focus the first field (1.9s)
+  ok  81 [public-order-chromium] › tests\e2e\public-order.spec.ts:201:1 › review, double-click protection, confirmation, copy and refresh retain no personal storage (2.8s)
+  ok  82 [public-order-chromium] › tests\e2e\public-order.spec.ts:257:1 › door address is required and optional kg weight reaches only the reviewed order (3.2s)
+  ok  83 [public-order-chromium] › tests\e2e\public-order.spec.ts:290:1 › selection changes remove the old price immediately and clearing a route cannot create an order (3.0s)
+  ok  84 [public-order-chromium] › tests\e2e\public-order.spec.ts:322:1 › 422 returns editable field errors, focuses the invalid phone and creates a new corrected attempt (2.6s)
+  ok  85 [public-order-chromium] › tests\e2e\public-order.spec.ts:349:3 › network failure keeps fields locked and retries one immutable order only on deliberate action (2.5s)
+  ok  86 [public-order-chromium] › tests\e2e\public-order.spec.ts:349:3 › server failure keeps fields locked and retries one immutable order only on deliberate action (2.3s)
+  ok  87 [public-order-chromium] › tests\e2e\public-order.spec.ts:376:1 › 409 is a safe public conflict and never implies staff editing or exposes backend content (1.9s)
+  ok  88 [public-order-chromium] › tests\e2e\public-order.spec.ts:391:1 › 429 prevents an early retry and reuses the original key after Retry-After (4.3s)
+  ok  89 [public-order-chromium] › tests\e2e\public-order.spec.ts:412:1 › empty public catalogs offer no invented options or order submission (899ms)
+  ok  90 [public-order-chromium] › tests\e2e\public-order.spec.ts:424:1 › catalog errors have a working public retry with no login redirect (782ms)
+  ok  91 [public-order-chromium] › tests\e2e\public-order.spec.ts:441:1 › public layouts fit phone, tablet and desktop widths with readable native controls (2.0s)
+  ok  92 [public-order-chromium] › tests\e2e\public-order.spec.ts:467:1 › form, review and success pass accessibility checks in both themes and reduced motion (4.7s)
+(node:32024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  93 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:202:1 › anonymous RTL route has safe metadata, explicit search and accessible empty/invalid validation (848ms)
+  ok  94 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:227:1 › trimmed lookup renders safe status and authoritative timeline order in Tripoli time (700ms)
+  ok  95 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:253:1 › deep link performs a single effective lookup and refresh is explicit with no focus, reconnect or polling fetches (983ms)
+  ok  96 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:276:1 › invalid and ambiguous URL numbers do not issue a lookup or expose private query data in metadata (805ms)
+  ok  97 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:289:1 › copy confirms success and clipboard denial offers a manual fallback (982ms)
+  ok  98 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:311:1 › unknown tracking is safe, preserves the identifier and permits an explicit new lookup (739ms)
+  ok  99 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:330:3 › network refresh failure keeps the last valid result and retries only on customer action (1.1s)
+  ok 100 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:330:3 › 503 refresh failure keeps the last valid result and retries only on customer action (985ms)
+  ok 101 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:358:1 › 429 honors Retry-After across identifier edits without automatically retrying (4.2s)
+  ok 102 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:388:1 › editing cancels obsolete lookup and a delayed result cannot replace the next identifier (944ms)
+[WebServer] [browser] [Porta API] Response schema mismatch [{"code":"unrecognized_keys","path":["data"],"receivedKind":"object"}] (src/lib/api/diagnostics.ts:113:11)
+  ok 103 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:417:1 › unapproved private fields invalidate the response and never render sensitive values (644ms)
+  ok 104 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:453:1 › every approved status remains readable at mobile, tablet and desktop widths with accessible themes (2.4s)
+  ok 105 [public-tracking-chromium] › tests\e2e\public-tracking.spec.ts:505:1 › order confirmation links only its authoritative tracking number and tracking navigation never repeats creation (3.0s)
+
+  105 passed (2.7m)

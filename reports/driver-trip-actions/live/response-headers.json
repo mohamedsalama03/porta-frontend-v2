@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-09-14T10:32:11.1383087Z",
+  "method": "GET",
+  "path": "/api/v1/auth/me",
+  "status": 401,
+  "allowOrigin": "http://localhost:3000",
+  "allowCredentials": "true",
+  "exposedHeaders": "X-Request-ID, Idempotency-Replayed, Retry-After",
+  "authenticated": false,
+  "writes": 0
+}

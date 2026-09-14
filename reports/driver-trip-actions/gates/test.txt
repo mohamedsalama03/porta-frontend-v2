@@ -1,0 +1,17 @@
+
+> porta-delivery-admin@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.0 D:/customers/porta frontend
+
+
+ Test Files  39 passed (39)
+      Tests  382 passed (382)
+   Start at  12:27:56
+   Duration  43.02s (environment 42%, import 24%, tests 24%, setup 8%, transform 2%)
+
+Environment  jsdom was created 39 times · 33.67s total, 42% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+

@@ -1,0 +1,6332 @@
+{
+  "scope": "Synthetic intercepted Driver Trip Detail presentation. All shared session and scoped operations are handled locally, including bounded synthetic START requests for pending/success/conflict/unavailable states. Every unexpected API or external request is blocked. No live account, production data, or actual mutation.",
+  "base": "http://localhost:3000",
+  "apiOrigin": "http://localhost:8080",
+  "startedAt": "2026-09-14T10:18:43.313Z",
+  "reducedMotion": true,
+  "results": [
+    {
+      "name": "light-390-no-action",
+      "state": "no-action",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-no-action.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-start-available",
+      "state": "start-available",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "بدء الرحلة",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-start-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-start-pending",
+      "state": "start-pending",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "جارٍ تأكيد الإجراء",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-start-pending.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-390-start-success",
+      "state": "start-success",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-start-success.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-390-stale-409",
+      "state": "stale-409",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-stale-409.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-390-arrival-available",
+      "state": "arrival-available",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-arrival-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-complete-available",
+      "state": "complete-available",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "إكمال الرحلة",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-complete-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-completed",
+      "state": "completed",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-completed.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-unavailable-404",
+      "state": "unavailable-404",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-unavailable-404.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-no-action",
+      "state": "no-action",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-no-action.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-start-available",
+      "state": "start-available",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "بدء الرحلة",
+            "width": 390,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-start-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-start-pending",
+      "state": "start-pending",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "جارٍ تأكيد الإجراء",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-start-pending.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-430-start-success",
+      "state": "start-success",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 390,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-start-success.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-430-stale-409",
+      "state": "stale-409",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-stale-409.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-430-arrival-available",
+      "state": "arrival-available",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 390,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-arrival-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-complete-available",
+      "state": "complete-available",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "إكمال الرحلة",
+            "width": 390,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-complete-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-completed",
+      "state": "completed",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-completed.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-unavailable-404",
+      "state": "unavailable-404",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-unavailable-404.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-no-action",
+      "state": "no-action",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-no-action.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-start-available",
+      "state": "start-available",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "بدء الرحلة",
+            "width": 704,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-start-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-start-pending",
+      "state": "start-pending",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "جارٍ تأكيد الإجراء",
+            "width": 662,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-start-pending.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-768-start-success",
+      "state": "start-success",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 704,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-start-success.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-768-stale-409",
+      "state": "stale-409",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-stale-409.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-768-arrival-available",
+      "state": "arrival-available",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 704,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-arrival-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-complete-available",
+      "state": "complete-available",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "إكمال الرحلة",
+            "width": 704,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-complete-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-completed",
+      "state": "completed",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-completed.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-unavailable-404",
+      "state": "unavailable-404",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-unavailable-404.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-no-action",
+      "state": "no-action",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-no-action.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-start-available",
+      "state": "start-available",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "بدء الرحلة",
+            "width": 976,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-start-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-start-pending",
+      "state": "start-pending",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "جارٍ تأكيد الإجراء",
+            "width": 934,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-start-pending.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-1440-start-success",
+      "state": "start-success",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 976,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-start-success.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-1440-stale-409",
+      "state": "stale-409",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-stale-409.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "light-1440-arrival-available",
+      "state": "arrival-available",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 976,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-arrival-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-complete-available",
+      "state": "complete-available",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "إكمال الرحلة",
+            "width": 976,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-complete-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-completed",
+      "state": "completed",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-completed.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-unavailable-404",
+      "state": "unavailable-404",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-unavailable-404.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-no-action",
+      "state": "no-action",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-no-action.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-start-available",
+      "state": "start-available",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "بدء الرحلة",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-start-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-start-pending",
+      "state": "start-pending",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "جارٍ تأكيد الإجراء",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-start-pending.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "dark-390-start-success",
+      "state": "start-success",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-start-success.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "dark-390-stale-409",
+      "state": "stale-409",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-stale-409.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        }
+      ]
+    },
+    {
+      "name": "dark-390-arrival-available",
+      "state": "arrival-available",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد الوصول",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-arrival-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-complete-available",
+      "state": "complete-available",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "إكمال الرحلة",
+            "width": 350,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-complete-available.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-completed",
+      "state": "completed",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-completed.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-unavailable-404",
+      "state": "unavailable-404",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-unavailable-404.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "POST",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB/start",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-390-confirmation",
+      "state": "confirmation",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد بدء الرحلة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "رجوع",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-390-confirmation.png",
+      "actionScreenshot": "reports/driver-trip-actions/visual/light-390-confirmation-action-viewport.png",
+      "actionViewport": {
+        "navTop": 769,
+        "buttonsBelowNav": 0
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-430-confirmation",
+      "state": "confirmation",
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 430,
+        "documentWidth": 430,
+        "bodyWidth": 430,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 98.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد بدء الرحلة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "رجوع",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 390,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 348,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-430-confirmation.png",
+      "actionScreenshot": "reports/driver-trip-actions/visual/light-430-confirmation-action-viewport.png",
+      "actionViewport": {
+        "navTop": 857,
+        "buttonsBelowNav": 0
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-768-confirmation",
+      "state": "confirmation",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد بدء الرحلة",
+            "width": 325,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "رجوع",
+            "width": 325,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 302,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-768-confirmation.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "light-1440-confirmation",
+      "state": "confirmation",
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "measures": {
+        "direction": "rtl",
+        "theme": "light",
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 116.09375,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 111.078125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 118.703125,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 114.390625,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد بدء الرحلة",
+            "width": 461,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "رجوع",
+            "width": 461,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 400,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 438,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/light-1440-confirmation.png",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dark-390-confirmation",
+      "state": "confirmation",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "measures": {
+        "direction": "rtl",
+        "theme": "dark",
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "overflowing": [],
+        "controls": [
+          {
+            "name": "Porta — مساحة السائق",
+            "width": 89.5,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "الرئيسية",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الرحلات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الشحنات",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "الحساب",
+            "width": 88.5,
+            "height": 58,
+            "minimum": 44
+          },
+          {
+            "name": "العودة إلى الرحلات",
+            "width": 106.171875,
+            "height": 44,
+            "minimum": 44
+          },
+          {
+            "name": "تأكيد بدء الرحلة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "رجوع",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          },
+          {
+            "name": "كل الحالاتتم الاستلامقيد التجهيزفي الطريقوصلت للمدينةجاهزة للاستلامتم التسليم",
+            "width": 350,
+            "height": 54,
+            "minimum": 44
+          },
+          {
+            "name": "فتح الشحنة",
+            "width": 308,
+            "height": 48,
+            "minimum": 48
+          },
+          {
+            "name": "تحديث البيانات",
+            "width": 136.6875,
+            "height": 48,
+            "minimum": 44
+          }
+        ],
+        "smallTargets": [],
+        "reducedMotion": true,
+        "runningAnimations": 0,
+        "adminChrome": false,
+        "rawErrorVisible": false,
+        "privateDataPersisted": false
+      },
+      "axeViolations": [],
+      "screenshot": "reports/driver-trip-actions/visual/dark-390-confirmation.png",
+      "actionScreenshot": "reports/driver-trip-actions/visual/dark-390-confirmation-action-viewport.png",
+      "actionViewport": {
+        "navTop": 769,
+        "buttonsBelowNav": 0
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-14T10:20:31.283Z",
+  "status": "PASS"
+}

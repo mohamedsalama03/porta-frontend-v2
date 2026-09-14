@@ -1,0 +1,5 @@
+
+> porta-delivery-admin@0.1.0 api:check
+> node scripts/generate-contract.mjs --check
+
+Generated schemas match the approved local contract.

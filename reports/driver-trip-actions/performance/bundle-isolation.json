@@ -1,0 +1,45 @@
+{
+  "scope": "Production trip-detail client entry chunks, using the prior phase manifest method. Independent gzip estimates exclude common framework runtime; Lighthouse below separately measures total navigation JavaScript.",
+  "buildId": "zrIZKaKzzV8BxWUD-wJ5X",
+  "route": "(driver)/driver/trips/[id]",
+  "entryChunkCount": 10,
+  "decodedBytes": 591979,
+  "gzipBytes": 152727,
+  "clientSources": [
+    "[project]/src/components/ui/motion-provider.tsx",
+    "[project]/src/app/error.tsx",
+    "[project]/src/features/auth/auth-providers.tsx",
+    "[project]/src/features/driver-workspace/session.tsx",
+    "[project]/src/features/driver-workspace/shell-navigation.tsx",
+    "[project]/src/app/(driver)/driver/error.tsx",
+    "[project]/src/features/driver-workspace/trip-detail.tsx"
+  ],
+  "forbiddenSources": [],
+  "tableSignatures": [],
+  "chunks": [
+    "static/chunks/3bcy96go67exa.js",
+    "static/chunks/2zbeh9udnz9hw.js",
+    "static/chunks/1blvbam_irlj_.js",
+    "static/chunks/1yqgt3d0o9evy.js",
+    "static/chunks/0psaddd4a5p7g.js",
+    "static/chunks/32oo48a4rktvt.js",
+    "static/chunks/0q_kth5ncxnw_.js",
+    "static/chunks/1-4kpjysk604t.js",
+    "static/chunks/3x23g8wn5s1gm.js",
+    "static/chunks/00433bcs343wf.js"
+  ],
+  "baseline": {
+    "buildId": "JmagTaEA0VOTT2vXolXag",
+    "decodedBytes": 579861,
+    "gzipBytes": 149609,
+    "source": "reports/driver-interface/performance/bundle-isolation.json"
+  },
+  "delta": {
+    "decodedBytes": 12118,
+    "gzipBytes": 3118,
+    "decodedPercent": 2.089811178885981,
+    "gzipPercent": 2.084099218629887
+  },
+  "failures": [],
+  "result": "PASS"
+}

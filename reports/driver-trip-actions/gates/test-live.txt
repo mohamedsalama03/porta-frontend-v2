@@ -1,0 +1,17 @@
+
+> porta-delivery-admin@0.1.0 test:live
+> playwright test --config playwright.live.config.ts
+
+
+Running 6 tests using 1 worker
+
+(node:23932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\live\driver-workspace.spec.ts:10:1 › anonymous driver route is guarded by a read-only live session check (1.4s)
+  ok 2 [chromium] › tests\live\http.spec.ts:14:1 › actual API catalogs and unauthenticated discovery match the supplied contract (344ms)
+  ok 3 [chromium] › tests\live\http.spec.ts:36:1 › browser receives readable CSRF cookie and HttpOnly session on the approved hostname (1.2s)
+  ok 4 [chromium] › tests\live\http.spec.ts:63:1 › private route redirects an actual unauthenticated session and preserves safe filters (1.4s)
+  ok 5 [chromium] › tests\live\public-order.spec.ts:12:1 › public booking opens with real catalogs and no staff identity or admin request (854ms)
+  ok 6 [chromium] › tests\live\public-tracking.spec.ts:14:1 › existing disposable order is publicly readable without staff requests and refresh remains read-only (1.2s)
+
+  6 passed (8.2s)

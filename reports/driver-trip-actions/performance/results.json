@@ -1,0 +1,660 @@
+{
+  "scope": "Production localhost Lighthouse navigation of driver trip detail with explicit synthetic START metadata. Every API request is intercepted in memory; all writes are blocked, including synthetic writes. No live credentials, backend ownership enforcement, real API latency, field INP or field SLA is measured.",
+  "base": "http://localhost:3001",
+  "apiOrigin": "http://localhost:8080",
+  "buildId": "zrIZKaKzzV8BxWUD-wJ5X",
+  "fixture": {
+    "tripStatus": "LOADING",
+    "allowedActions": [
+      "START"
+    ],
+    "shipmentStatus": "PREPARING"
+  },
+  "startedAt": "2026-09-14T10:32:41.830Z",
+  "baseline": {
+    "buildId": "JmagTaEA0VOTT2vXolXag",
+    "source": "reports/driver-interface/performance/results.json",
+    "results": [
+      {
+        "mode": "mobile",
+        "scores": {
+          "performance": 0.82,
+          "accessibility": 1,
+          "best-practices": 1
+        },
+        "metrics": {
+          "fcpMs": 909.2886000000001,
+          "lcpMs": 4006.5771999999997,
+          "cls": 0,
+          "tbtMs": 282,
+          "inp": "Not measured; no field performance claim."
+        },
+        "javascript": {
+          "count": 21,
+          "transferBytes": 323980,
+          "decodedBytes": 1101415
+        }
+      },
+      {
+        "mode": "desktop",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1
+        },
+        "metrics": {
+          "fcpMs": 251.15910000000002,
+          "lcpMs": 856.73865,
+          "cls": 0,
+          "tbtMs": 0,
+          "inp": "Not measured; no field performance claim."
+        },
+        "javascript": {
+          "count": 21,
+          "transferBytes": 323980,
+          "decodedBytes": 1101415
+        }
+      }
+    ]
+  },
+  "bundle": {
+    "result": "PASS",
+    "decodedBytes": 591979,
+    "gzipBytes": 152727,
+    "delta": {
+      "decodedBytes": 12118,
+      "gzipBytes": 3118,
+      "decodedPercent": 2.089811178885981,
+      "gzipPercent": 2.084099218629887
+    }
+  },
+  "results": [
+    {
+      "mode": "mobile",
+      "page": "trip-detail",
+      "path": "/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+      "measuredAt": "2026-09-14T10:32:51.594Z",
+      "finalUrl": "http://localhost:3001/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+      "scores": {
+        "performance": 0.85,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "fcpMs": 917.3657000000001,
+        "lcpMs": 3776.0485500000004,
+        "cls": 0,
+        "tbtMs": 228.49999999999955,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "count": 21,
+        "transferBytes": 327098,
+        "decodedBytes": 1113533,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferBytes": 2578,
+            "decodedBytes": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferBytes": 9325,
+            "decodedBytes": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferBytes": 72280,
+            "decodedBytes": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferBytes": 44455,
+            "decodedBytes": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferBytes": 4458,
+            "decodedBytes": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferBytes": 5300,
+            "decodedBytes": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferBytes": 11678,
+            "decodedBytes": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferBytes": 6196,
+            "decodedBytes": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1yqgt3d0o9evy.js",
+            "transferBytes": 6113,
+            "decodedBytes": 17149
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0psaddd4a5p7g.js",
+            "transferBytes": 10323,
+            "decodedBytes": 28709
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/32oo48a4rktvt.js",
+            "transferBytes": 7409,
+            "decodedBytes": 37476
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferBytes": 91564,
+            "decodedBytes": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1-4kpjysk604t.js",
+            "transferBytes": 10831,
+            "decodedBytes": 29350
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3x23g8wn5s1gm.js",
+            "transferBytes": 1209,
+            "decodedBytes": 650
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/00433bcs343wf.js",
+            "transferBytes": 8405,
+            "decodedBytes": 24174
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferBytes": 2984,
+            "decodedBytes": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferBytes": 15006,
+            "decodedBytes": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3nm7caaj1flsg.js",
+            "transferBytes": 5324,
+            "decodedBytes": 12492
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1l3h8xxzzr2mk.js",
+            "transferBytes": 5099,
+            "decodedBytes": 12486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/37lm9qbu3t3n7.js",
+            "transferBytes": 1323,
+            "decodedBytes": 1520
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1ue7lgv0fajb3.js",
+            "transferBytes": 5238,
+            "decodedBytes": 12251
+          }
+        ]
+      },
+      "contentValidation": {
+        "timing": "After Lighthouse audits; final hydration wait excluded from navigation metrics.",
+        "initialLoaded": {
+          "shell": true,
+          "tripDetail": true,
+          "shipments": false,
+          "startCapability": true
+        },
+        "waitMs": 106,
+        "error": null,
+        "screenshotRecordedDuringMeasurement": true,
+        "capture": {
+          "capturedAt": "2026-09-14T10:36:14.472Z",
+          "timing": "Separate post-audit review capture; viewport restored after measured navigation.",
+          "expected": {
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1,
+            "isMobile": true,
+            "hasTouch": true
+          },
+          "actual": {
+            "innerWidth": 412,
+            "innerHeight": 823,
+            "clientWidth": 412,
+            "scrollWidth": 412,
+            "devicePixelRatio": 1,
+            "mobileLayout": true
+          },
+          "screenshot": "reports/driver-trip-actions/performance/mobile-trip-detail-verified.png",
+          "loaded": {
+            "shell": true,
+            "tripDetail": true,
+            "shipments": true,
+            "startCapability": true
+          },
+          "reason": "Correct Lighthouse post-audit emulation reset without rerunning valid navigation metrics.",
+          "captureOnly": true,
+          "rawMeasurementSha256": "55962cb0fc85a2d0761a06c1b4a0b8ba95e4df240d1b82691e1f6cc830187b99",
+          "rawMeasurementUnchanged": true,
+          "measuredScreenshot": "reports/driver-trip-actions/performance/mobile-trip-detail-measured.jpg",
+          "measuredScreenshotTiming": 603,
+          "measuredScreenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "apiCalls": [
+            {
+              "method": "GET",
+              "path": "/api/v1/auth/me",
+              "query": {}
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/trips",
+              "query": {
+                "per_page": "20"
+              }
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+              "query": {}
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/shipments",
+              "query": {
+                "per_page": "20",
+                "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+              }
+            }
+          ],
+          "unexpected": [],
+          "interceptionErrors": [],
+          "blockedWrites": []
+        }
+      },
+      "loaded": {
+        "shell": true,
+        "tripDetail": true,
+        "shipments": true,
+        "startCapability": true
+      },
+      "apiCalls": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ],
+      "apiIsolation": {
+        "sessionRead": true,
+        "scopedTripsRead": true,
+        "tripDetailRead": true,
+        "scopedShipmentsRead": true,
+        "adminOrPublicCalls": [],
+        "writes": [],
+        "blockedWrites": []
+      },
+      "unexpected": [],
+      "interceptionErrors": [],
+      "developmentScripts": [],
+      "runtimeError": null,
+      "warnings": [],
+      "comparison": {
+        "performancePoints": 3.0000000000000027,
+        "lcpMs": -230.5286499999993,
+        "tbtMs": -53.500000000000455,
+        "cls": 0,
+        "javascriptTransferBytes": 3118,
+        "javascriptDecodedBytes": 12118
+      }
+    },
+    {
+      "mode": "desktop",
+      "page": "trip-detail",
+      "path": "/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+      "measuredAt": "2026-09-14T10:32:58.911Z",
+      "finalUrl": "http://localhost:3001/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1
+      },
+      "metrics": {
+        "fcpMs": 249.1705,
+        "lcpMs": 792.7557499999999,
+        "cls": 0.007817571140880834,
+        "tbtMs": 0,
+        "inp": "Not measured; no field performance claim."
+      },
+      "javascript": {
+        "count": 21,
+        "transferBytes": 327098,
+        "decodedBytes": 1113533,
+        "resources": [
+          {
+            "url": "http://localhost:3001/_next/static/chunks/310vm2bl3xxpt.js",
+            "transferBytes": 2578,
+            "decodedBytes": 5364
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2mmpezlrfmbu5.js",
+            "transferBytes": 9325,
+            "decodedBytes": 34718
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/27t_qfc-3_lzs.js",
+            "transferBytes": 72280,
+            "decodedBytes": 229156
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3mbztfr7zgk1o.js",
+            "transferBytes": 44455,
+            "decodedBytes": 159925
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/turbopack-3t93k1d9d3nzl.js",
+            "transferBytes": 4458,
+            "decodedBytes": 9721
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3bcy96go67exa.js",
+            "transferBytes": 5300,
+            "decodedBytes": 17016
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/2zbeh9udnz9hw.js",
+            "transferBytes": 11678,
+            "decodedBytes": 32786
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1blvbam_irlj_.js",
+            "transferBytes": 6196,
+            "decodedBytes": 13482
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1yqgt3d0o9evy.js",
+            "transferBytes": 6113,
+            "decodedBytes": 17149
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0psaddd4a5p7g.js",
+            "transferBytes": 10323,
+            "decodedBytes": 28709
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/32oo48a4rktvt.js",
+            "transferBytes": 7409,
+            "decodedBytes": 37476
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/0q_kth5ncxnw_.js",
+            "transferBytes": 91564,
+            "decodedBytes": 391187
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1-4kpjysk604t.js",
+            "transferBytes": 10831,
+            "decodedBytes": 29350
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3x23g8wn5s1gm.js",
+            "transferBytes": 1209,
+            "decodedBytes": 650
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/00433bcs343wf.js",
+            "transferBytes": 8405,
+            "decodedBytes": 24174
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1vzj42bl1yovi.js",
+            "transferBytes": 2984,
+            "decodedBytes": 5241
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1529q1gn1ziof.js",
+            "transferBytes": 15006,
+            "decodedBytes": 38680
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1l3h8xxzzr2mk.js",
+            "transferBytes": 5099,
+            "decodedBytes": 12486
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/1ue7lgv0fajb3.js",
+            "transferBytes": 5238,
+            "decodedBytes": 12251
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/3nm7caaj1flsg.js",
+            "transferBytes": 5324,
+            "decodedBytes": 12492
+          },
+          {
+            "url": "http://localhost:3001/_next/static/chunks/37lm9qbu3t3n7.js",
+            "transferBytes": 1323,
+            "decodedBytes": 1520
+          }
+        ]
+      },
+      "contentValidation": {
+        "timing": "After Lighthouse audits; final hydration wait excluded from navigation metrics.",
+        "initialLoaded": {
+          "shell": true,
+          "tripDetail": true,
+          "shipments": true,
+          "startCapability": true
+        },
+        "waitMs": 110,
+        "error": null,
+        "screenshotRecordedDuringMeasurement": true,
+        "capture": {
+          "capturedAt": "2026-09-14T10:36:15.700Z",
+          "timing": "Separate post-audit review capture; viewport restored after measured navigation.",
+          "expected": {
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false
+          },
+          "actual": {
+            "innerWidth": 1350,
+            "innerHeight": 940,
+            "clientWidth": 1350,
+            "scrollWidth": 1350,
+            "devicePixelRatio": 1,
+            "mobileLayout": false
+          },
+          "screenshot": "reports/driver-trip-actions/performance/desktop-trip-detail-verified.png",
+          "loaded": {
+            "shell": true,
+            "tripDetail": true,
+            "shipments": true,
+            "startCapability": true
+          },
+          "reason": "Correct Lighthouse post-audit emulation reset without rerunning valid navigation metrics.",
+          "captureOnly": true,
+          "rawMeasurementSha256": "e63633e62b2b777c736c70ac60f2e7bc19d7f126107e729721e4c4af2531a0f2",
+          "rawMeasurementUnchanged": true,
+          "measuredScreenshot": "reports/driver-trip-actions/performance/desktop-trip-detail-measured.jpg",
+          "measuredScreenshotTiming": 403,
+          "measuredScreenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "apiCalls": [
+            {
+              "method": "GET",
+              "path": "/api/v1/auth/me",
+              "query": {}
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/trips",
+              "query": {
+                "per_page": "20"
+              }
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+              "query": {}
+            },
+            {
+              "method": "GET",
+              "path": "/api/v1/driver/shipments",
+              "query": {
+                "per_page": "20",
+                "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+              }
+            }
+          ],
+          "unexpected": [],
+          "interceptionErrors": [],
+          "blockedWrites": []
+        }
+      },
+      "loaded": {
+        "shell": true,
+        "tripDetail": true,
+        "shipments": true,
+        "startCapability": true
+      },
+      "apiCalls": [
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/auth/me",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips",
+          "query": {
+            "per_page": "20"
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/trips/01ARZ3NDEKTSV4RRFFQ69G5FAB",
+          "query": {}
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/driver/shipments",
+          "query": {
+            "per_page": "20",
+            "trip_id": "01ARZ3NDEKTSV4RRFFQ69G5FAB"
+          }
+        }
+      ],
+      "apiIsolation": {
+        "sessionRead": true,
+        "scopedTripsRead": true,
+        "tripDetailRead": true,
+        "scopedShipmentsRead": true,
+        "adminOrPublicCalls": [],
+        "writes": [],
+        "blockedWrites": []
+      },
+      "unexpected": [],
+      "interceptionErrors": [],
+      "developmentScripts": [],
+      "runtimeError": null,
+      "warnings": [],
+      "comparison": {
+        "performancePoints": 1.0000000000000009,
+        "lcpMs": -63.982900000000086,
+        "tbtMs": 0,
+        "cls": 0.007817571140880834,
+        "javascriptTransferBytes": 3118,
+        "javascriptDecodedBytes": 12118
+      }
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-14T10:32:59.183Z",
+  "status": "MEASURED"
+}

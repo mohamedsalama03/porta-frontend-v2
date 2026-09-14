@@ -1,0 +1,4 @@
+mobile-trip-detail: performance=0.85; LCP=3776.0485500000004ms; CLS=0; TBT=228.49999999999955ms; JS=327098 bytes
+desktop-trip-detail: performance=1; LCP=792.7557499999999ms; CLS=0.007817571140880834; TBT=0ms; JS=327098 bytes
+Trip detail bundle: 591979 decoded bytes; 152727 gzip bytes.
+MEASURED: reports/driver-trip-actions/performance/results.json

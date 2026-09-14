@@ -1,0 +1,5 @@
+
+> porta-delivery-admin@0.1.0 api:generate
+> node scripts/generate-contract.mjs
+
+Generated 65 component schemas and 54 operations from the local contract.
